@@ -1,10 +1,14 @@
 /**
  * @file packages/sdk/src/resources/admin.ts
  * @description Operator Control Plane resource client for platform models, providers, and budgets.
- * @module @orchestrai/sdk/resources
+ * @module @orchestr-ai/sdk/resources
  */
 
-import type { LlmProviderRecord, LlmModelRecord, TenantBudgetInfo } from "@orchestrai/shared-types";
+import type {
+  LlmProviderRecord,
+  LlmModelRecord,
+  TenantBudgetInfo,
+} from "@orchestr-ai/shared-types";
 import { ResourceBase } from "./resource-base";
 
 export type { TenantBudgetInfo };

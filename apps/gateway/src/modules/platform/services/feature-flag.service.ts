@@ -5,8 +5,8 @@
  * @module apps/gateway/modules/platform/services
  */
 
-import { getPrismaClient, type PrismaClient } from "@orchestrai/database";
-import { FeatureFlagKey } from "@orchestrai/shared-types";
+import { getPrismaClient, type PrismaClient } from "@orchestr-ai/database";
+import { FeatureFlagKey } from "@orchestr-ai/shared-types";
 
 export interface FeatureFlagRecord {
   flagId: string;

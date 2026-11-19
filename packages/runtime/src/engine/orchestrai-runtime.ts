@@ -4,8 +4,8 @@
  */
 
 import crypto from "node:crypto";
-import { ToolPermissionLevel } from "@orchestrai/shared-types";
-import { OrchestrAIError, type AIMessage, type AgentDefinition } from "@orchestrai/core";
+import { ToolPermissionLevel } from "@orchestr-ai/shared-types";
+import { OrchestrAIError, type AIMessage, type AgentDefinition } from "@orchestr-ai/core";
 import { START, type CompiledGraph } from "@/graph";
 import {
   MemoryCheckpointer,

@@ -7,7 +7,7 @@
  */
 
 import React from "react";
-import { Input, Label } from "@orchestrai/ui";
+import { Input, Label } from "@orchestr-ai/ui";
 import type { AuthUser } from "@/lib/auth";
 import { UI_COPY } from "@/lib/ui-copy";
 

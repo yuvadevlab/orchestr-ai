@@ -129,7 +129,7 @@ Unlike simplistic conversational LLM wrappers or script-based agent chains, Orch
 
 #### 7. Admin Service (`apps/admin` — Port `4005`)
 
-- **Technology Stack**: Fastify v4, Prisma ORM, `@orchestrai/database`.
+- **Technology Stack**: Fastify v4, Prisma ORM, `@orchestr-ai/database`.
 - **Purpose**: Internal control plane managing tenant provisioning, LLM quota policies, model provider credentials, and global system health.
 - **Detailed Features**:
   - **Tenant Quota & Token Budget Management**: Sets per-tenant daily and monthly token caps, maximum concurrent DAG executions, and allowed LLM tiers.
@@ -147,26 +147,26 @@ Unlike simplistic conversational LLM wrappers or script-based agent chains, Orch
 
 ### 2.2 Core Package Catalog
 
-| Package                         | Lines | Core Responsibilities & Invariants                                                                                                                                                                                           |
-| :------------------------------ | :---: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`@orchestrai/core`**          | < 200 | **Absolute Source of Truth**: Zero internal workspace dependencies. Defines base execution contexts, state schemas, Zod validation models, and core error hierarchies.                                                       |
-| **`@orchestrai/shared-types`**  | < 200 | **Canonical Domain Enums**: Contains all domain enums (`ExecutionStatus`, `AgentMode`, `MessageRole`, `ToolCapability`, `StateTransition`, `ConsensusStrategy`). Strict rule: zero bare string literals across the platform. |
-| **`@orchestrai/agent`**         | < 250 | **ReAct Cognitive Loop**: Implements the core Reason -> Act -> Observe execution loop, human-in-the-loop pause gates, planning cycles, and self-reflection mechanics.                                                        |
-| **`@orchestrai/runtime`**       | < 250 | **StateGraph Runtime Adapters**: Executes task nodes, coordinates conditional branching, evaluates edge conditions, and resolves multi-agent consensus.                                                                      |
-| **`@orchestrai/models`**        | < 250 | **Multi-Provider LLM Adapters**: Unified client abstraction supporting Ollama (local), Anthropic Claude, OpenAI, and DeepSeek with standardized streaming and structured JSON output.                                        |
-| **`@orchestrai/model-router`**  | < 250 | **Dynamic Model Optimization**: Evaluates prompt complexity, context size, and user budget to select the optimal model candidate (cost, latency, or quality prioritized).                                                    |
-| **`@orchestrai/tools`**         | < 250 | **Capability-Sandboxed Tool Harness**: Wraps tool executions in capability checks (`NETWORK`, `FILESYSTEM_READ`, `FILESYSTEM_WRITE`, `DATABASE`, `SHELL`) with strict timeouts.                                              |
-| **`@orchestrai/memory`**        | < 250 | **Four-Tier Memory Engine**: Manages Working Memory, Short-Term State Checkpoints, Long-Term Episodic Memory, and Vector RAG Memory.                                                                                         |
-| **`@orchestrai/rag`**           | < 250 | **Dense-Sparse Hybrid Retrieval**: Combines pgvector cosine similarity search with BM25 keyword matching and reciprocal rank fusion (RRF).                                                                                   |
-| **`@orchestrai/database`**      | < 250 | **Prisma ORM & PostgreSQL Schema**: Manages relational schema migrations, connection pooling, and transactional checkpoint persistence.                                                                                      |
-| **`@orchestrai/queue`**         | < 250 | **BullMQ Queue Management**: Defines queue topologies, delayed job schedulers, rate-limited worker pools, and metrics collectors.                                                                                            |
-| **`@orchestrai/events`**        | < 250 | **Transactional Outbox & Event Bus**: Implements durable domain event dispatching, idempotency key checking, and Redis pub/sub bridges.                                                                                      |
-| **`@orchestrai/observability`** | < 250 | **OpenTelemetry & Prometheus**: Injects trace contexts across HTTP, gRPC, and BullMQ boundaries, exporting metrics and structured logs.                                                                                      |
-| **`@orchestrai/regex`**         | < 150 | **Centralized Regular Expressions**: Zero inline regexes rule. Houses all validated regex patterns for sanitization, parsing, and token matching.                                                                            |
-| **`@orchestrai/sdk`**           | < 250 | **Client Orchestration SDK**: TypeScript client library for interacting with Gateway APIs, initiating swarms, and consuming SSE streams.                                                                                     |
-| **`@orchestrai/prompts`**       | < 200 | **Dynamic Prompt Builder**: Composes system prompts, role instructions, tool schemas, and few-shot exemplars driven by database configuration.                                                                               |
-| **`@orchestrai/eval`**          | < 250 | **Evaluation & Benchmark Suite**: Measures swarm reasoning accuracy, tool selection correctness, and detects hallucination anomalies.                                                                                        |
-| **`@orchestrai/grpc`**          | < 200 | **gRPC Stubs & Protobuf Compilations**: Precompiled Protobuf bindings for orchestrator communication.                                                                                                                        |
+| Package                          | Lines | Core Responsibilities & Invariants                                                                                                                                                                                           |
+| :------------------------------- | :---: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`@orchestr-ai/core`**          | < 200 | **Absolute Source of Truth**: Zero internal workspace dependencies. Defines base execution contexts, state schemas, Zod validation models, and core error hierarchies.                                                       |
+| **`@orchestr-ai/shared-types`**  | < 200 | **Canonical Domain Enums**: Contains all domain enums (`ExecutionStatus`, `AgentMode`, `MessageRole`, `ToolCapability`, `StateTransition`, `ConsensusStrategy`). Strict rule: zero bare string literals across the platform. |
+| **`@orchestr-ai/agent`**         | < 250 | **ReAct Cognitive Loop**: Implements the core Reason -> Act -> Observe execution loop, human-in-the-loop pause gates, planning cycles, and self-reflection mechanics.                                                        |
+| **`@orchestr-ai/runtime`**       | < 250 | **StateGraph Runtime Adapters**: Executes task nodes, coordinates conditional branching, evaluates edge conditions, and resolves multi-agent consensus.                                                                      |
+| **`@orchestr-ai/models`**        | < 250 | **Multi-Provider LLM Adapters**: Unified client abstraction supporting Ollama (local), Anthropic Claude, OpenAI, and DeepSeek with standardized streaming and structured JSON output.                                        |
+| **`@orchestr-ai/model-router`**  | < 250 | **Dynamic Model Optimization**: Evaluates prompt complexity, context size, and user budget to select the optimal model candidate (cost, latency, or quality prioritized).                                                    |
+| **`@orchestr-ai/tools`**         | < 250 | **Capability-Sandboxed Tool Harness**: Wraps tool executions in capability checks (`NETWORK`, `FILESYSTEM_READ`, `FILESYSTEM_WRITE`, `DATABASE`, `SHELL`) with strict timeouts.                                              |
+| **`@orchestr-ai/memory`**        | < 250 | **Four-Tier Memory Engine**: Manages Working Memory, Short-Term State Checkpoints, Long-Term Episodic Memory, and Vector RAG Memory.                                                                                         |
+| **`@orchestr-ai/rag`**           | < 250 | **Dense-Sparse Hybrid Retrieval**: Combines pgvector cosine similarity search with BM25 keyword matching and reciprocal rank fusion (RRF).                                                                                   |
+| **`@orchestr-ai/database`**      | < 250 | **Prisma ORM & PostgreSQL Schema**: Manages relational schema migrations, connection pooling, and transactional checkpoint persistence.                                                                                      |
+| **`@orchestr-ai/queue`**         | < 250 | **BullMQ Queue Management**: Defines queue topologies, delayed job schedulers, rate-limited worker pools, and metrics collectors.                                                                                            |
+| **`@orchestr-ai/events`**        | < 250 | **Transactional Outbox & Event Bus**: Implements durable domain event dispatching, idempotency key checking, and Redis pub/sub bridges.                                                                                      |
+| **`@orchestr-ai/observability`** | < 250 | **OpenTelemetry & Prometheus**: Injects trace contexts across HTTP, gRPC, and BullMQ boundaries, exporting metrics and structured logs.                                                                                      |
+| **`@orchestr-ai/regex`**         | < 150 | **Centralized Regular Expressions**: Zero inline regexes rule. Houses all validated regex patterns for sanitization, parsing, and token matching.                                                                            |
+| **`@orchestr-ai/sdk`**           | < 250 | **Client Orchestration SDK**: TypeScript client library for interacting with Gateway APIs, initiating swarms, and consuming SSE streams.                                                                                     |
+| **`@orchestr-ai/prompts`**       | < 200 | **Dynamic Prompt Builder**: Composes system prompts, role instructions, tool schemas, and few-shot exemplars driven by database configuration.                                                                               |
+| **`@orchestr-ai/eval`**          | < 250 | **Evaluation & Benchmark Suite**: Measures swarm reasoning accuracy, tool selection correctness, and detects hallucination anomalies.                                                                                        |
+| **`@orchestr-ai/grpc`**          | < 200 | **gRPC Stubs & Protobuf Compilations**: Precompiled Protobuf bindings for orchestrator communication.                                                                                                                        |
 
 ---
 
@@ -230,7 +230,7 @@ sequenceDiagram
 3. **Dynamic Server-Driven Configuration**:
    - Operational parameters (max execution steps, sampling temperatures, compaction thresholds, cache TTLs, starter suggestions) must be served via Gateway APIs (`/api/v1/platform/...`) and cached with stale-while-revalidate IndexedDB persistence.
 4. **Centralized Regular Expressions**:
-   - All regular expressions must originate from `@orchestrai/regex`. Zero inline regexes.
+   - All regular expressions must originate from `@orchestr-ai/regex`. Zero inline regexes.
 
 ---
 

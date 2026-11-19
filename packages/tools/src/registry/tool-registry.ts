@@ -14,8 +14,8 @@
  * ───────────────────────────────────────────────────────────────────
  */
 
-import { OrchestrAIError } from "@orchestrai/core";
-import { ToolPermissionLevel } from "@orchestrai/shared-types";
+import { OrchestrAIError } from "@orchestr-ai/core";
+import { ToolPermissionLevel } from "@orchestr-ai/shared-types";
 import type { ITool } from "@/interfaces";
 import type { AnthropicToolFormat, OpenAiFunctionToolFormat } from "./tool-registry.types";
 

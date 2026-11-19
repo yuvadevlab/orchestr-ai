@@ -1,5 +1,5 @@
 {
-  "name": "@orchestrai/core",
+  "name": "@orchestr-ai/core",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -23,7 +23,7 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@orchestrai/shared-types": "workspace:*",
+    "@orchestr-ai/shared-types": "workspace:*",
     "zod": "^4.6.6"
   },
   "devDependencies": {

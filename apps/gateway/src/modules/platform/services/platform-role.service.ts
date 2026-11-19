@@ -5,7 +5,7 @@
  * @module apps/gateway/services
  */
 
-import { getPrismaClient, type PrismaClient, type PlatformRole } from "@orchestrai/database";
+import { getPrismaClient, type PrismaClient, type PlatformRole } from "@orchestr-ai/database";
 
 /** DTO for creating or updating a platform role. */
 export interface UpsertRoleDto {

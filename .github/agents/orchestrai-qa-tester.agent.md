@@ -15,7 +15,7 @@ You MUST read and strictly adhere to:
 
 ## Role Scope & Focus
 
-- Maintain comprehensive test coverage across `@orchestrai/core`, `@orchestrai/agent`, and `@orchestrai/runtime`.
+- Maintain comprehensive test coverage across `@orchestr-ai/core`, `@orchestr-ai/agent`, and `@orchestr-ai/runtime`.
 - Verify schema boundary edge-cases: invalid inputs, empty objects, missing required fields.
 - Assert idempotency in worker job processors and outbox event consumers.
 - Ensure all tests are deterministic, run fast in parallel, and have zero network side-effects.

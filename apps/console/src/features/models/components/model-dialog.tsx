@@ -7,9 +7,9 @@
  */
 
 import React from "react";
-import { toast } from "@orchestrai/ui";
+import { toast } from "@orchestr-ai/ui";
 import { formatApiError } from "@/lib/error-utils";
-import { FormDialog } from "@orchestrai/ui";
+import { FormDialog } from "@orchestr-ai/ui";
 import { UI_COPY } from "@/lib/ui-copy";
 import { buildModelFields } from "./model-form-fields";
 import { useProviders, useRegisterModelMutation } from "../api";

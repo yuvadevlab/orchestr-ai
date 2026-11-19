@@ -6,7 +6,7 @@
 
 import { randomUUID } from "node:crypto";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
-import { prisma } from "@orchestrai/database";
+import { prisma } from "@orchestr-ai/database";
 import { loadGatewayConfig } from "@/config";
 import { LocalStore } from "@/db/local-store";
 import { hashPassword } from "./crypto";

@@ -2,11 +2,11 @@
  * @file packages/database/src/seeds/seed-cognitive-policies.ts
  * @description Database seeder for cognitive policies and dynamic thinking guidelines.
  * Adheres strictly to the Anthropic dynamic cognition standard with zero hardcoding.
- * @module @orchestrai/database/seeds
+ * @module @orchestr-ai/database/seeds
  */
 
 import type { PrismaClient } from "@prisma/client";
-import { CognitivePolicySlug } from "@orchestrai/shared-types";
+import { CognitivePolicySlug } from "@orchestr-ai/shared-types";
 
 export interface CognitivePolicyBlueprint {
   slug: CognitivePolicySlug;

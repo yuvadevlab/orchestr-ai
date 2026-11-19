@@ -4,9 +4,9 @@
  */
 
 import type { Job, Processor } from "bullmq";
-import { ToolExecutionJobPayloadSchema, type ToolExecutionJobPayload } from "@orchestrai/queue";
-import { ValidationError, NotFoundError, ToolExecutionError } from "@orchestrai/core";
-import type { ToolRegistry, ToolExecutionContext } from "@orchestrai/tools";
+import { ToolExecutionJobPayloadSchema, type ToolExecutionJobPayload } from "@orchestr-ai/queue";
+import { ValidationError, NotFoundError, ToolExecutionError } from "@orchestr-ai/core";
+import type { ToolRegistry, ToolExecutionContext } from "@orchestr-ai/tools";
 
 /**
  * Result returned from a detached tool execution job.

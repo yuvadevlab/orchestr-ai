@@ -13,13 +13,13 @@ import {
   ESLINT_COMPACT_DIAGNOSTIC_REGEX,
   TSC_DIAGNOSTIC_REGEX,
   RUFF_DIAGNOSTIC_REGEX,
-} from "@orchestrai/regex";
+} from "@orchestr-ai/regex";
 import {
   DiagnosticSeverity,
   DiagnosticToolType,
   type HarnessDiagnosticItem,
   type HarnessDiagnosticReport,
-} from "@orchestrai/shared-types";
+} from "@orchestr-ai/shared-types";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
 
 const logger = loggerWithConfig(new Logger("WorkspaceDiagnosticRunner"));

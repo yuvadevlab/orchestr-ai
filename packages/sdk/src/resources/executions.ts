@@ -6,7 +6,7 @@
 import type { Execution, PaginatedList, StreamEvent } from "@/types";
 import { ResourceBase } from "./resource-base";
 import { StreamIterator } from "@/streaming";
-import { ExecutionStatus } from "@orchestrai/shared-types";
+import { ExecutionStatus } from "@orchestr-ai/shared-types";
 
 export interface ExecutionFilter {
   agentId?: string;

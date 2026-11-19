@@ -22,7 +22,7 @@ We must decide between:
 We adopt a **modular monorepo structure** managed by **pnpm workspaces** and **Turborepo**:
 
 - All code resides in a single Git repository during initial development.
-- Packages are organized under `packages/*` with strict isolation: `@orchestrai/core` has zero internal workspace dependencies.
+- Packages are organized under `packages/*` with strict isolation: `@orchestr-ai/core` has zero internal workspace dependencies.
 - Packages use explicit dependency graphs (`workspace:*`) and TypeScript project references.
 - Each package maintains clean boundaries (own `package.json`, isolated tests, typed entry points) enabling seamless extraction into external npm packages or independent microservices when scale or organizational boundaries dictate.
 
@@ -36,7 +36,7 @@ We adopt a **modular monorepo structure** managed by **pnpm workspaces** and **T
 ### 2. Single monolithic application
 
 - _Pros_: Minimal initial setup overhead.
-- _Cons_: Severe coupling; impossible to reuse `@orchestrai/models` or `@orchestrai/tools` across worker and gateway without circular dependencies; impossible to distribute SDK to external clients cleanly.
+- _Cons_: Severe coupling; impossible to reuse `@orchestr-ai/models` or `@orchestr-ai/tools` across worker and gateway without circular dependencies; impossible to distribute SDK to external clients cleanly.
 
 ## Consequences
 
@@ -45,7 +45,7 @@ We adopt a **modular monorepo structure** managed by **pnpm workspaces** and **T
 - Single unified commit history and simplified cross-package atomic refactoring.
 - Fast local development with Turborepo caching.
 - Enforced architectural discipline: packages cannot form circular dependencies.
-- Zero-cost future extraction: when `@orchestrai/sdk` or `@orchestrai/tools` need to be published to npm or moved to a standalone repository, no code restructuring is required.
+- Zero-cost future extraction: when `@orchestr-ai/sdk` or `@orchestr-ai/tools` need to be published to npm or moved to a standalone repository, no code restructuring is required.
 
 ### Negative / Trade-offs
 

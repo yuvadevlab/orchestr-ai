@@ -10,7 +10,7 @@ import {
   RequestStatus,
   GrantStatus,
   ApprovalRiskLevel,
-} from "@orchestrai/shared-types";
+} from "@orchestr-ai/shared-types";
 import {
   AgentIdSchema,
   GrantIdSchema,

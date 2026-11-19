@@ -5,7 +5,7 @@
  * @module apps/console/features/models
  */
 
-import type { LlmModelRecord, LlmProviderRecord } from "@orchestrai/shared-types";
+import type { LlmModelRecord, LlmProviderRecord } from "@orchestr-ai/shared-types";
 
 export type LlmProvider = LlmProviderRecord;
 export type LlmModel = LlmModelRecord;

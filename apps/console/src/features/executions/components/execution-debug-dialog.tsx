@@ -3,7 +3,7 @@
 /**
  * @file execution-debug-dialog.tsx
  * @description Forensic developer debug dialog for deep-diving into execution state, errors, and traces.
- * Powered by @orchestrai/ui Dialog primitives for accessible dialog behavior and sizing.
+ * Powered by @orchestr-ai/ui Dialog primitives for accessible dialog behavior and sizing.
  * @module apps/console/features/executions/components
  */
 
@@ -17,11 +17,11 @@ import {
   DialogBody,
   DialogFooter,
   Button,
-} from "@orchestrai/ui";
+} from "@orchestr-ai/ui";
 import { Check, Copy, AlertTriangle, ExternalLink, Terminal } from "lucide-react";
 import Link from "next/link";
 import type { ExecutionRun } from "../types";
-import { StatusBadge } from "@orchestrai/ui/components/status-badge";
+import { StatusBadge } from "@orchestr-ai/ui/components/status-badge";
 import { UI_COPY } from "@/lib/ui-copy";
 import { ExecutionDebugMetricsGrid } from "./execution-debug-metrics-grid";
 import { ExecutionDebugPayload } from "./execution-debug-payload";
@@ -37,7 +37,7 @@ export interface ExecutionDebugDialogProps {
 
 /**
  * Forensic developer debug dialog displaying execution metadata, step graphs, and raw state JSON.
- * Utilizes @orchestrai/ui Dialog with size="2xl".
+ * Utilizes @orchestr-ai/ui Dialog with size="2xl".
  */
 export function ExecutionDebugDialog({
   execution,

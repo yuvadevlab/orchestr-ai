@@ -3,9 +3,9 @@
  * @description Contract and context for application-controlled dynamic mode routing.
  */
 
-import type { AgentMode } from "@orchestrai/shared-types";
-import type { AIMessage } from "@orchestrai/core";
-import type { ITool } from "@orchestrai/tools";
+import type { AgentMode } from "@orchestr-ai/shared-types";
+import type { AIMessage } from "@orchestr-ai/core";
+import type { ITool } from "@orchestr-ai/tools";
 
 /**
  * Contextual parameters provided to a mode router to make an informed selection.

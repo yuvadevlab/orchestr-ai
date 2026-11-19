@@ -1,11 +1,11 @@
 /**
  * @file execution-service.ts
  * @description Protobuf RPC contract definitions for gRPC execution service endpoints.
- * @module @orchestrai/grpc/contracts
+ * @module @orchestr-ai/grpc/contracts
  */
 
 import { z } from "zod";
-import { ExecutionIdSchema, AgentIdSchema, ExecutionStatusSchema } from "@orchestrai/core";
+import { ExecutionIdSchema, AgentIdSchema, ExecutionStatusSchema } from "@orchestr-ai/core";
 
 /** gRPC Execution Request payload schema */
 export const GrpcExecutionRequestSchema = z.object({

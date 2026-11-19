@@ -7,7 +7,7 @@
 "use client";
 
 import React, { useEffect } from "react";
-import { DynamicErrorState } from "@orchestrai/ui/components/error-state";
+import { DynamicErrorState } from "@orchestr-ai/ui/components/error-state";
 
 export interface GlobalErrorProps {
   /** Unhandled JavaScript error or API exception */

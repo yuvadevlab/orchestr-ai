@@ -1,7 +1,7 @@
 /**
  * @file packages/database/src/tenant-context.ts
  * @description Multi-tenant isolation helpers and scoped query builders.
- * @module @orchestrai/database
+ * @module @orchestr-ai/database
  */
 
 import type { QueryResult, QueryResultRow } from "pg";

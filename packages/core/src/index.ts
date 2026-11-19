@@ -1,14 +1,14 @@
 /**
  * @file packages/core/src/index.ts
- * @description Main entry point for `@orchestrai/core`.
+ * @description Main entry point for `@orchestr-ai/core`.
  * Exports shared domain contracts, Zod schemas, lifecycle events, and core interfaces.
  *
  * Package Invariant:
- * `@orchestrai/core` is strictly isolated and maintains ZERO internal workspace dependencies.
+ * `@orchestr-ai/core` is strictly isolated and maintains ZERO internal workspace dependencies.
  */
 
 // Re-export universal types and enums from shared-types
-export * from "@orchestrai/shared-types";
+export * from "@orchestr-ai/shared-types";
 
 // Domain Modules
 export * from "./identifiers";

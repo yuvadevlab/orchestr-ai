@@ -5,8 +5,8 @@
  * @module apps/gateway/repositories
  */
 
-import type { PrismaClient, Prisma } from "@orchestrai/database";
-import type { SessionMessageEntity } from "@orchestrai/core";
+import type { PrismaClient, Prisma } from "@orchestr-ai/database";
+import type { SessionMessageEntity } from "@orchestr-ai/core";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
 import { resolveDbTenantId, resolveOrCreateDefaultAgent } from "@/modules/tenant-resolver";
 import { mapMessageToSessionMessageEntity } from "./session-entity.mapper";

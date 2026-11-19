@@ -1,11 +1,11 @@
 /**
  * @file packages/core/src/ports/session-repository.port.ts
  * @description Abstract storage port for conversation sessions, threads, and interleaved messages.
- * @module @orchestrai/core/ports
+ * @module @orchestr-ai/core/ports
  */
 
-import type { PaginatedResult } from "@orchestrai/shared-types";
-import { MessageRole } from "@orchestrai/shared-types";
+import type { PaginatedResult } from "@orchestr-ai/shared-types";
+import { MessageRole } from "@orchestr-ai/shared-types";
 
 /**
  * Domain entity representing a conversation or cowork session.

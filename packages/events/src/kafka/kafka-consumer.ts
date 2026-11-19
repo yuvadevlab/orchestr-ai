@@ -1,10 +1,10 @@
 /**
  * @file kafka-consumer.ts
  * @description Kafka event consumer group subscriber implementation of IEventSubscriber.
- * @module @orchestrai/events/kafka
+ * @module @orchestr-ai/events/kafka
  */
 
-import type { DomainEventType } from "@orchestrai/shared-types";
+import type { DomainEventType } from "@orchestr-ai/shared-types";
 import type { IEventSubscriber, EventHandler, EventSubscription } from "../contracts";
 
 /** Kafka consumer group options */

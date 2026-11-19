@@ -4,7 +4,7 @@
  * @module apps/gateway/services
  */
 
-import { InMemorySpanExporter, Tracer } from "@orchestrai/observability";
+import { InMemorySpanExporter, Tracer } from "@orchestr-ai/observability";
 
 export interface SerializedSpan {
   id: string;

@@ -8,7 +8,7 @@
 
 import React from "react";
 import { Brain } from "lucide-react";
-import { Badge } from "@orchestrai/ui";
+import { Badge } from "@orchestr-ai/ui";
 import { UI_COPY } from "@/lib/ui-copy";
 import type { ScoredMemoryResult } from "../types";
 

@@ -3,7 +3,7 @@
  * @description Backpressure sensing controller protecting worker clusters from memory saturation.
  */
 
-import { QueueBackpressureError, ValidationError } from "@orchestrai/core";
+import { QueueBackpressureError, ValidationError } from "@orchestr-ai/core";
 import type { QueueMetrics } from "@/types/queue.types";
 
 /**

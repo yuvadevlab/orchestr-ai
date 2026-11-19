@@ -1,6 +1,6 @@
 /**
  * @file packages/sdk/src/index.ts
- * @description Central entry point and public API exports for `@orchestrai/sdk`.
+ * @description Central entry point and public API exports for `@orchestr-ai/sdk`.
  */
 
 import { OrchestrAIClient } from "./client";

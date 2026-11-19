@@ -6,7 +6,7 @@
 
 import React, { Suspense } from "react";
 import dynamic from "next/dynamic";
-import { TableSkeleton } from "@orchestrai/ui/components/skeleton";
+import { TableSkeleton } from "@orchestr-ai/ui/components/skeleton";
 
 const ContextHubPageContent = dynamic(() =>
   import("@/features/context").then((m) => ({ default: m.ContextHubPageContent })),

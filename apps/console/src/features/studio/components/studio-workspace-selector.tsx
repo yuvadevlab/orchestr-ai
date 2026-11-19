@@ -8,7 +8,7 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import { Folder, ChevronDown, FolderOpen, Copy } from "lucide-react";
-import { Button } from "@orchestrai/ui";
+import { Button } from "@orchestr-ai/ui";
 import { UI_COPY } from "@/lib/ui-copy";
 import { useConsoleStore, type WorkspaceRecord } from "@/lib/stores";
 import { StudioWorkspaceRecentList } from "./studio-workspace-recent-list";

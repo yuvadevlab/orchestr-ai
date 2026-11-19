@@ -1,7 +1,7 @@
 /**
  * @file packages/shared-types/src/platform.ts
  * @description Universal entity and DTO types for LLM providers, models, execution modes, and navigation.
- * @module @orchestrai/shared-types
+ * @module @orchestr-ai/shared-types
  */
 
 /**

@@ -1,7 +1,7 @@
 /**
  * @file packages/prompts/src/templates/prompt-builder.ts
  * @description Type-safe prompt builder combining personas, active tools, and workspace context.
- * @module @orchestrai/prompts/templates
+ * @module @orchestr-ai/prompts/templates
  */
 
 import { AUTONOMOUS_TOOLS_SYSTEM_PROMPT } from "../system/autonomous-tools.prompt";

@@ -4,7 +4,7 @@
  */
 
 import { z } from "zod";
-import { StreamChunkType } from "@orchestrai/shared-types";
+import { StreamChunkType } from "@orchestr-ai/shared-types";
 import { ExecutionIdSchema } from "@/identifiers";
 
 /**

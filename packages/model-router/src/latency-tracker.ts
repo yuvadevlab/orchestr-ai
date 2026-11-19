@@ -1,7 +1,7 @@
 /**
  * @file packages/model-router/src/latency-tracker.ts
  * @description Rolling window latency observer calculating P95, P99, and average percentiles.
- * @module @orchestrai/model-router
+ * @module @orchestr-ai/model-router
  */
 
 /**

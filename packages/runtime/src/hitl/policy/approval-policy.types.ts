@@ -4,7 +4,7 @@
  */
 
 import { z } from "zod";
-import { ToolPermissionLevel } from "@orchestrai/shared-types";
+import { ToolPermissionLevel } from "@orchestr-ai/shared-types";
 import type { RiskLevel } from "../contracts";
 
 /**

@@ -12,7 +12,7 @@ import {
   PermissionScope,
   type LlmModelRecord,
   type PlatformModeRecord,
-} from "@orchestrai/shared-types";
+} from "@orchestr-ai/shared-types";
 import { useConsoleStore } from "@/lib/stores";
 import { StudioAttachedFilesList, type AttachedFile } from "./studio-file-attachment";
 import { StudioLiveClearanceCard } from "./studio-live-clearance-card";

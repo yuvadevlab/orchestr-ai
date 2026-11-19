@@ -1,7 +1,7 @@
 /**
  * @file packages/prompts/src/personas/architect.prompt.ts
  * @description System Architect specialist persona prompt constant.
- * @module @orchestrai/prompts/personas
+ * @module @orchestr-ai/prompts/personas
  */
 
 /**

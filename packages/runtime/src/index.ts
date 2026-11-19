@@ -1,6 +1,6 @@
 /**
  * @file packages/runtime/src/index.ts
- * @description Public API surface for `@orchestrai/runtime`.
+ * @description Public API surface for `@orchestr-ai/runtime`.
  *
  * ─── Package Invariant ─────────────────────────────────────────────
  * This package implements the Directed StateGraph (DAG) Execution Engine,

@@ -1,7 +1,7 @@
 /**
  * @file grpc-client.ts
  * @description Client transport wrapper for inter-service gRPC calls.
- * @module @orchestrai/grpc/client
+ * @module @orchestr-ai/grpc/client
  */
 
 import type {
@@ -9,8 +9,8 @@ import type {
   GrpcExecutionRequest,
   GrpcExecutionResponse,
 } from "../contracts/execution-service";
-import { ExecutionStatus } from "@orchestrai/shared-types";
-import { ExecutionIdSchema } from "@orchestrai/core";
+import { ExecutionStatus } from "@orchestr-ai/shared-types";
+import { ExecutionIdSchema } from "@orchestr-ai/core";
 
 /**
  * gRPC Client transport managing binary inter-service RPC invocations.

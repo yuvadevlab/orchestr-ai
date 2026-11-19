@@ -9,7 +9,7 @@ import {
   AgentMode,
   ApprovalStatus,
   ApprovalDecisionVerdict,
-} from "@orchestrai/shared-types";
+} from "@orchestr-ai/shared-types";
 
 /**
  * Standard API error payload returned by OrchestrAI services.

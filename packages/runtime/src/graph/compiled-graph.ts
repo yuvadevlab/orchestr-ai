@@ -14,7 +14,7 @@
  */
 
 import crypto from "node:crypto";
-import { OrchestrAIError } from "@orchestrai/core";
+import { OrchestrAIError } from "@orchestr-ai/core";
 import { START, END, type NodeFunction, type EdgeRouter } from "./graph.types";
 import type { ICheckpointer } from "@/checkpoint";
 

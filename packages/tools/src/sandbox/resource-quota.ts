@@ -12,7 +12,7 @@
  * ─────────────────────────────────────────────────────────────────────
  */
 
-import { OrchestrAIError } from "@orchestrai/core";
+import { OrchestrAIError } from "@orchestr-ai/core";
 
 /**
  * Configuration for hard resource caps on an agent execution.

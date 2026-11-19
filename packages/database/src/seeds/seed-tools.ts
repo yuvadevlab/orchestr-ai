@@ -2,11 +2,11 @@
  * @file packages/database/src/seeds/seed-tools.ts
  * @description Database seeder for platform tools catalog.
  * Uses ToolPermissionLevel enum and zero-overwrite idempotent upsert.
- * @module @orchestrai/database/seeds
+ * @module @orchestr-ai/database/seeds
  */
 
 import type { PrismaClient } from "@prisma/client";
-import { ToolPermissionLevel, PlatformToolName, ToolSandboxType } from "@orchestrai/shared-types";
+import { ToolPermissionLevel, PlatformToolName, ToolSandboxType } from "@orchestr-ai/shared-types";
 
 export const SEED_TOOLS = [
   {

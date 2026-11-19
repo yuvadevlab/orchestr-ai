@@ -4,12 +4,12 @@
  * @module apps/gateway/modules/memory
  */
 
-import { DomainEventType } from "@orchestrai/shared-types";
+import { DomainEventType } from "@orchestr-ai/shared-types";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
 import { domainEventBus } from "@/modules/events/domain-event-publisher";
 import { memoryService } from "@/modules/memory/memory.service";
-import type { DomainEventEnvelope } from "@orchestrai/core";
-import { ExecutionCompletedPayloadSchema, ExecutionFailedPayloadSchema } from "@orchestrai/events";
+import type { DomainEventEnvelope } from "@orchestr-ai/core";
+import { ExecutionCompletedPayloadSchema, ExecutionFailedPayloadSchema } from "@orchestr-ai/events";
 import type { z } from "zod";
 
 type ExecutionCompletedPayload = z.infer<typeof ExecutionCompletedPayloadSchema>;

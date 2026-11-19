@@ -4,9 +4,9 @@
  * @module apps/gateway/modules/streaming
  */
 
-import { ExecutionStatus, SseStreamEvent } from "@orchestrai/shared-types";
+import { ExecutionStatus, SseStreamEvent } from "@orchestr-ai/shared-types";
 import { createModelResiliencePipeline } from "@yuva-devlab/resilience";
-import { OllamaAdapter } from "@orchestrai/models";
+import { OllamaAdapter } from "@orchestr-ai/models";
 import { extractToolCall } from "@/modules/streaming/autonomous-agent-runner";
 import { traceService } from "@/modules/trace/trace.service";
 import type { ExecutionStreamState } from "@/modules/streaming/live-execution-broadcaster";

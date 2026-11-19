@@ -9,7 +9,7 @@ import {
   MENTION_QUERY_REGEX,
   SLASH_COMMAND_PREFIX_REGEX,
   WORD_SPLIT_REGEX,
-} from "@orchestrai/regex";
+} from "@orchestr-ai/regex";
 import type { MentionSelection } from "../components/studio-mention-popover";
 import type { SlashCommandItem } from "../components/studio-slash-commands";
 

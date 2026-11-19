@@ -4,8 +4,8 @@
  */
 
 import type { Job, Processor } from "bullmq";
-import { DeadLetterJobPayloadSchema, type DeadLetterJobPayload } from "@orchestrai/queue";
-import { ValidationError } from "@orchestrai/core";
+import { DeadLetterJobPayloadSchema, type DeadLetterJobPayload } from "@orchestr-ai/queue";
+import { ValidationError } from "@orchestr-ai/core";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
 
 const defaultLogger = loggerWithConfig(new Logger("DLQ"));

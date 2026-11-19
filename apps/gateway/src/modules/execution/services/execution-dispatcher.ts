@@ -5,20 +5,20 @@
  * @module apps/gateway/modules/execution
  */
 
-import { type PrismaClient, type Prisma, type Agent } from "@orchestrai/database";
-import { QUEUE_NAMES, MessageRole, AgentMode } from "@orchestrai/shared-types";
+import { type PrismaClient, type Prisma, type Agent } from "@orchestr-ai/database";
+import { QUEUE_NAMES, MessageRole, AgentMode } from "@orchestr-ai/shared-types";
 import {
   ExecutionIdSchema,
   AgentIdSchema,
   type IExecutionRepository,
   type IQueueProducer,
-} from "@orchestrai/core";
-import { GrpcClient } from "@orchestrai/grpc";
+} from "@orchestr-ai/core";
+import { GrpcClient } from "@orchestr-ai/grpc";
 import type { CreateExecutionDto } from "@/validation";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
 import { liveExecutionManager } from "@/modules/streaming/live-execution.manager";
 import { toSharedStatus } from "../repositories/execution-status.mapper";
-import { UUID_REGEX } from "@orchestrai/regex";
+import { UUID_REGEX } from "@orchestr-ai/regex";
 
 const logger = loggerWithConfig(new Logger("ExecutionDispatcher"));
 
@@ -163,7 +163,7 @@ export class ExecutionDispatcher {
           // Pass DB model record values — never hardcoded in the executor
           contextWindow,
           costPerTokenUsd,
-          // Persona role drives system prompt template selection in @orchestrai/prompts
+          // Persona role drives system prompt template selection in @orchestr-ai/prompts
           targetAgent.role ?? undefined,
           (dto.mode as AgentMode) || (targetAgent.mode as AgentMode) || AgentMode.AUTO,
           workspacePath,

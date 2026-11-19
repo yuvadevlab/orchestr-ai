@@ -4,8 +4,8 @@
  */
 
 import crypto from "node:crypto";
-import { MessageRole, ApprovalDecisionVerdict } from "@orchestrai/shared-types";
-import { AIMessageSchema, OrchestrAIError, type AIMessage } from "@orchestrai/core";
+import { MessageRole, ApprovalDecisionVerdict } from "@orchestr-ai/shared-types";
+import { AIMessageSchema, OrchestrAIError, type AIMessage } from "@orchestr-ai/core";
 import type { IPersistentCheckpointer } from "@/checkpoint";
 import {
   ApprovalDecisionEngine,

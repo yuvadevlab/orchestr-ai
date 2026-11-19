@@ -48,11 +48,11 @@ Domain Packages (agent, runtime, memory, rag, queue, events)
 Infrastructure Adapters (models, tools, observability, sdk)
   │
   ▼
-Core Contracts (@orchestrai/core)
+Core Contracts (@orchestr-ai/core)
 ```
 
-- **Core Contract Purity**: `@orchestrai/core` contains shared domain contracts, Zod schemas, error definitions, and lifecycle event types. It has **zero internal workspace dependencies** and zero I/O side-effects.
-- **Never Duplicate Contracts**: Enums, types, and schemas must never be duplicated across apps or packages. All shared types must originate from `@orchestrai/core`.
+- **Core Contract Purity**: `@orchestr-ai/core` contains shared domain contracts, Zod schemas, error definitions, and lifecycle event types. It has **zero internal workspace dependencies** and zero I/O side-effects.
+- **Never Duplicate Contracts**: Enums, types, and schemas must never be duplicated across apps or packages. All shared types must originate from `@orchestr-ai/core`.
 - **Pure Functions First**: Mathematical calculations, prompt assembly, and token budget calculations must be pure functions with zero database or network side-effects.
 
 ---
@@ -70,7 +70,7 @@ Core Contracts (@orchestrai/core)
 ## 5. Zero Hardcoded Strings, Models & Strict Enum Usage Invariant
 
 - **Zero Raw String Literals for Domain Entities**: NO raw hardcoded string literals or magic values may be stored, dispatched, or compared for domain entities, statuses, roles, event types, modes, scopes, commands, or state transitions.
-- **Shared Canonical Enums**: ALL domain statuses, roles, modes, event names, and error codes MUST be defined as canonical TypeScript enums in `@orchestrai/shared-types` (or `@orchestrai/core`).
+- **Shared Canonical Enums**: ALL domain statuses, roles, modes, event names, and error codes MUST be defined as canonical TypeScript enums in `@orchestr-ai/shared-types` (or `@orchestr-ai/core`).
 - **Always Check with `Enum.KEY`**: When checking, matching, or branching on any value, agents MUST use `Enum.KEY` (e.g., `status === ExecutionStatus.COMPLETED`, `event.type === OrchestratorEventType.START`, `role === MessageRole.USER`). Never use raw string comparisons like `status === "completed"` or `"user"`.
 - **Zod Schemas Bound to Enums**: All validation schemas must use `z.nativeEnum(MyEnum)` or `z.enum([...])` sourced directly from canonical enum keys.
 - **Zero Hardcoded Models or Fallback Constants**: NO hardcoded model names (e.g. `"gemma4:31b-cloud"`, `"qwen2.5:7b"`) or fallback candidate objects (e.g. `DEFAULT_FALLBACK_CANDIDATE`). All models must be dynamically resolved from database records or the `DEFAULT_MODEL_NAME` environment variable.
@@ -120,9 +120,9 @@ Before completing any task, verify:
 - [ ] No file exceeds 250 lines of code (decomposed proactively at 200 lines).
 - [ ] All exported symbols have complete JSDoc annotations.
 - [ ] All conditionals, guards, and branching logic have explanatory inline comments.
-- [ ] Shared contracts originate from `@orchestrai/core` without cross-package duplication.
+- [ ] Shared contracts originate from `@orchestr-ai/core` without cross-package duplication.
 - [ ] Zero hardcoded runtime parameters; commands, prompts, and execution hyperparameters are dynamic (Big 3 Standard).
-- [ ] All regexes are centralized in `@orchestrai/regex`.
+- [ ] All regexes are centralized in `@orchestr-ai/regex`.
 - [ ] No test cases (unit, e2e, integration) or Storybook stories added during phase implementation unless requested.
 - [ ] `pnpm lint` and `pnpm typecheck` pass with zero errors and zero warnings.
 - [ ] Commit messages conform to `commitlint.config.ts`.

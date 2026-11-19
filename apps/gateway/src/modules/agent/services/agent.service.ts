@@ -10,7 +10,7 @@ import {
   type PrismaClient,
   type Prisma,
   type AgentMode,
-} from "@orchestrai/database";
+} from "@orchestr-ai/database";
 import { resolveDbTenantId } from "@/modules/tenant-resolver";
 import type { CreateAgentDto, UpdateAgentDto, AgentFilterDto } from "@/validation";
 

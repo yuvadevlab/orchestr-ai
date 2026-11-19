@@ -4,7 +4,7 @@
  * @module apps/gateway/repositories
  */
 
-import type { ExecutionEntity } from "@orchestrai/core";
+import type { ExecutionEntity } from "@orchestr-ai/core";
 import { toSharedStatus } from "./execution-status.mapper";
 
 /**

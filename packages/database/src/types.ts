@@ -1,7 +1,7 @@
 /**
  * @file packages/database/src/types.ts
  * @description Type definitions for database connection configuration, query options, and health metrics.
- * @module @orchestrai/database
+ * @module @orchestr-ai/database
  */
 
 import type { PoolConfig } from "pg";

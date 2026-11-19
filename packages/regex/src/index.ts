@@ -7,7 +7,7 @@
  * UUID validators, security redactions, network ranges, and URI patterns.
  * It has zero dependencies to ensure universal monorepo consumption.
  * ───────────────────────────────────────────────────────────────────
- * @module @orchestrai/regex
+ * @module @orchestr-ai/regex
  */
 
 export * from "./uuid.regex";

@@ -1,7 +1,7 @@
 /**
  * @file packages/regex/src/network.regex.ts
  * @description Regular expressions for network address validation, private IP blocking, and CORS origins.
- * @module @orchestrai/regex
+ * @module @orchestr-ai/regex
  */
 
 /**

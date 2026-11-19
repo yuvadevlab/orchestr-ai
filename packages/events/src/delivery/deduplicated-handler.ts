@@ -4,7 +4,7 @@
  */
 
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
-import type { DomainEventEnvelope } from "@orchestrai/core";
+import type { DomainEventEnvelope } from "@orchestr-ai/core";
 import type { IIdempotencyStore } from "../idempotency";
 
 /**

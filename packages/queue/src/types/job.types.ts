@@ -10,7 +10,7 @@ import {
   TenantIdSchema,
   TraceIdSchema,
   StepIdSchema,
-} from "@orchestrai/core";
+} from "@orchestr-ai/core";
 
 /**
  * Priority levels for BullMQ jobs.

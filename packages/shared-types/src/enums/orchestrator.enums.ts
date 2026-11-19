@@ -1,7 +1,7 @@
 /**
  * @file packages/shared-types/src/enums/orchestrator.enums.ts
  * @description Enumerations governing the standalone execution orchestrator state machine and event broker.
- * @module @orchestrai/shared-types/enums
+ * @module @orchestr-ai/shared-types/enums
  */
 
 /**

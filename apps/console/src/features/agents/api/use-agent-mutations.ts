@@ -8,7 +8,7 @@
 
 import { useMutation, useQueryClient, type UseMutationResult } from "@tanstack/react-query";
 import { getApiClient } from "@/lib/api-client";
-import type { Agent } from "@orchestrai/sdk";
+import type { Agent } from "@orchestr-ai/sdk";
 
 export interface CreateAgentInput {
   name: string;

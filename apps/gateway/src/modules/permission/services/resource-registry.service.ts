@@ -6,11 +6,11 @@
 
 import path from "node:path";
 import fs from "node:fs";
-import { getPrismaClient, type Resource } from "@orchestrai/database";
-import { ResourceType, WorkspaceTool } from "@orchestrai/shared-types";
-import { expandUserHome } from "@orchestrai/tools";
-import { isResourceContained } from "@orchestrai/core";
-import { FILE_PROTOCOL_REGEX, POSTGRES_PROTOCOL_REGEX } from "@orchestrai/regex";
+import { getPrismaClient, type Resource } from "@orchestr-ai/database";
+import { ResourceType, WorkspaceTool } from "@orchestr-ai/shared-types";
+import { expandUserHome } from "@orchestr-ai/tools";
+import { isResourceContained } from "@orchestr-ai/core";
+import { FILE_PROTOCOL_REGEX, POSTGRES_PROTOCOL_REGEX } from "@orchestr-ai/regex";
 import { findNearestProjectRoot } from "../storage/permission-storage";
 
 /**

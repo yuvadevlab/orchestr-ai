@@ -1,10 +1,10 @@
 /**
  * @file packages/sdk/src/resources/realtime.ts
  * @description Dedicated streaming client resource connecting to OrchestrAI Realtime broker.
- * @module @orchestrai/sdk/resources
+ * @module @orchestr-ai/sdk/resources
  */
 
-import { SseStreamEvent, type SseEventEnvelope } from "@orchestrai/shared-types";
+import { SseStreamEvent, type SseEventEnvelope } from "@orchestr-ai/shared-types";
 import { ResourceBase } from "./resource-base";
 import type { OrchestrAIClientOptions } from "../types";
 import type { HttpClient } from "../transport";

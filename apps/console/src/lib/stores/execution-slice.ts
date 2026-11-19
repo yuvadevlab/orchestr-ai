@@ -5,7 +5,7 @@
  */
 
 import type { StateCreator } from "zustand";
-import type { ExecutionStatus, StepStatus } from "@orchestrai/shared-types";
+import type { ExecutionStatus, StepStatus } from "@orchestr-ai/shared-types";
 
 /**
  * Step representation within an active DAG execution run.

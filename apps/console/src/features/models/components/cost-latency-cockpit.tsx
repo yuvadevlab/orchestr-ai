@@ -8,7 +8,7 @@
 
 import React, { useState } from "react";
 import { Cpu } from "lucide-react";
-import { Button } from "@orchestrai/ui";
+import { Button } from "@orchestr-ai/ui";
 import { UI_COPY } from "@/lib/ui-copy";
 import { CostLatencyMetrics } from "./cost-latency-metrics";
 

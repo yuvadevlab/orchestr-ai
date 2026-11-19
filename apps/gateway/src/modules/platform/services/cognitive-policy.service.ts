@@ -5,8 +5,8 @@
  * @module apps/gateway/modules/platform/services
  */
 
-import { getPrismaClient, type PrismaClient } from "@orchestrai/database";
-import { CognitivePolicySlug, SystemPromptSlug } from "@orchestrai/shared-types";
+import { getPrismaClient, type PrismaClient } from "@orchestr-ai/database";
+import { CognitivePolicySlug, SystemPromptSlug } from "@orchestr-ai/shared-types";
 
 export interface CognitivePolicyRecord {
   policyId: string;

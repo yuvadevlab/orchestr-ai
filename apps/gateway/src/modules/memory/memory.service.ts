@@ -5,8 +5,8 @@
  */
 
 import { randomUUID } from "node:crypto";
-import { MemoryManager, MemoryStorageAdapter, type EpisodeRecord } from "@orchestrai/memory";
-import { MemoryType, EpisodeOutcome } from "@orchestrai/shared-types";
+import { MemoryManager, MemoryStorageAdapter, type EpisodeRecord } from "@orchestr-ai/memory";
+import { MemoryType, EpisodeOutcome } from "@orchestr-ai/shared-types";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
 
 const logger = loggerWithConfig(new Logger("MemoryService"));

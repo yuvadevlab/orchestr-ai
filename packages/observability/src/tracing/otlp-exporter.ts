@@ -38,7 +38,7 @@ export class OtlpHttpSpanExporter implements ISpanExporter {
           },
           scopeSpans: [
             {
-              scope: { name: "@orchestrai/observability", version: "0.1.0" },
+              scope: { name: "@orchestr-ai/observability", version: "0.1.0" },
               spans: spans.map((s) => ({
                 traceId: s.spanContext().traceId,
                 spanId: s.spanContext().spanId,

@@ -5,8 +5,8 @@
  * @module apps/gateway/modules/platform/services
  */
 
-import { getPrismaClient, type PrismaClient, type Prisma } from "@orchestrai/database";
-import { ConfigNamespace, ConfigKey, type PlatformCommandRecord } from "@orchestrai/shared-types";
+import { getPrismaClient, type PrismaClient, type Prisma } from "@orchestr-ai/database";
+import { ConfigNamespace, ConfigKey, type PlatformCommandRecord } from "@orchestr-ai/shared-types";
 
 /** DTO for creating or updating a slash command. */
 export interface UpsertCommandDto {

@@ -6,7 +6,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
-import { PermissionScope } from "@orchestrai/shared-types";
+import { PermissionScope } from "@orchestr-ai/shared-types";
 
 /**
  * Finds the nearest project root (e.g. containing package.json or .git) for an external path.

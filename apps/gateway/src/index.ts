@@ -33,7 +33,7 @@ import {
   initEvalQualityGate,
   initMemoryDistillation,
 } from "@/modules";
-import { getPrismaClient, seedAllPlatformData } from "@orchestrai/database";
+import { getPrismaClient, seedAllPlatformData } from "@orchestr-ai/database";
 import { GatewayServer, registerProcessLifecycle } from "@/server";
 
 // Re-export all internal modules for test harnesses and downstream programmatic consumption

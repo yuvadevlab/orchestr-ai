@@ -18,7 +18,7 @@
  */
 
 import type { z } from "zod";
-import type { ToolDefinition } from "@orchestrai/core";
+import type { ToolDefinition } from "@orchestr-ai/core";
 
 /**
  * Environmental context provided to a tool during its execution run.

@@ -2,7 +2,7 @@
  * @file apps/console/src/features/auth/components/signup-view.tsx
  * @description Client view redirecting operator registration to DevLab Portal Central SSO.
  * @author yuva.devlab@gmail.com
- * @module @orchestrai/console/features/auth
+ * @module @orchestr-ai/console/features/auth
  */
 
 "use client";

@@ -1,6 +1,6 @@
 /**
  * @file packages/agent/vitest.config.ts
- * @description Vitest configuration for @orchestrai/agent.
+ * @description Vitest configuration for @orchestr-ai/agent.
  */
 
 import path from "node:path";

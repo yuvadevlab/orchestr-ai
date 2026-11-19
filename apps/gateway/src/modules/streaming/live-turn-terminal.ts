@@ -4,8 +4,8 @@
  * @module apps/gateway/modules/streaming
  */
 
-import { ExecutionStatus, EpisodeOutcome, SseStreamEvent } from "@orchestrai/shared-types";
-import { StatusCode, type Span } from "@orchestrai/observability";
+import { ExecutionStatus, EpisodeOutcome, SseStreamEvent } from "@orchestr-ai/shared-types";
+import { StatusCode, type Span } from "@orchestr-ai/observability";
 import { memoryService } from "@/modules/memory/memory.service";
 import type { ExecutionStreamState } from "@/modules/streaming/live-execution-broadcaster";
 import type { TurnExecutorCallbacks } from "@/modules/streaming/live-turn-executor";

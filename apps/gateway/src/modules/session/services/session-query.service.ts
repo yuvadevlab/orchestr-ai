@@ -4,10 +4,10 @@
  * @module apps/gateway/services
  */
 
-import { getPrismaClient, type PrismaClient } from "@orchestrai/database";
+import { getPrismaClient, type PrismaClient } from "@orchestr-ai/database";
 import type { MessageQueryDto, ConversationQueryDto } from "@/validation";
 import { resolveDbTenantId } from "@/modules/tenant-resolver";
-import { UUID_REGEX } from "@orchestrai/regex";
+import { UUID_REGEX } from "@orchestr-ai/regex";
 
 export interface ConversationMessageRecord {
   messageId: string;

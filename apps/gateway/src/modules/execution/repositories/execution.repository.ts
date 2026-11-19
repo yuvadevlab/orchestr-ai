@@ -2,18 +2,18 @@
  * @file apps/gateway/src/repositories/postgres-execution.repository.ts
  * @description PostgreSQL Prisma adapter implementing the core IExecutionRepository port.
  * All database reads and writes are isolated here so the rest of the codebase
- * depends only on the abstract {@link IExecutionRepository} port from `@orchestrai/core`.
+ * depends only on the abstract {@link IExecutionRepository} port from `@orchestr-ai/core`.
  * @module apps/gateway/repositories
  */
 
-import { getPrismaClient, type PrismaClient, type Prisma } from "@orchestrai/database";
+import { getPrismaClient, type PrismaClient, type Prisma } from "@orchestr-ai/database";
 import type {
   IExecutionRepository,
   ExecutionEntity,
   CreateExecutionEntityData,
   ListExecutionsFilter,
-} from "@orchestrai/core";
-import { ExecutionStatus, type PaginatedResult } from "@orchestrai/shared-types";
+} from "@orchestr-ai/core";
+import { ExecutionStatus, type PaginatedResult } from "@orchestr-ai/shared-types";
 import { toPrismaStatus } from "./execution-status.mapper";
 import { mapExecutionToEntity } from "./execution-entity.mapper";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";

@@ -4,7 +4,7 @@
  * @module apps/console/lib
  */
 
-import { createOrchestrAIClient, type OrchestrAIClient } from "@orchestrai/sdk";
+import { createOrchestrAIClient, type OrchestrAIClient } from "@orchestr-ai/sdk";
 import { getStoredSession } from "./auth";
 
 /** Gateway base URL configured from environment variable or default local port 4001 */

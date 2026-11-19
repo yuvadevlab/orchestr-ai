@@ -9,8 +9,8 @@ import {
   type PrismaClient,
   type LlmModel,
   type Prisma,
-} from "@orchestrai/database";
-import type { LlmModelRecord } from "@orchestrai/shared-types";
+} from "@orchestr-ai/database";
+import type { LlmModelRecord } from "@orchestr-ai/shared-types";
 
 /**
  * Payload interface for registering or modifying an LLM model deployment.

@@ -5,8 +5,8 @@ import { z } from "zod";
  */
 
 import type { Redis } from "ioredis";
-import { QUEUE_NAMES } from "@orchestrai/shared-types";
-import { ValidationError } from "@orchestrai/core";
+import { QUEUE_NAMES } from "@orchestr-ai/shared-types";
+import { ValidationError } from "@orchestr-ai/core";
 import { BaseQueueProducer } from "./base-producer";
 import { ToolExecutionJobPayloadSchema, type ToolExecutionJobPayload } from "@/types/job.types";
 import type { EnqueueJobOptions } from "@/types/queue.types";

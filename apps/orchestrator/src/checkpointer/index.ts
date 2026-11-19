@@ -4,7 +4,7 @@
  * @module apps/orchestrator/checkpointer
  */
 
-import { PostgresCheckpointer } from "@orchestrai/runtime";
+import { PostgresCheckpointer } from "@orchestr-ai/runtime";
 import { PoolDatabaseQueryRunner } from "./database-query-runner";
 
 export * from "./database-query-runner";

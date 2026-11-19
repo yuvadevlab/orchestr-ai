@@ -3,7 +3,7 @@
  * @description Types and options for the agent prompt compilation pipeline.
  */
 
-import type { AIMessage } from "@orchestrai/core";
+import type { AIMessage } from "@orchestr-ai/core";
 
 /**
  * Configuration options provided to the prompt compiler for assembling LLM prompts.

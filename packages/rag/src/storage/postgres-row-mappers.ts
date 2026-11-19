@@ -7,7 +7,7 @@
 import { DocumentSchema, DocumentChunkSchema } from "../contracts";
 import type { Document, DocumentChunk } from "../contracts";
 import type { PostgresDocumentRow, PostgresChunkRow } from "./postgres-queries";
-import { EMBEDDING_ARRAY_REGEX } from "@orchestrai/regex";
+import { EMBEDDING_ARRAY_REGEX } from "@orchestr-ai/regex";
 
 /**
  * Maps a relational database row from the `documents` table to a validated Document entity.

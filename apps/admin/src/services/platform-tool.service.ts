@@ -4,8 +4,8 @@
  * @module apps/admin/services
  */
 
-import { getPrismaClient, type PrismaClient, type PlatformTool } from "@orchestrai/database";
-import { ToolPermissionLevel } from "@orchestrai/shared-types";
+import { getPrismaClient, type PrismaClient, type PlatformTool } from "@orchestr-ai/database";
+import { ToolPermissionLevel } from "@orchestr-ai/shared-types";
 
 /**
  * Platform tool catalog entity record.

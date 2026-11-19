@@ -1,10 +1,10 @@
 /**
  * @file apps/gateway/src/repositories/bullmq-queue-producer.adapter.ts
- * @description Queue producer adapter implementing the IQueueProducer port via @orchestrai/queue.
+ * @description Queue producer adapter implementing the IQueueProducer port via @orchestr-ai/queue.
  * @module apps/gateway/repositories
  */
 
-import type { IQueueProducer, QueueJobOptions } from "@orchestrai/core";
+import type { IQueueProducer, QueueJobOptions } from "@orchestr-ai/core";
 import { agentQueueProducerManager } from "@/modules/streaming/agent-execution-queue.producer";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
 

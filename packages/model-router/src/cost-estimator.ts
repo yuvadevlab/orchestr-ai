@@ -1,7 +1,7 @@
 /**
  * @file packages/model-router/src/cost-estimator.ts
  * @description Pre-inference and post-inference cost estimation calculator.
- * @module @orchestrai/model-router
+ * @module @orchestr-ai/model-router
  */
 
 import type { ModelDeploymentCandidate } from "./types";

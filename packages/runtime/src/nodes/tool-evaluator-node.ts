@@ -4,8 +4,8 @@
  */
 
 import crypto from "node:crypto";
-import { requiresHumanApproval } from "@orchestrai/core";
-import { ApprovalStatus, ToolPermissionLevel } from "@orchestrai/shared-types";
+import { requiresHumanApproval } from "@orchestr-ai/core";
+import { ApprovalStatus, ToolPermissionLevel } from "@orchestr-ai/shared-types";
 import type { NodeFunction } from "@/graph";
 import type { RuntimeGraphState, RuntimeNodeDependencies } from "./node.types";
 

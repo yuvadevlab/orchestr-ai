@@ -7,7 +7,7 @@
  */
 
 import React from "react";
-import { Table, TableHeader, TableRow, TableHead, TableBody } from "@orchestrai/ui";
+import { Table, TableHeader, TableRow, TableHead, TableBody } from "@orchestr-ai/ui";
 import type { ExecutionRun } from "../types";
 import { UI_COPY } from "@/lib/ui-copy";
 import { ExecutionTableRow } from "./execution-table-row";

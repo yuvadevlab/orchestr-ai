@@ -1,7 +1,7 @@
 /**
  * @file packages/shared-types/src/enums/cqrs.enums.ts
  * @description Enumerations for CQRS command types, routing keys, and queue backoff policies.
- * @module @orchestrai/shared-types/enums
+ * @module @orchestr-ai/shared-types/enums
  */
 
 /**

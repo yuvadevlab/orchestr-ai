@@ -5,8 +5,8 @@
  * @module apps/gateway/modules/platform/services
  */
 
-import { getPrismaClient, type PrismaClient, type Prisma } from "@orchestrai/database";
-import { ConfigNamespace, ConfigKey } from "@orchestrai/shared-types";
+import { getPrismaClient, type PrismaClient, type Prisma } from "@orchestr-ai/database";
+import { ConfigNamespace, ConfigKey } from "@orchestr-ai/shared-types";
 
 /** Cache parameters shape */
 export interface SemanticCacheConfig {

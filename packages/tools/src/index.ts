@@ -1,10 +1,10 @@
 /**
  * @file packages/tools/src/index.ts
- * @description Public API surface for `@orchestrai/tools`.
+ * @description Public API surface for `@orchestr-ai/tools`.
  *
  * ─── Package Invariant ─────────────────────────────────────────────
  * This package implements the Tool Execution and Security Perimeter layer.
- * It depends exclusively on `@orchestrai/core` and `@orchestrai/shared-types`.
+ * It depends exclusively on `@orchestr-ai/core` and `@orchestr-ai/shared-types`.
  * ───────────────────────────────────────────────────────────────────
  */
 

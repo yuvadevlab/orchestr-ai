@@ -8,7 +8,7 @@
 
 import React from "react";
 import { CheckCircle2, Circle, ListTodo, Loader2 } from "lucide-react";
-import { PlanStepStatus } from "@orchestrai/shared-types";
+import { PlanStepStatus } from "@orchestr-ai/shared-types";
 import { UI_COPY } from "@/lib/ui-copy";
 import type { PlanStep } from "../types";
 

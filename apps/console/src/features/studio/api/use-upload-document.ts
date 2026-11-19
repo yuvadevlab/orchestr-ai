@@ -8,7 +8,7 @@
 
 import { useMutation, useQueryClient, type UseMutationResult } from "@tanstack/react-query";
 import { getApiClient } from "@/lib/api-client";
-import { DocumentUploadStatus, DocumentMimeType } from "@orchestrai/shared-types";
+import { DocumentUploadStatus, DocumentMimeType } from "@orchestr-ai/shared-types";
 
 export interface UploadDocumentParams {
   file: File;

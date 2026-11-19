@@ -4,8 +4,8 @@
  * @module apps/gateway/repositories
  */
 
-import { MessageRole } from "@orchestrai/shared-types";
-import type { SessionEntity, SessionMessageEntity } from "@orchestrai/core";
+import { MessageRole } from "@orchestr-ai/shared-types";
+import type { SessionEntity, SessionMessageEntity } from "@orchestr-ai/core";
 
 /**
  * Maps arbitrary role string values from database columns to canonical MessageRole enums.

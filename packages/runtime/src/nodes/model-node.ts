@@ -3,9 +3,9 @@
  * @description Model invocation node responsible for LLM reasoning and response capture.
  */
 
-import { MessageRole } from "@orchestrai/shared-types";
-import { AIMessageSchema, type AIMessage } from "@orchestrai/core";
-import { compilePrompt, extractToolCalls, resolveModeStrategy } from "@orchestrai/agent";
+import { MessageRole } from "@orchestr-ai/shared-types";
+import { AIMessageSchema, type AIMessage } from "@orchestr-ai/core";
+import { compilePrompt, extractToolCalls, resolveModeStrategy } from "@orchestr-ai/agent";
 import type { NodeFunction } from "@/graph";
 import type { RuntimeGraphState, RuntimeNodeDependencies } from "./node.types";
 

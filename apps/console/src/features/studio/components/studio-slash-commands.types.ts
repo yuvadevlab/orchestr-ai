@@ -20,7 +20,7 @@ import {
   Shield,
   type LucideIcon,
 } from "lucide-react";
-import { AgentMode, type PlatformCommandRecord } from "@orchestrai/shared-types";
+import { AgentMode, type PlatformCommandRecord } from "@orchestr-ai/shared-types";
 
 /** UI representation of a slash command in the command popover */
 export interface SlashCommandItem {

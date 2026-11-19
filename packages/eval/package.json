@@ -1,5 +1,5 @@
 {
-  "name": "@orchestrai/eval",
+  "name": "@orchestr-ai/eval",
   "version": "0.1.0",
   "description": "Evaluation harness and benchmark scoring suite for OrchestrAI agent performance.",
   "main": "./dist/index.cjs",
@@ -18,8 +18,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@orchestrai/core": "workspace:*",
-    "@orchestrai/shared-types": "workspace:*",
+    "@orchestr-ai/core": "workspace:*",
+    "@orchestr-ai/shared-types": "workspace:*",
     "zod": "^4.6.6"
   },
   "devDependencies": {

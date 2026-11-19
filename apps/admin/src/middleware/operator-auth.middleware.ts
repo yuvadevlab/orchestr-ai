@@ -7,8 +7,8 @@
 
 import type { IncomingMessage, ServerResponse } from "node:http";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
-import { OperatorRole } from "@orchestrai/shared-types";
-import { getPrismaClient } from "@orchestrai/database";
+import { OperatorRole } from "@orchestr-ai/shared-types";
+import { getPrismaClient } from "@orchestr-ai/database";
 import type { AdminConfig } from "@/config";
 import type { AdminRequestContext } from "@/context";
 

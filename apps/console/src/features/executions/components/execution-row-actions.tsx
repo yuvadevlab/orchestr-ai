@@ -8,7 +8,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { Button } from "@orchestrai/ui";
+import { Button } from "@orchestr-ai/ui";
 import { ExternalLink, Bug } from "lucide-react";
 import type { ExecutionRun } from "../types";
 import { UI_COPY } from "@/lib/ui-copy";

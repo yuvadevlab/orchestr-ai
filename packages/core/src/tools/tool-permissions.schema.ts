@@ -4,7 +4,7 @@
  */
 
 import { z } from "zod";
-import { ToolPermissionLevel } from "@orchestrai/shared-types";
+import { ToolPermissionLevel } from "@orchestr-ai/shared-types";
 
 /**
  * Hierarchical permission classification for executable tools backed by ToolPermissionLevel enum.

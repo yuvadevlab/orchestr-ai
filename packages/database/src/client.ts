@@ -1,7 +1,7 @@
 /**
  * @file packages/database/src/client.ts
  * @description Lazy-initialized singleton PrismaClient manager with PostgreSQL driver adapter and connection pooling.
- * @module @orchestrai/database
+ * @module @orchestr-ai/database
  */
 
 import { PrismaClient } from "@prisma/client";

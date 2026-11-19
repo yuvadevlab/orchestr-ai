@@ -4,8 +4,8 @@
  * @module apps/gateway/services
  */
 
-import { getPrismaClient, type Prisma } from "@orchestrai/database";
-import { PermissionLevel } from "@orchestrai/shared-types";
+import { getPrismaClient, type Prisma } from "@orchestr-ai/database";
+import { PermissionLevel } from "@orchestr-ai/shared-types";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
 
 const logger = loggerWithConfig(new Logger("ResourceAccessLogger"));

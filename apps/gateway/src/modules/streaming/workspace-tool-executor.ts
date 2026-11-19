@@ -11,8 +11,8 @@ import {
   ListDirectoryTool,
   BashTool,
   KnowledgeSearchTool,
-} from "@orchestrai/tools";
-import { WorkspaceTool, FeatureFlagKey } from "@orchestrai/shared-types";
+} from "@orchestr-ai/tools";
+import { WorkspaceTool, FeatureFlagKey } from "@orchestr-ai/shared-types";
 import { randomUUID } from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";

@@ -2,7 +2,7 @@
  * @file apps/console/src/lib/jwt.ts
  * @description Lightweight, environment-agnostic JWT decoder and preemptive expiry validator.
  * Operates across Next.js Edge runtime, Node.js SSR, and browser client without native crypto dependencies.
- * @module @orchestrai/console/lib/jwt
+ * @module @orchestr-ai/console/lib/jwt
  */
 
 /** Canonical claims present in portal RS256/JWT authentication payloads */

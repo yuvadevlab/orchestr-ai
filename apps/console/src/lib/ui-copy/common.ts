@@ -1,1 +1,1 @@
-export { COMMON_COPY } from "@orchestrai/ui";
+export { COMMON_COPY } from "@orchestr-ai/ui";

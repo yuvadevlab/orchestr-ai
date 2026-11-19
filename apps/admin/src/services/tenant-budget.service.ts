@@ -4,8 +4,8 @@
  * @module apps/admin/services
  */
 
-import { getPrismaClient, type PrismaClient, type Tenant } from "@orchestrai/database";
-import type { TenantBudgetInfo, TenantRecord } from "@orchestrai/shared-types";
+import { getPrismaClient, type PrismaClient, type Tenant } from "@orchestr-ai/database";
+import type { TenantBudgetInfo, TenantRecord } from "@orchestr-ai/shared-types";
 
 /** Default monthly spending limit in USD for newly initialized tenant partitions */
 const DEFAULT_MAX_MONTHLY_SPEND_USD = 500.0;

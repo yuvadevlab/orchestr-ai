@@ -16,7 +16,7 @@ import {
   Terminal,
   PanelRightOpen,
 } from "lucide-react";
-import { Badge, Button } from "@orchestrai/ui";
+import { Badge, Button } from "@orchestr-ai/ui";
 import { UI_COPY } from "@/lib/ui-copy";
 import { useConsoleStore } from "@/lib/stores";
 import type { CoworkArtifact } from "../../types";

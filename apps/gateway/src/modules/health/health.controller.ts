@@ -17,7 +17,7 @@ export class HealthController {
   public getHealth(_req: GatewayRequest, res: GatewayResponse): void {
     sendJson(res, 200, {
       status: "ok",
-      service: "@orchestrai/gateway",
+      service: "@orchestr-ai/gateway",
       version: GATEWAY_VERSION,
       build: BUILD_METADATA,
       timestamp: new Date().toISOString(),
@@ -31,7 +31,7 @@ export class HealthController {
   public getReady(_req: GatewayRequest, res: GatewayResponse): void {
     sendJson(res, 200, {
       status: "ready",
-      service: "@orchestrai/gateway",
+      service: "@orchestr-ai/gateway",
       uptimeSeconds: Math.floor(process.uptime()),
       timestamp: new Date().toISOString(),
     });

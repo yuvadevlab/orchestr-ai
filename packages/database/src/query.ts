@@ -1,7 +1,7 @@
 /**
  * @file packages/database/src/query.ts
  * @description Parameterized query runner and atomic transaction manager for PostgreSQL.
- * @module @orchestrai/database
+ * @module @orchestr-ai/database
  */
 
 import type { PoolClient, QueryResult, QueryResultRow } from "pg";

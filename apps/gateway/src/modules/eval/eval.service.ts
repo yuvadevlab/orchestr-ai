@@ -10,9 +10,9 @@ import {
   EvaluationDatasetSchema,
   type EvaluationDataset,
   type BenchmarkResult,
-} from "@orchestrai/eval";
-import { OllamaAdapter } from "@orchestrai/models";
-import { MessageRole, BenchmarkDatasetName } from "@orchestrai/shared-types";
+} from "@orchestr-ai/eval";
+import { OllamaAdapter } from "@orchestr-ai/models";
+import { MessageRole, BenchmarkDatasetName } from "@orchestr-ai/shared-types";
 import { extractToolCall } from "@/modules/streaming/autonomous-agent-runner";
 
 /**

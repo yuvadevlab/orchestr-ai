@@ -4,7 +4,7 @@
  */
 
 import { z } from "zod";
-import { ValidationError, OrchestrAIError } from "@orchestrai/core";
+import { ValidationError, OrchestrAIError } from "@orchestr-ai/core";
 
 /**
  * Payload contract for document indexing and chunking jobs.

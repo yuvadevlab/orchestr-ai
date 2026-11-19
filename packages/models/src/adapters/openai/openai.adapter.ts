@@ -15,8 +15,8 @@
  * ────────────────────────────────────────────────────────────────────────────
  */
 
-import { ModelProvider, OrchestrAIError } from "@orchestrai/core";
-import type { AIMessage } from "@orchestrai/core";
+import { ModelProvider, OrchestrAIError } from "@orchestr-ai/core";
+import type { AIMessage } from "@orchestr-ai/core";
 import type { ILlmAdapter, LlmRequest, LlmResponse, LlmStreamChunk } from "@/interfaces";
 import type { OpenAiConfig } from "./openai.config.schema";
 

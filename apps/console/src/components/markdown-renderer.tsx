@@ -10,8 +10,8 @@ import React, { useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { Check, Copy } from "lucide-react";
-import { Button } from "@orchestrai/ui";
-import { LANGUAGE_CLASS_REGEX, STRIP_TOOL_CALLS_REGEX } from "@orchestrai/regex";
+import { Button } from "@orchestr-ai/ui";
+import { LANGUAGE_CLASS_REGEX, STRIP_TOOL_CALLS_REGEX } from "@orchestr-ai/regex";
 
 export interface MarkdownRendererProps {
   content: string;

@@ -16,8 +16,8 @@
 import path from "node:path";
 import fs from "node:fs/promises";
 import { z } from "zod";
-import { ToolPermissionLevel } from "@orchestrai/shared-types";
-import type { ToolDefinition } from "@orchestrai/core";
+import { ToolPermissionLevel } from "@orchestr-ai/shared-types";
+import type { ToolDefinition } from "@orchestr-ai/core";
 import type { ITool, ToolExecutionContext } from "@/interfaces";
 import { sanitizePath } from "@/security";
 

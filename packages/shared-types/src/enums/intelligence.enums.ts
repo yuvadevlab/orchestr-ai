@@ -1,7 +1,7 @@
 /**
  * @file packages/shared-types/src/enums/intelligence.enums.ts
  * @description Enumerations governing model routing cascades, billing ledgers, and semantic caching.
- * @module @orchestrai/shared-types/enums
+ * @module @orchestr-ai/shared-types/enums
  */
 
 /**

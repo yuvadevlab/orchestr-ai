@@ -1,7 +1,7 @@
 /**
  * @file index.ts
- * @description Master barrel export for `@orchestrai/eval`.
- * @module @orchestrai/eval
+ * @description Master barrel export for `@orchestr-ai/eval`.
+ * @module @orchestr-ai/eval
  */
 
 export * from "./contracts/eval-dataset.schema";

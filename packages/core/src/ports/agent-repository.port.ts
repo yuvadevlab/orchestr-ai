@@ -1,10 +1,10 @@
 /**
  * @file packages/core/src/ports/agent-repository.port.ts
  * @description Abstract storage port for agent specialist definitions, capabilities, and system instructions.
- * @module @orchestrai/core/ports
+ * @module @orchestr-ai/core/ports
  */
 
-import type { PaginatedResult } from "@orchestrai/shared-types";
+import type { PaginatedResult } from "@orchestr-ai/shared-types";
 
 /**
  * Domain entity representing an autonomous specialist agent.

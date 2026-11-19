@@ -1,7 +1,7 @@
 /**
  * @file packages/core/src/ports/index.ts
  * @description Barrel export for abstract hexagonal ports (repositories, event publishers, queue producers).
- * @module @orchestrai/core/ports
+ * @module @orchestr-ai/core/ports
  */
 
 export * from "./execution-repository.port";

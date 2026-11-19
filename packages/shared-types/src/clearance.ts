@@ -1,7 +1,7 @@
 /**
  * @file packages/shared-types/src/clearance.ts
  * @description Data Transfer Objects (DTOs) for Human-In-The-Loop (HITL) clearance and security grants.
- * @module @orchestrai/shared-types
+ * @module @orchestr-ai/shared-types
  */
 
 import type {

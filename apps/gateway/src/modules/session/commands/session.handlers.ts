@@ -12,7 +12,7 @@ import type {
   ISessionRepository,
   SessionEntity,
   SessionMessageEntity,
-} from "@orchestrai/core";
+} from "@orchestr-ai/core";
 
 /**
  * Command handler creating a new conversation session thread.

@@ -5,7 +5,7 @@
  */
 
 import { EventEmitter } from "node:events";
-import { ExecutionStatus, SseStreamEvent } from "@orchestrai/shared-types";
+import { ExecutionStatus, SseStreamEvent } from "@orchestr-ai/shared-types";
 import type { GatewayResponse } from "@/routes/http-types";
 import type { ToolArtifact } from "@/modules/streaming/autonomous-agent-runner";
 import type { ApprovalRequest } from "@/modules/permission";

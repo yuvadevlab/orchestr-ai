@@ -2,7 +2,7 @@
  * @file apps/console/src/lib/constants/version.ts
  * @description Dynamic application version and build metadata for OrchestrAI Console.
  * Implements Big Tech hybrid SemVer + Git SHA observability without hardcoded strings.
- * @module @orchestrai/console/lib/constants/version
+ * @module @orchestr-ai/console/lib/constants/version
  */
 
 import pkg from "../../../package.json";

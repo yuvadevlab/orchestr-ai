@@ -14,8 +14,8 @@
  * ─────────────────────────────────────────────────────────────────────
  */
 
-import { OrchestrAIError } from "@orchestrai/core";
-import { BLOCKED_IP_PATTERNS } from "@orchestrai/regex";
+import { OrchestrAIError } from "@orchestr-ai/core";
+import { BLOCKED_IP_PATTERNS } from "@orchestr-ai/regex";
 
 /**
  * Validates an outbound URL against the configured domain allowlist.

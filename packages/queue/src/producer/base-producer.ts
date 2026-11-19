@@ -5,7 +5,7 @@
 
 import { Queue, type JobsOptions } from "bullmq";
 import type { Redis } from "ioredis";
-import { QueueError, OrchestrAIError } from "@orchestrai/core";
+import { QueueError, OrchestrAIError } from "@orchestr-ai/core";
 import type { IQueueProducer } from "./queue-producer.interface";
 import type { EnqueueJobOptions, QueueMetrics } from "@/types/queue.types";
 

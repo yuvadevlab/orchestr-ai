@@ -3,7 +3,7 @@
  * @description Client view for OrchestrAI Console delegating authentication to DevLab Portal Central SSO.
  * Automatically purges stale session markers and redirects to DevLab SSO.
  * @author yuva.devlab@gmail.com
- * @module @orchestrai/console/features/auth
+ * @module @orchestr-ai/console/features/auth
  */
 
 "use client";

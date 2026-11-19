@@ -4,13 +4,13 @@
  */
 
 import { z } from "zod";
-import { AgentIdSchema, ExecutionIdSchema, UuidSchema } from "@orchestrai/core";
+import { AgentIdSchema, ExecutionIdSchema, UuidSchema } from "@orchestr-ai/core";
 import {
   ApprovalStatus,
   DomainEventType,
   StepType,
   ToolResultStatus,
-} from "@orchestrai/shared-types";
+} from "@orchestr-ai/shared-types";
 
 /** Schema for sequential execution step indices */
 export const StepIndexSchema = z

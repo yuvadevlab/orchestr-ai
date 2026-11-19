@@ -7,7 +7,7 @@
 import type { GatewayRequest, GatewayResponse } from "@/routes/http-types";
 import { sendJson } from "@/routes/http-helpers";
 import { resourceAccessService } from "../services/resource-access.service";
-import { PermissionScope } from "@orchestrai/shared-types";
+import { PermissionScope } from "@orchestr-ai/shared-types";
 
 interface RevokeGrantBody {
   revokedBy?: string;

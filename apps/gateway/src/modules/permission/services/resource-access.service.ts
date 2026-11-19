@@ -10,8 +10,8 @@ import {
   type AccessGrant,
   type PermissionRequest,
   type Capability,
-} from "@orchestrai/database";
-import { GrantStatus, PermissionScope } from "@orchestrai/shared-types";
+} from "@orchestr-ai/database";
+import { GrantStatus, PermissionScope } from "@orchestr-ai/shared-types";
 import { permissionPolicyManager } from "./permission-policy.manager";
 import { dbGrantService } from "./db-grant.service";
 

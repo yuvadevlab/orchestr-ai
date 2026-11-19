@@ -15,8 +15,8 @@ Master rulebooks are indexed in [`.agents/AGENTS.md`](.agents/AGENTS.md). Adhere
    - Every exported symbol (function, class, interface, type, schema) MUST have a comprehensive JSDoc block.
    - Every conditional (`if/else/switch`), guard clause, and state transition MUST have an inline comment explaining **why** it exists and what invariant or edge case it handles.
 3. **Strict Package Boundaries**:
-   - `@orchestrai/core` is the absolute source of truth with ZERO internal workspace dependencies.
-   - All shared contracts, enums, schemas, and event types must originate from `@orchestrai/core`. Never duplicate.
+   - `@orchestr-ai/core` is the absolute source of truth with ZERO internal workspace dependencies.
+   - All shared contracts, enums, schemas, and event types must originate from `@orchestr-ai/core`. Never duplicate.
 4. **Conventional Commits & Quality Gates**:
    - Commits must pass `commitlint` (format: `<type>(<scope>): <subject>`). Scopes match apps and packages.
    - Pre-commit hooks run `lint-staged` with zero ESLint warnings (`--max-warnings=0`), Prettier, and Ruff.
@@ -30,7 +30,7 @@ Master rulebooks are indexed in [`.agents/AGENTS.md`](.agents/AGENTS.md). Adhere
 7. **Dynamic Server-Driven Configuration (Big 3 Standard) & Centralized Regex**:
    - NO client or worker application may hardcode operational parameters (slash commands, system prompts, max execution steps, sampling temperatures, compaction thresholds, cache similarity/TTL, RAG chunking parameters, retention policies, or starter suggestions).
    - All runtime behaviors must be dynamic, database- or control-plane-driven, served via Gateway APIs (`/api/v1/platform/...`), and cached with stale-while-revalidate IndexedDB persistence.
-   - All regular expressions must originate from `@orchestrai/regex`. Zero inline regexes.
+   - All regular expressions must originate from `@orchestr-ai/regex`. Zero inline regexes.
 
 ---
 

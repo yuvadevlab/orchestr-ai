@@ -8,8 +8,8 @@
 
 import React, { useRef, useState } from "react";
 import { Plus, FileText, X, Loader2 } from "lucide-react";
-import { Button } from "@orchestrai/ui";
-import { DocumentUploadStatus } from "@orchestrai/shared-types";
+import { Button } from "@orchestr-ai/ui";
+import { DocumentUploadStatus } from "@orchestr-ai/shared-types";
 import { UI_COPY } from "@/lib/ui-copy";
 import { useUploadDocument } from "../api";
 

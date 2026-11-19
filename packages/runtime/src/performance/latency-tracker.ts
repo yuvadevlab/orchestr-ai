@@ -1,7 +1,7 @@
 /**
  * @file latency-tracker.ts
  * @description Quantile latency estimator tracking p50, p95, and p99 metrics.
- * @module @orchestrai/runtime/performance
+ * @module @orchestr-ai/runtime/performance
  */
 
 /** Quantile summary report metrics */

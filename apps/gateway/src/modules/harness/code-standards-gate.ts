@@ -4,7 +4,7 @@
  * @module apps/gateway/modules/harness
  */
 
-import { DiagnosticSeverity, type HarnessDiagnosticReport } from "@orchestrai/shared-types";
+import { DiagnosticSeverity, type HarnessDiagnosticReport } from "@orchestr-ai/shared-types";
 import { WorkspaceDiagnosticRunner } from "./workspace-diagnostic-runner";
 
 /**

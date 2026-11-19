@@ -7,7 +7,7 @@ import {
   CardContent,
   Input,
   Label,
-} from "@orchestrai/ui";
+} from "@orchestr-ai/ui";
 import { ShieldCheck } from "lucide-react";
 import { UI_COPY } from "@/lib/ui-copy";
 

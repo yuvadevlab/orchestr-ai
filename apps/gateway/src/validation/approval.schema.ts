@@ -4,7 +4,11 @@
  */
 
 import { z } from "zod";
-import { ApprovalStatus, ApprovalDecisionVerdict, PermissionScope } from "@orchestrai/shared-types";
+import {
+  ApprovalStatus,
+  ApprovalDecisionVerdict,
+  PermissionScope,
+} from "@orchestr-ai/shared-types";
 
 /**
  * Validates operator decision payload to resolve a pending approval request.

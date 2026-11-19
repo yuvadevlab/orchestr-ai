@@ -4,7 +4,7 @@
  * @module apps/admin/services
  */
 
-import { getPrismaClient, type PrismaClient, type PlatformRole } from "@orchestrai/database";
+import { getPrismaClient, type PrismaClient, type PlatformRole } from "@orchestr-ai/database";
 
 /**
  * Platform role representation record.

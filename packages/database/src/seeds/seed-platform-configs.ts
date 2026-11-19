@@ -2,11 +2,11 @@
  * @file packages/database/src/seeds/seed-platform-configs.ts
  * @description Database seeder for namespaced platform configurations (commands, suggestions, execution, cache, compaction, RAG).
  * Fully dynamic server-driven operational parameter store adhering to Big 3 standards.
- * @module @orchestrai/database/seeds
+ * @module @orchestr-ai/database/seeds
  */
 
 import type { PrismaClient, Prisma } from "@prisma/client";
-import { ConfigNamespace, ConfigKey } from "@orchestrai/shared-types";
+import { ConfigNamespace, ConfigKey } from "@orchestr-ai/shared-types";
 
 export interface PlatformConfigBlueprint {
   namespace: ConfigNamespace;

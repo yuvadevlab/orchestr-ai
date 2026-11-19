@@ -10,7 +10,7 @@
  * ───────────────────────────────────────────────────────────────────
  */
 
-import { OrchestrAIError } from "@orchestrai/core";
+import { OrchestrAIError } from "@orchestr-ai/core";
 import { START, END, type NodeFunction, type EdgeRouter } from "./graph.types";
 import { CompiledGraph, type CompiledGraphOptions } from "./compiled-graph";
 

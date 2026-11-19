@@ -1,7 +1,7 @@
 /**
  * @file pool-tuner.ts
  * @description Connection pool size dynamic tuner for PostgreSQL and Redis.
- * @module @orchestrai/runtime/performance
+ * @module @orchestr-ai/runtime/performance
  */
 
 /** Connection pool tuning recommendations */

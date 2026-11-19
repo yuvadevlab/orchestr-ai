@@ -1,6 +1,6 @@
 /**
  * @file packages/tools/vitest.config.ts
- * @description Vitest configuration for @orchestrai/tools.
+ * @description Vitest configuration for @orchestr-ai/tools.
  */
 
 import path from "node:path";

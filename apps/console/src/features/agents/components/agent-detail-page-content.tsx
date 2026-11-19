@@ -8,7 +8,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { Panel, StatusChip } from "@orchestrai/ui";
+import { Panel, StatusChip } from "@orchestr-ai/ui";
 import { useAgents } from "../api";
 import { useExecutions } from "../../executions/api";
 import { EmptyState, DetailPageSkeleton } from "@/components";

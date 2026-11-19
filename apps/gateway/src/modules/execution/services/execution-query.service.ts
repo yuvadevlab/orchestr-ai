@@ -4,8 +4,8 @@
  * @module apps/gateway/services
  */
 
-import { getPrismaClient, type PrismaClient } from "@orchestrai/database";
-import { ExecutionStatus } from "@orchestrai/shared-types";
+import { getPrismaClient, type PrismaClient } from "@orchestr-ai/database";
+import { ExecutionStatus } from "@orchestr-ai/shared-types";
 import type { ExecutionFilterDto, ResumeExecutionDto } from "@/validation";
 import { resolveDbTenantId } from "@/modules/tenant-resolver";
 import { liveExecutionManager } from "@/modules/streaming/live-execution.manager";

@@ -6,7 +6,7 @@
 import type { Execution, StreamEvent } from "@/types";
 import type { HttpClient } from "@/transport";
 import { StreamIterator } from "@/streaming";
-import { ExecutionStatus } from "@orchestrai/shared-types";
+import { ExecutionStatus } from "@orchestr-ai/shared-types";
 
 /**
  * Ergonomic controller handle returned when an agent execution is launched.

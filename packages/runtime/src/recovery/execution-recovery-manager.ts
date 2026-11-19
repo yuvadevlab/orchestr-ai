@@ -3,7 +3,7 @@
  * @description Recovery coordinator analyzing interrupted runs, validating checksums, and building resume plans.
  */
 
-import { OrchestrAIError } from "@orchestrai/core";
+import { OrchestrAIError } from "@orchestr-ai/core";
 import { END } from "@/graph";
 import type { IPersistentCheckpointer } from "@/checkpoint/database-adapter.interface";
 import { verifyStateHash } from "@/checkpoint/serializer/state-hasher";

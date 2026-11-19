@@ -9,7 +9,7 @@
 import { useQuery, type UseQueryResult } from "@tanstack/react-query";
 import { getApiClient } from "@/lib/api-client";
 import { useAuth } from "@/lib/auth";
-import type { PlatformModeRecord } from "@orchestrai/shared-types";
+import type { PlatformModeRecord } from "@orchestr-ai/shared-types";
 
 export type PlatformExecutionMode = PlatformModeRecord;
 

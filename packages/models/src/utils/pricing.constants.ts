@@ -2,10 +2,10 @@
  * @file packages/models/src/utils/pricing.constants.ts
  * @description Dynamic token pricing configuration and fallback rate defaults.
  * Pricing rates are dynamically stored in and loaded from the database catalog (llm_models.defaultConfig).
- * @module @orchestrai/models/utils
+ * @module @orchestr-ai/models/utils
  */
 
-import type { ModelProvider } from "@orchestrai/core";
+import type { ModelProvider } from "@orchestr-ai/core";
 
 /**
  * Per-model token pricing configuration.

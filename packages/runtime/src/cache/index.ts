@@ -1,7 +1,7 @@
 /**
  * @file index.ts
- * @description Master barrel export for `@orchestrai/runtime/cache`.
- * @module @orchestrai/runtime/cache
+ * @description Master barrel export for `@orchestr-ai/runtime/cache`.
+ * @module @orchestr-ai/runtime/cache
  */
 
 export * from "./cache-storage.interface";

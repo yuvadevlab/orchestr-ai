@@ -10,7 +10,7 @@ import { SubscriptionManager } from "@/subscriptions";
 import { RedisPubSubBroker } from "@/broker";
 import { WsGateway } from "@/websocket";
 import { createHttpRouter } from "./http-router";
-import { REALTIME_CHANNEL_PREFIX_REGEX } from "@orchestrai/regex";
+import { REALTIME_CHANNEL_PREFIX_REGEX } from "@orchestr-ai/regex";
 
 import type { RealtimeConfig } from "@/config";
 

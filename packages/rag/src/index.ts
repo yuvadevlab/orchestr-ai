@@ -1,6 +1,6 @@
 /**
  * @file packages/rag/src/index.ts
- * @description Master entry point for `@orchestrai/rag`.
+ * @description Master entry point for `@orchestr-ai/rag`.
  * Provides document ingestion, chunking, embeddings, pgvector storage, hybrid search,
  * reranking, and citation-backed context synthesis for OrchestrAI.
  */

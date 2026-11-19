@@ -10,7 +10,7 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { Button, Badge, useTheme } from "@orchestrai/ui";
+import { Button, Badge, useTheme } from "@orchestr-ai/ui";
 import { Sun, Moon, Cpu, Zap, LogIn, LogOut, User } from "lucide-react";
 import { UI_COPY } from "@/lib/ui-copy";
 import { useAuth } from "@/lib/auth";

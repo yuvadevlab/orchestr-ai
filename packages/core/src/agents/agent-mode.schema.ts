@@ -4,7 +4,7 @@
  */
 
 import { z } from "zod";
-import { AgentMode } from "@orchestrai/shared-types";
+import { AgentMode } from "@orchestr-ai/shared-types";
 
 /**
  * Supported execution modes for an agent backed by canonical AgentMode enum.

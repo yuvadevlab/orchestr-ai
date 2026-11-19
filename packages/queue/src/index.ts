@@ -1,6 +1,6 @@
 /**
  * @file packages/queue/src/index.ts
- * @description Main entry point for `@orchestrai/queue`.
+ * @description Main entry point for `@orchestr-ai/queue`.
  * Exports queue abstractions, Redis connection manager, BullMQ producers, and resilience policies.
  */
 

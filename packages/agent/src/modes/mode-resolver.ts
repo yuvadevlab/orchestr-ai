@@ -3,7 +3,7 @@
  * @description Factory function resolving the appropriate IModeStrategy for an AgentMode.
  */
 
-import { AgentMode } from "@orchestrai/shared-types";
+import { AgentMode } from "@orchestr-ai/shared-types";
 import type { IModeStrategy } from "./mode-strategy.interface";
 import { ChatModeStrategy } from "./chat-mode.strategy";
 import { PlanModeStrategy } from "./plan-mode.strategy";

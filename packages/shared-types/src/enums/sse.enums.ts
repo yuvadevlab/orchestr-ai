@@ -1,7 +1,7 @@
 /**
  * @file packages/shared-types/src/enums/sse.enums.ts
  * @description Enumerations for Server-Sent Events (SSE) wire protocol roles, step statuses, and outcomes.
- * @module @orchestrai/shared-types/enums
+ * @module @orchestr-ai/shared-types/enums
  */
 
 /**

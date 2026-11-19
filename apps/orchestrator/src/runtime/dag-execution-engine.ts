@@ -5,9 +5,9 @@
  * @module apps/orchestrator/runtime
  */
 
-import { OrchestrAIRuntime, type RuntimeGraphState } from "@orchestrai/runtime";
-import { ToolRegistry } from "@orchestrai/tools";
-import { OllamaAdapter } from "@orchestrai/models";
+import { OrchestrAIRuntime, type RuntimeGraphState } from "@orchestr-ai/runtime";
+import { ToolRegistry } from "@orchestr-ai/tools";
+import { OllamaAdapter } from "@orchestr-ai/models";
 import {
   ToolPermissionLevel,
   MessageRole,
@@ -15,8 +15,8 @@ import {
   OrchestratorEventType,
   OrchestratorPubSubEventName,
   PlatformCapabilitySlug,
-} from "@orchestrai/shared-types";
-import { AIMessageSchema, AGENT_EXECUTION_DEFAULTS, type AgentDefinition } from "@orchestrai/core";
+} from "@orchestr-ai/shared-types";
+import { AIMessageSchema, AGENT_EXECUTION_DEFAULTS, type AgentDefinition } from "@orchestr-ai/core";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
 import { createPostgresCheckpointer } from "@/checkpointer";
 import { ExecutionStateMachine } from "@/state-machine";

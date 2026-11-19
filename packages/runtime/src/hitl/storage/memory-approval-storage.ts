@@ -3,8 +3,8 @@
  * @description In-memory implementation of IApprovalStorage for local development and tests.
  */
 
-import { ApprovalStatus, ApprovalDecisionVerdict } from "@orchestrai/shared-types";
-import { OrchestrAIError } from "@orchestrai/core";
+import { ApprovalStatus, ApprovalDecisionVerdict } from "@orchestr-ai/shared-types";
+import { OrchestrAIError } from "@orchestr-ai/core";
 import type { ApprovalResolutionInput, ApprovalTicket, IApprovalStorage } from "../contracts";
 
 /**

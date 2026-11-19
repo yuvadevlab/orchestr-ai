@@ -1,6 +1,6 @@
 /**
  * @file packages/events/src/index.ts
- * @description Public API surface for `@orchestrai/events` — Bus, Redis Streams, Outbox, and Distributed Consistency.
+ * @description Public API surface for `@orchestr-ai/events` — Bus, Redis Streams, Outbox, and Distributed Consistency.
  */
 
 // Domain event payload schemas, factories, and contracts

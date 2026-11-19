@@ -9,7 +9,7 @@
 import { useQuery, type UseQueryResult } from "@tanstack/react-query";
 import { getApiClient } from "@/lib/api-client";
 import { useAuth } from "@/lib/auth";
-import type { NavItemRecord } from "@orchestrai/shared-types";
+import type { NavItemRecord } from "@orchestr-ai/shared-types";
 
 export type DynamicNavItem = NavItemRecord;
 

@@ -16,7 +16,7 @@ import {
   ApprovalRiskLevel,
   PermissionScope,
   WorkspaceTool,
-} from "@orchestrai/shared-types";
+} from "@orchestr-ai/shared-types";
 import type {
   ApprovalDecision,
   ApprovalRequest,

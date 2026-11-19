@@ -4,7 +4,7 @@
  * @module apps/gateway/services
  */
 
-import { getPrismaClient, type PrismaClient, type Prisma } from "@orchestrai/database";
+import { getPrismaClient, type PrismaClient, type Prisma } from "@orchestr-ai/database";
 import type {
   CreateConversationDto,
   AddMessageDto,
@@ -20,7 +20,7 @@ import {
   type MessageListResult,
 } from "./session-query.service";
 import { ConversationMessageService, type AppendedMessageRecord } from "./session-message.service";
-import { UUID_REGEX } from "@orchestrai/regex";
+import { UUID_REGEX } from "@orchestr-ai/regex";
 
 export interface ConversationRecord {
   conversationId: string;

@@ -5,8 +5,8 @@
  */
 
 import { Redis } from "ioredis";
-import type { IEventPublisher, DomainEventEnvelope } from "@orchestrai/core";
-import { SseStreamEvent, type SseEventEnvelope } from "@orchestrai/shared-types";
+import type { IEventPublisher, DomainEventEnvelope } from "@orchestr-ai/core";
+import { SseStreamEvent, type SseEventEnvelope } from "@orchestr-ai/shared-types";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
 
 const logger = loggerWithConfig(new Logger("RedisEventPublisherAdapter"));

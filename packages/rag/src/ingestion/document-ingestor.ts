@@ -3,7 +3,7 @@
  * @description Coordinator for media-type text extractors in document ingestion.
  */
 
-import { RagError } from "@orchestrai/core";
+import { RagError } from "@orchestr-ai/core";
 import type { ITextExtractor, ExtractedDocument } from "./extractor.interface";
 import { TextExtractor } from "./text-extractor";
 import { JsonExtractor } from "./json-extractor";

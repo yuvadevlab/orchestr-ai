@@ -5,8 +5,8 @@
  * @module apps/gateway/services
  */
 
-import { getPrismaClient, type PrismaClient } from "@orchestrai/database";
-import type { LlmProvider, Prisma } from "@orchestrai/database";
+import { getPrismaClient, type PrismaClient } from "@orchestr-ai/database";
+import type { LlmProvider, Prisma } from "@orchestr-ai/database";
 
 /** Shape returned for a provider enriched with its registered model count. */
 export interface ProviderWithCount extends LlmProvider {

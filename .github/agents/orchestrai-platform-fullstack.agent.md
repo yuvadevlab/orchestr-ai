@@ -18,8 +18,8 @@ You MUST read and strictly adhere to:
 
 - Maintain HTTP/REST and WebSocket ingress routes, auth, and rate limiting in `apps/gateway`.
 - Build and maintain operator console UI components, runner rails, and execution streams in `apps/console`.
-- Maintain the official client SDK in `@orchestrai/sdk`.
-- Ensure all public APIs validate inputs via `@orchestrai/core` Zod schemas.
+- Maintain the official client SDK in `@orchestr-ai/sdk`.
+- Ensure all public APIs validate inputs via `@orchestr-ai/core` Zod schemas.
 
 ## Hard Constraints
 

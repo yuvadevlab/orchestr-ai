@@ -10,16 +10,16 @@ import {
   AgentStateMachine,
   runAgentUntilHalt,
   type AgentRunResult,
-} from "@orchestrai/agent";
+} from "@orchestr-ai/agent";
 import {
   AgentDefinitionSchema,
   AgentStateSchema,
   type AgentDefinition,
   type AIMessage,
-} from "@orchestrai/core";
-import { ToolRegistry } from "@orchestrai/tools";
-import { OllamaAdapter } from "@orchestrai/models";
-import { getPrismaClient } from "@orchestrai/database";
+} from "@orchestr-ai/core";
+import { ToolRegistry } from "@orchestr-ai/tools";
+import { OllamaAdapter } from "@orchestr-ai/models";
+import { getPrismaClient } from "@orchestr-ai/database";
 import { resolveDbTenantId } from "@/modules/tenant-resolver";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
 

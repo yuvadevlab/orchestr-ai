@@ -4,7 +4,7 @@
  */
 
 import { z } from "zod";
-import { MessageRole } from "@orchestrai/shared-types";
+import { MessageRole } from "@orchestr-ai/shared-types";
 
 /**
  * Validates payload for initiating a new multi-turn conversation session.

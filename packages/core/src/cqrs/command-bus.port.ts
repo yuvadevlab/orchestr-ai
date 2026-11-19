@@ -1,14 +1,14 @@
 /**
  * @file packages/core/src/cqrs/command-bus.port.ts
  * @description Command bus interfaces and handler contracts for CQRS write pipelines.
- * @module @orchestrai/core/cqrs
+ * @module @orchestr-ai/core/cqrs
  */
 
 import type {
   ExecutionCommandType,
   ApprovalCommandType,
   SessionCommandType,
-} from "@orchestrai/shared-types";
+} from "@orchestr-ai/shared-types";
 
 /**
  * Union of canonical domain command types and custom string keys.

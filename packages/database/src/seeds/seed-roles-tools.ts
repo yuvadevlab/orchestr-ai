@@ -2,7 +2,7 @@
  * @file packages/database/src/seeds/seed-roles-tools.ts
  * @description Orchestrator for platform permissions, roles, and tools seeders.
  * Modularized to adhere strictly to the < 250 LOC rule with zero data loss.
- * @module @orchestrai/database/seeds
+ * @module @orchestr-ai/database/seeds
  */
 
 import type { PrismaClient } from "@prisma/client";

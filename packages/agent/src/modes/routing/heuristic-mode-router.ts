@@ -3,8 +3,8 @@
  * @description Fast, zero-latency rule-based heuristic classifier for AUTO mode routing.
  */
 
-import { AgentMode, MessageRole } from "@orchestrai/shared-types";
-import { PLAN_PATTERNS, ACT_PATTERNS, CHAT_PATTERNS } from "@orchestrai/regex";
+import { AgentMode, MessageRole } from "@orchestr-ai/shared-types";
+import { PLAN_PATTERNS, ACT_PATTERNS, CHAT_PATTERNS } from "@orchestr-ai/regex";
 import type { IModeRouter, ModeRoutingContext } from "./mode-router.interface";
 
 /**

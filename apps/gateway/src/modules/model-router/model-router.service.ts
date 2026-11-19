@@ -1,6 +1,6 @@
 /**
  * @file apps/gateway/src/modules/model-router/model-router.service.ts
- * @description Master model router service integrating @orchestrai/model-router into the gateway.
+ * @description Master model router service integrating @orchestr-ai/model-router into the gateway.
  * Tracks empirical per-model latencies, cost estimates, and intelligent routing fallbacks.
  * @module apps/gateway/modules/model-router
  */
@@ -13,8 +13,8 @@ import {
   type ModelDeploymentCandidate,
   type RouteRequest,
   LatencyStats,
-} from "@orchestrai/model-router";
-import { RoutingStrategy } from "@orchestrai/shared-types";
+} from "@orchestr-ai/model-router";
+import { RoutingStrategy } from "@orchestr-ai/shared-types";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
 
 const logger = loggerWithConfig(new Logger("ModelRouterService"));

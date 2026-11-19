@@ -10,8 +10,8 @@
  * ───────────────────────────────────────────────────────────────────
  */
 
-import { AgentMode, ToolPermissionLevel } from "@orchestrai/shared-types";
-import type { ITool } from "@orchestrai/tools";
+import { AgentMode, ToolPermissionLevel } from "@orchestr-ai/shared-types";
+import type { ITool } from "@orchestr-ai/tools";
 import type { ModeCheckResult, ModeEnforcerOptions } from "./mode-constraint.types";
 
 /**

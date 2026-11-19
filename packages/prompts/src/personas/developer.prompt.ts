@@ -1,7 +1,7 @@
 /**
  * @file packages/prompts/src/personas/developer.prompt.ts
  * @description Developer specialist persona prompt constant.
- * @module @orchestrai/prompts/personas
+ * @module @orchestr-ai/prompts/personas
  */
 
 /**

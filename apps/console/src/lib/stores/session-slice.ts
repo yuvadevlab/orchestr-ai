@@ -5,7 +5,7 @@
  */
 
 import type { StateCreator } from "zustand";
-import type { MessageRole } from "@orchestrai/shared-types";
+import type { MessageRole } from "@orchestr-ai/shared-types";
 
 /**
  * Chat message representation in the session feed.

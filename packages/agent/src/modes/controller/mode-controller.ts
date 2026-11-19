@@ -3,7 +3,7 @@
  * @description Manages active agent mode, lifecycle transitions, and transition audit history.
  */
 
-import { AgentMode } from "@orchestrai/shared-types";
+import { AgentMode } from "@orchestr-ai/shared-types";
 import type { IModeRouter } from "../routing/mode-router.interface";
 
 /**

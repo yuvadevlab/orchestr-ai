@@ -4,7 +4,7 @@
  */
 
 import { z } from "zod";
-import { ApprovalStatus, ApprovalDecisionVerdict } from "@orchestrai/shared-types";
+import { ApprovalStatus, ApprovalDecisionVerdict } from "@orchestr-ai/shared-types";
 import { ExecutionIdSchema, StepIdSchema, UuidSchema } from "@/identifiers";
 
 /**

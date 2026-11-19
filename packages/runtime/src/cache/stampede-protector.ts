@@ -1,7 +1,7 @@
 /**
  * @file stampede-protector.ts
  * @description Single-flight request coalescer preventing cache stampedes under high concurrency.
- * @module @orchestrai/runtime/cache
+ * @module @orchestr-ai/runtime/cache
  */
 
 /**

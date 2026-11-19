@@ -1,7 +1,7 @@
 /**
  * @file subagent-coordinator.ts
  * @description Hierarchical sub-agent coordinator dispatching parallel tasks and merging execution state.
- * @module @orchestrai/runtime/multi-agent
+ * @module @orchestr-ai/runtime/multi-agent
  */
 
 import { AgentRouter, type AgentMessage } from "./agent-router";

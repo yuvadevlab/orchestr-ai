@@ -2,7 +2,7 @@
  * @file apps/console/src/features/auth/index.ts
  * @description Central barrel export for authentication views, components, and types.
  * @author yuva.devlab@gmail.com
- * @module @orchestrai/console/features/auth
+ * @module @orchestr-ai/console/features/auth
  */
 
 export * from "./types";

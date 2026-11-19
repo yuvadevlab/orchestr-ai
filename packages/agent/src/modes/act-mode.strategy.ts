@@ -3,9 +3,9 @@
  * @description Strategy implementation for autonomous action-focused ACT mode.
  */
 
-import { AgentMode } from "@orchestrai/shared-types";
-import { ACT_MODE_SYSTEM_PROMPT } from "@orchestrai/prompts";
-import type { ITool } from "@orchestrai/tools";
+import { AgentMode } from "@orchestr-ai/shared-types";
+import { ACT_MODE_SYSTEM_PROMPT } from "@orchestr-ai/prompts";
+import type { ITool } from "@orchestr-ai/tools";
 import type { IModeStrategy } from "./mode-strategy.interface";
 
 /**
@@ -16,7 +16,7 @@ export class ActModeStrategy implements IModeStrategy {
   public readonly mode = AgentMode.ACT;
 
   /**
-   * Returns canonical system guidance for ACT mode from @orchestrai/prompts.
+   * Returns canonical system guidance for ACT mode from @orchestr-ai/prompts.
    */
   public getSystemInstructions(): string {
     return ACT_MODE_SYSTEM_PROMPT;

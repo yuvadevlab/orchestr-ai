@@ -9,7 +9,7 @@
 import { useApiData, type UseApiDataResult } from "@/lib/hooks";
 import { useAuth } from "@/lib/auth";
 import { AgentStatus, type AgentDefinition } from "../types";
-import type { Agent } from "@orchestrai/sdk";
+import type { Agent } from "@orchestr-ai/sdk";
 
 /**
  * Custom React hook querying registered agents from Gateway REST API.

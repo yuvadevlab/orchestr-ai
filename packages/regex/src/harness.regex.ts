@@ -2,7 +2,7 @@
  * @file packages/regex/src/harness.regex.ts
  * @description Centralized regular expressions for Agent Harness engineering, YAML frontmatter,
  * and compiler/linter diagnostic output parsing (TSC, ESLint, Ruff).
- * @module @orchestrai/regex
+ * @module @orchestr-ai/regex
  */
 
 /**

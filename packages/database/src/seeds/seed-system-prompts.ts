@@ -2,11 +2,11 @@
  * @file packages/database/src/seeds/seed-system-prompts.ts
  * @description Database seeder for system prompt templates and living constitutional rules.
  * All operational prompts are database-driven with zero hardcoded prompt strings.
- * @module @orchestrai/database/seeds
+ * @module @orchestr-ai/database/seeds
  */
 
 import type { PrismaClient } from "@prisma/client";
-import { SystemPromptSlug } from "@orchestrai/shared-types";
+import { SystemPromptSlug } from "@orchestr-ai/shared-types";
 
 export interface SystemPromptBlueprint {
   slug: SystemPromptSlug;

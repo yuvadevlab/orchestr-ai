@@ -1,7 +1,7 @@
 /**
  * @file cache-storage.interface.ts
  * @description Contract defining cache storage backends and TTL cache options.
- * @module @orchestrai/runtime/cache
+ * @module @orchestr-ai/runtime/cache
  */
 
 /**

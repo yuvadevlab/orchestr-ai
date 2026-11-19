@@ -4,7 +4,7 @@
  */
 
 import crypto from "node:crypto";
-import { MemoryType } from "@orchestrai/shared-types";
+import { MemoryType } from "@orchestr-ai/shared-types";
 import type {
   IMemoryStorage,
   MemoryFilter,

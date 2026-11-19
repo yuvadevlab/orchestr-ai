@@ -10,8 +10,8 @@ import type {
   ExecutionEntity,
   IExecutionRepository,
   IEventPublisher,
-} from "@orchestrai/core";
-import { SseStreamEvent } from "@orchestrai/shared-types";
+} from "@orchestr-ai/core";
+import { SseStreamEvent } from "@orchestr-ai/shared-types";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
 
 const logger = loggerWithConfig(new Logger("CancelExecutionCommandHandler"));

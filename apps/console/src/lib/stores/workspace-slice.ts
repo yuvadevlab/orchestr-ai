@@ -5,7 +5,7 @@
  */
 
 import type { StateCreator } from "zustand";
-import { TRAILING_PATH_SLASH_REGEX, PATH_SPLIT_REGEX } from "@orchestrai/regex";
+import { TRAILING_PATH_SLASH_REGEX, PATH_SPLIT_REGEX } from "@orchestr-ai/regex";
 
 /**
  * Record representing a local workspace or project folder.

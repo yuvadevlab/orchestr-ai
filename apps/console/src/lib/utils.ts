@@ -5,7 +5,7 @@
  */
 
 import { clsx, type ClassValue } from "clsx";
-import { WORD_SPLIT_REGEX, ALPHANUMERIC_START_REGEX } from "@orchestrai/regex";
+import { WORD_SPLIT_REGEX, ALPHANUMERIC_START_REGEX } from "@orchestr-ai/regex";
 import { UI_COPY } from "./ui-copy";
 
 /**

@@ -1,7 +1,7 @@
 /**
  * @file packages/database/src/pool.ts
  * @description Native PostgreSQL connection pool manager with automatic environment discovery and lifecycle control.
- * @module @orchestrai/database
+ * @module @orchestr-ai/database
  */
 
 import fs from "node:fs";

@@ -3,7 +3,7 @@
  * @description Types and contracts for mode capability validation and constraint checking.
  */
 
-import type { AgentMode, ToolPermissionLevel } from "@orchestrai/shared-types";
+import type { AgentMode, ToolPermissionLevel } from "@orchestr-ai/shared-types";
 
 /**
  * Result of evaluating a proposed tool call against the active agent mode.

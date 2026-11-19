@@ -1,7 +1,7 @@
 /**
  * @file eval-runner.ts
  * @description Evaluation runner scoring agent execution outputs against benchmark datasets.
- * @module @orchestrai/eval/runner
+ * @module @orchestr-ai/eval/runner
  */
 
 import type { EvaluationDataset, BenchmarkResult } from "../contracts/eval-dataset.schema";

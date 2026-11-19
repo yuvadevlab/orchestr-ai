@@ -17,8 +17,8 @@
  * ───────────────────────────────────────────────────────────────────
  */
 
-import { AgentMode } from "@orchestrai/shared-types";
-import type { ITool } from "@orchestrai/tools";
+import { AgentMode } from "@orchestr-ai/shared-types";
+import type { ITool } from "@orchestr-ai/tools";
 
 /**
  * Interface that all operating mode strategies must implement.

@@ -1,7 +1,7 @@
 /**
  * @file packages/prompts/src/system/planning.prompt.ts
  * @description Structured planning and multi-step decomposition prompt constants.
- * @module @orchestrai/prompts/system
+ * @module @orchestr-ai/prompts/system
  */
 
 /**

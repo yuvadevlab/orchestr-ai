@@ -6,8 +6,8 @@
 
 import fs from "node:fs";
 import path from "node:path";
-import { classifyPathSensitivity, expandUserHome } from "@orchestrai/tools";
-import { ApprovalRiskLevel, WorkspaceTool } from "@orchestrai/shared-types";
+import { classifyPathSensitivity, expandUserHome } from "@orchestr-ai/tools";
+import { ApprovalRiskLevel, WorkspaceTool } from "@orchestr-ai/shared-types";
 import { findNearestProjectRoot } from "../storage/permission-storage";
 import type { PermissionCheckResult } from "../storage/permission-types";
 

@@ -8,9 +8,9 @@
 
 import React from "react";
 import { Brain, Trash2, Calendar, Star } from "lucide-react";
-import { Button, toast } from "@orchestrai/ui";
-import { EmptyState } from "@orchestrai/ui";
-import { TableSkeleton } from "@orchestrai/ui/components/skeleton";
+import { Button, toast } from "@orchestr-ai/ui";
+import { EmptyState } from "@orchestr-ai/ui";
+import { TableSkeleton } from "@orchestr-ai/ui/components/skeleton";
 import { UI_COPY } from "@/lib/ui-copy";
 import { useDeleteMemory } from "../api";
 import type { MemoryItem } from "../types";

@@ -1,7 +1,7 @@
 /**
  * @file packages/shared-types/src/enums/platform.enums.ts
  * @description Enumerations governing platform scope, registered capabilities, and platform tools.
- * @module @orchestrai/shared-types/enums
+ * @module @orchestr-ai/shared-types/enums
  */
 
 /**

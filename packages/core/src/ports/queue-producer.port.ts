@@ -1,10 +1,10 @@
 /**
  * @file packages/core/src/ports/queue-producer.port.ts
  * @description Abstract job queue port for asynchronous execution and background task dispatch.
- * @module @orchestrai/core/ports
+ * @module @orchestr-ai/core/ports
  */
 
-import { QueueBackoffType } from "@orchestrai/shared-types";
+import { QueueBackoffType } from "@orchestr-ai/shared-types";
 
 /**
  * Scheduling and retry options for dispatched queue jobs.

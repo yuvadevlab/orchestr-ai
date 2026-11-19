@@ -16,7 +16,7 @@ import {
   SelectContent,
   SelectItem,
   toast,
-} from "@orchestrai/ui";
+} from "@orchestr-ai/ui";
 import { UI_COPY } from "@/lib/ui-copy";
 import { useRunBenchmark } from "../api";
 import { EvaluationsResultsDisplay } from "./evaluations-results-display";

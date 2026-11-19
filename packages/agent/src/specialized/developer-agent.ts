@@ -1,13 +1,13 @@
 /**
  * @file developer-agent.ts
  * @description Specialized Developer Agent for code editing, AST parsing, and sandboxed test execution.
- * @module @orchestrai/agent/specialized
+ * @module @orchestr-ai/agent/specialized
  */
 
-import { AgentMode } from "@orchestrai/shared-types";
-import { DEVELOPER_PERSONA_PROMPT } from "@orchestrai/prompts";
+import { AgentMode } from "@orchestr-ai/shared-types";
+import { DEVELOPER_PERSONA_PROMPT } from "@orchestr-ai/prompts";
 import { AgentBuilder } from "../builder/agent-builder";
-import { AgentDefinition, AGENT_EXECUTION_DEFAULTS } from "@orchestrai/core";
+import { AgentDefinition, AGENT_EXECUTION_DEFAULTS } from "@orchestr-ai/core";
 
 /** Configuration options for initializing a DeveloperAgent */
 export interface DeveloperAgentOptions {

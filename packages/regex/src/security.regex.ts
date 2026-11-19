@@ -1,7 +1,7 @@
 /**
  * @file packages/regex/src/security.regex.ts
  * @description Regular expressions for detecting credentials, secrets, tokens, and sensitive system files.
- * @module @orchestrai/regex
+ * @module @orchestr-ai/regex
  */
 
 /**

@@ -3,7 +3,7 @@
  * @description Sliding window and token-aware buffer for short-term conversational context.
  */
 
-import type { AIMessage } from "@orchestrai/core";
+import type { AIMessage } from "@orchestr-ai/core";
 
 /**
  * Options configuring the ConversationWindow buffer.

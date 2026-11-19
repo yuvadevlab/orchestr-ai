@@ -3,8 +3,8 @@
  * @description In-memory, asynchronous, non-blocking event bus implementation for testing and local runtimes.
  */
 
-import type { DomainEventEnvelope } from "@orchestrai/core";
-import type { DomainEventType } from "@orchestrai/shared-types";
+import type { DomainEventEnvelope } from "@orchestr-ai/core";
+import type { DomainEventType } from "@orchestr-ai/shared-types";
 import type { EventHandler, EventSubscription, IEventBus } from "@/contracts/event-bus.interface";
 
 /**

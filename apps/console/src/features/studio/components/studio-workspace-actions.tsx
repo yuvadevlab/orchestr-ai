@@ -8,7 +8,7 @@
 
 import React from "react";
 import { Plus } from "lucide-react";
-import { Button } from "@orchestrai/ui";
+import { Button } from "@orchestr-ai/ui";
 import { UI_COPY } from "@/lib/ui-copy";
 
 export interface StudioWorkspaceActionsProps {

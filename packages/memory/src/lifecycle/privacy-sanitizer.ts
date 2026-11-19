@@ -3,7 +3,7 @@
  * @description Redacts sensitive tokens, credentials, and PII before persistence.
  */
 
-import { SECRET_REDACTION_PATTERNS } from "@orchestrai/regex";
+import { SECRET_REDACTION_PATTERNS } from "@orchestr-ai/regex";
 
 /**
  * Sanitizes memory payloads to protect secrets and confidential credentials from persistent storage.

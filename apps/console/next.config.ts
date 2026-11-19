@@ -6,7 +6,7 @@ import type { NextConfig } from "next";
  */
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  transpilePackages: ["@orchestrai/ui", "@yuva-devlab/ui", "@yuva-devlab/tokens"],
+  transpilePackages: ["@orchestr-ai/ui", "@yuva-devlab/ui", "@yuva-devlab/tokens"],
   async redirects() {
     return [
       {

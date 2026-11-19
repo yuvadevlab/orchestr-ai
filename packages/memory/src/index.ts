@@ -1,6 +1,6 @@
 /**
  * @file packages/memory/src/index.ts
- * @description Master public API entrypoint for `@orchestrai/memory`.
+ * @description Master public API entrypoint for `@orchestr-ai/memory`.
  *
  * ─── Memory Architecture (Learning note for AI Engineers) ─────────
  * Memory is divided into 4 primary operational paradigms:

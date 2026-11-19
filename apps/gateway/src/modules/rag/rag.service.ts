@@ -10,7 +10,7 @@ import {
   MockEmbeddingProvider,
   OllamaEmbeddingProvider,
   type IEmbeddingProvider,
-} from "@orchestrai/rag";
+} from "@orchestr-ai/rag";
 import type { IngestDocumentDto, QueryRagDto } from "@/validation";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
 

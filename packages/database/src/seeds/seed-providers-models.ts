@@ -2,11 +2,11 @@
  * @file packages/database/src/seeds/seed-providers-models.ts
  * @description Idempotent seeder for LLM providers and models.
  * Preserves existing database data with zero deletion or truncation.
- * @module @orchestrai/database/seeds
+ * @module @orchestr-ai/database/seeds
  */
 
 import type { PrismaClient, Prisma } from "@prisma/client";
-import { PlatformScope } from "@orchestrai/shared-types";
+import { PlatformScope } from "@orchestr-ai/shared-types";
 
 export const SEED_PROVIDERS = [
   {

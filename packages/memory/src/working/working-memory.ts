@@ -3,7 +3,7 @@
  * @description Ephemeral execution scratchpad maintaining transient variables and step outcomes.
  */
 
-import { MemoryType } from "@orchestrai/shared-types";
+import { MemoryType } from "@orchestr-ai/shared-types";
 import type { MemoryItem } from "../contracts";
 
 /**

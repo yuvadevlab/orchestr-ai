@@ -9,13 +9,13 @@ Chronological log of architecture, engineering decisions, and completed mileston
 #### 1. Parser & Invariant Bug Fixes
 
 - **ESLint Compact Formatter Diagnostic Parsing**:
-  - Added `ESLINT_COMPACT_DIAGNOSTIC_REGEX` to `@orchestrai/regex` matching compact format (`/path: line X, col Y, Error - msg (rule)`).
+  - Added `ESLINT_COMPACT_DIAGNOSTIC_REGEX` to `@orchestr-ai/regex` matching compact format (`/path: line X, col Y, Error - msg (rule)`).
   - Updated `WorkspaceDiagnosticRunner` to parse compact ESLint lines and fall back to stylish format without missing errors.
   - Added project-aware `tsc` execution reading `tsconfig.json` to eliminate false-positive path-alias and JSX errors on single-file checks.
 - **Strict Enum Invariant Enforcement (Rule 7)**:
   - Replaced raw string literals (`=== "bash"`) with canonical `WorkspaceTool.BASH` across `tool-approval-invoker.ts`, `permission-policy.manager.ts`, `permission-evaluator.ts`, and `resource-registry.service.ts`.
 - **Centralized Regex Invariant Enforcement (Rule 8)**:
-  - Added `LANGUAGE_CLASS_REGEX` and `STRIP_TOOL_CALLS_REGEX` to `@orchestrai/regex`.
+  - Added `LANGUAGE_CLASS_REGEX` and `STRIP_TOOL_CALLS_REGEX` to `@orchestr-ai/regex`.
   - Replaced inline regexes in `apps/console/src/components/markdown-renderer.tsx`.
 
 #### 2. Dynamic Workspace Path Isolation & Propagation
@@ -57,7 +57,7 @@ Chronological log of architecture, engineering decisions, and completed mileston
 
 ### Summary of Completed Work
 
-#### 1. Centralized Harness Lexical & Diagnostic Regexes (`@orchestrai/regex`)
+#### 1. Centralized Harness Lexical & Diagnostic Regexes (`@orchestr-ai/regex`)
 
 - Added [`harness.regex.ts`](packages/regex/src/harness.regex.ts):
   - `YAML_FRONTMATTER_REGEX`: Extracts markdown YAML frontmatter blocks delimited by `---`.
@@ -67,7 +67,7 @@ Chronological log of architecture, engineering decisions, and completed mileston
   - `RUFF_DIAGNOSTIC_REGEX`: Parses Python Ruff linter output (`file:line:col: rule message`).
   - `TOOL_CALL_BLOCK_REGEX`: Reusable fenced tool-calling block matcher.
 
-#### 2. Universal Harness Type Contracts (`@orchestrai/shared-types`)
+#### 2. Universal Harness Type Contracts (`@orchestr-ai/shared-types`)
 
 - Added [`harness.ts`](packages/shared-types/src/harness.ts):
   - `DiagnosticSeverity` (`ERROR`, `WARNING`, `INFO`).
@@ -132,7 +132,7 @@ Chronological log of architecture, engineering decisions, and completed mileston
 
 - **Namespaces & Keys**: Defined `ConfigNamespace.BRANDING`, `ConfigNamespace.TOOLS` and keys `WELCOME_HEADLINE`, `WELCOME_SUBTITLE`, `BRAND_NAME`, `BRAND_VERSION`, `CATEGORY_BLURBS`.
 - **Role & Tool Classifications**: Created canonical `AgentRoleSlug` (`STRATEGY`, `RESEARCH`, `WRITING`, `ENGINEERING`, `DATA`, `AUTOMATION`, `SPECIALIST`), `PlatformToolName` (all 26 platform tools), and `ToolSandboxType` (`READ_ONLY`, `NETWORK_READ`, `NETWORK_WRITE`, `WORKSPACE_WRITE`, `EPHEMERAL_VM`).
-- Rebuilt `@orchestrai/shared-types` cleanly.
+- Rebuilt `@orchestr-ai/shared-types` cleanly.
 
 #### 2. Modular Database Seeders (< 250 LOC with Zero Data Loss Guarantee) (`packages/database/src/seeds/`)
 
@@ -215,7 +215,7 @@ Chronological log of architecture, engineering decisions, and completed mileston
 #### 1. Core Contracts (`packages/shared-types`)
 
 - Defined `PlatformCommandRecord` entity interface in `packages/shared-types/src/platform.ts`.
-- Rebuilt `@orchestrai/shared-types` package.
+- Rebuilt `@orchestr-ai/shared-types` package.
 
 #### 2. Gateway Platform Slash Commands Module (`apps/gateway/src/modules/platform/`)
 
@@ -269,7 +269,7 @@ Chronological log of architecture, engineering decisions, and completed mileston
 #### Quality Invariants & Validation
 
 - **Hard 250-Line Rule**: 100% of files in `canvas/` and `VirtualizedMessageFeed` are strictly < 150 lines (highest LOC is 144).
-- **TypeScript**: `pnpm --filter @orchestrai/console typecheck` passed with 0 errors.
+- **TypeScript**: `pnpm --filter @orchestr-ai/console typecheck` passed with 0 errors.
 
 ---
 
@@ -304,7 +304,7 @@ Chronological log of architecture, engineering decisions, and completed mileston
 #### Quality Invariants & Validation
 
 - **Hard 250-Line Rule**: 100% of files in `apps/console/src/lib/streaming/`, `src/lib/storage/`, and `src/lib/stores/` are strictly < 130 lines.
-- **TypeScript**: `pnpm --filter @orchestrai/console typecheck` and monorepo `pnpm typecheck` passed cleanly across all 43 targets with 0 errors.
+- **TypeScript**: `pnpm --filter @orchestr-ai/console typecheck` and monorepo `pnpm typecheck` passed cleanly across all 43 targets with 0 errors.
 
 ---
 
@@ -312,7 +312,7 @@ Chronological log of architecture, engineering decisions, and completed mileston
 
 ### Phase 4 Completion Summary
 
-#### Dynamic Model Router Package (`@orchestrai/model-router`)
+#### Dynamic Model Router Package (`@orchestr-ai/model-router`)
 
 - **Routing Engine & Strategies**:
   - Implemented `ModelRouter` supporting `RoutingStrategy` (`ROUND_ROBIN`, `LOWEST_LATENCY`, `LEAST_EXPENSIVE`, `PRIORITY_FALLBACK`).
@@ -321,7 +321,7 @@ Chronological log of architecture, engineering decisions, and completed mileston
   - `CostEstimator`: Pre- and post-inference cost calculator computing financial token expenditure in USD based on model pricing tiers.
   - `FallbackCascade`: Fault-tolerant runner cascading through ranked deployment candidates upon `RouterFallbackReason` (`RATE_LIMITED`, `TIMEOUT`, `PROVIDER_UNAVAILABLE`, `CONTEXT_EXCEEDED`, `HTTP_ERROR`).
 
-#### Tenant Billing & Budget Enforcement Package (`@orchestrai/billing`)
+#### Tenant Billing & Budget Enforcement Package (`@orchestr-ai/billing`)
 
 - **Token Counting**:
   - `TokenCounter`: Fast token estimation engine supporting raw text and structured chat message arrays with protocol framing overhead.
@@ -331,7 +331,7 @@ Chronological log of architecture, engineering decisions, and completed mileston
 - **Quota & Budget Enforcement**:
   - `BudgetEnforcer`: Enforces monthly spending limits, generating `BillingEnforcementAction` (`ALLOW`, `WARN`, `THROTTLE`, `BLOCK`) and `BudgetQuotaStatus` (`HEALTHY`, `WARNING`, `EXCEEDED`, `THROTTLED`).
 
-#### Semantic Vector Cache Package (`@orchestrai/semantic-cache`)
+#### Semantic Vector Cache Package (`@orchestr-ai/semantic-cache`)
 
 - **Cosine Similarity Engine**:
   - `cosineSimilarity`: Zero-division protected vector dot-product computation.
@@ -346,8 +346,8 @@ Chronological log of architecture, engineering decisions, and completed mileston
 
 #### Quality Invariants & Validation
 
-- **Hard 250-Line Rule**: 100% of files in `@orchestrai/model-router`, `@orchestrai/billing`, and `@orchestrai/semantic-cache` are strictly < 150 lines.
-- **Strict Enums**: Zero hardcoded strings; all actions, strategies, and hit states use canonical enums from `@orchestrai/shared-types`.
+- **Hard 250-Line Rule**: 100% of files in `@orchestr-ai/model-router`, `@orchestr-ai/billing`, and `@orchestr-ai/semantic-cache` are strictly < 150 lines.
+- **Strict Enums**: Zero hardcoded strings; all actions, strategies, and hit states use canonical enums from `@orchestr-ai/shared-types`.
 - **TypeScript**: `pnpm typecheck` passed across all 43 targets in the monorepo with 0 errors.
 
 ---
@@ -361,7 +361,7 @@ Chronological log of architecture, engineering decisions, and completed mileston
 - **Microservice Scaffolding**: Built `apps/admin` (port 4005) with ESM `tsup` compilation and strict path aliases (`@/*`).
 - **Zero Hardcoded Strings & Canonical Role Enums**:
   - `OperatorRole` (`admin`, `operator`, `developer`, `viewer`, `system`) and `BudgetQuotaStatus` (`healthy`, `warning`, `exceeded`, `throttled`) in `packages/shared-types/src/enums/platform.enums.ts`.
-  - Re-exported shared `TenantBudgetInfo` and `TenantRecord` in `@orchestrai/shared-types/src/platform.ts` and `@orchestrai/sdk`.
+  - Re-exported shared `TenantBudgetInfo` and `TenantRecord` in `@orchestr-ai/shared-types/src/platform.ts` and `@orchestr-ai/sdk`.
 - **Environment & Header Configuration (Zero Hardcoded Header Strings)**:
   - Extracted all HTTP header names to `.env` and `.env.example`: `API_KEY_HEADER_NAME`, `ADMIN_API_KEY_HEADER_NAME`, `AUTH_HEADER_NAME`, `TENANT_HEADER_NAME`, `REQUEST_ID_HEADER_NAME`.
   - Added dedicated Admin environment variables: `ADMIN_PORT=4005`, `ADMIN_HOST`, `ADMIN_API_KEY`, `OPERATOR_JWT_SECRET`, `ADMIN_CORS_ORIGINS`.
@@ -395,8 +395,8 @@ Chronological log of architecture, engineering decisions, and completed mileston
 #### Quality Invariants & Validation
 
 - **Hard 250-Line Rule**: 100% of files in `apps/admin` are strictly < 155 lines (well below the 250 LOC threshold).
-- **TypeScript**: `pnpm --filter @orchestrai/admin typecheck` and monorepo `pnpm typecheck` passed cleanly across all 40 targets with 0 errors.
-- **Build**: `pnpm --filter @orchestrai/admin build` built cleanly in 51ms.
+- **TypeScript**: `pnpm --filter @orchestr-ai/admin typecheck` and monorepo `pnpm typecheck` passed cleanly across all 40 targets with 0 errors.
+- **Build**: `pnpm --filter @orchestr-ai/admin build` built cleanly in 51ms.
 
 ---
 
@@ -418,7 +418,7 @@ Chronological log of architecture, engineering decisions, and completed mileston
   - Deterministic state machine governing transitions between `PENDING`, `DISPATCHED`, `COMPUTING`, `AWAITING_CLEARANCE`, `COMPLETED`, `FAILED`, and `CANCELLED`.
   - Strict guard conditions and state validation preventing illegal transitions.
 - **Database Query Runner & Postgres Checkpointer** (`apps/orchestrator/src/checkpointer/database-query-runner.ts`):
-  - Bridges `@orchestrai/database` connection pool with runtime `PostgresCheckpointer` without leaky node-pg dependencies.
+  - Bridges `@orchestr-ai/database` connection pool with runtime `PostgresCheckpointer` without leaky node-pg dependencies.
   - Safe transactional snapshotting of LangGraph / dag execution state per tick.
 - **Realtime Redis Publisher** (`apps/orchestrator/src/publisher/orchestrator-redis-publisher.ts`):
   - Publishes typed `OrchestratorPubSubEventName` events to Redis Pub/Sub channels (`orchestrai:realtime:execution:<id>`).
@@ -480,7 +480,7 @@ Chronological log of architecture, engineering decisions, and completed mileston
   - Extracted `apps/gateway/src/modules/execution/execution-dispatcher.ts` (< 190 LOC) from `ExecutionService` (now 187 LOC).
   - 100% of files in `apps/gateway` are now strictly < 250 LOC (max 245 LOC).
 - **Validation**:
-  - `pnpm --filter @orchestrai/gateway typecheck` → **0 errors** ✅
+  - `pnpm --filter @orchestr-ai/gateway typecheck` → **0 errors** ✅
   - Monorepo `pnpm typecheck` across all 37 targets → **0 errors** ✅
   - Monorepo `pnpm lint --max-warnings=0` → **0 errors, 0 warnings** ✅
 
@@ -503,21 +503,21 @@ Chronological log of architecture, engineering decisions, and completed mileston
 ### 3. Completed Phase 0: Shared Domain Contracts, Ports & Enum Normalization
 
 - **Strict Enum Typing & Zero Hardcoded Strings**:
-  - Created `SseMessageRole`, `SseToolCallStatus`, `SseDoneStatus` in `@orchestrai/shared-types/enums/sse.enums.ts`.
-  - Created `ExecutionCommandType`, `ApprovalCommandType`, `SessionCommandType`, `QueueBackoffType` in `@orchestrai/shared-types/enums/cqrs.enums.ts`.
+  - Created `SseMessageRole`, `SseToolCallStatus`, `SseDoneStatus` in `@orchestr-ai/shared-types/enums/sse.enums.ts`.
+  - Created `ExecutionCommandType`, `ApprovalCommandType`, `SessionCommandType`, `QueueBackoffType` in `@orchestr-ai/shared-types/enums/cqrs.enums.ts`.
   - Replaced all string literals in SSE payloads (`SseMessagePayload`, `SseToolCallPayload`, `SseDonePayload`), CQRS commands, and queue backoff configs with canonical enum keys.
-- **Hexagonal Storage Ports (`@orchestrai/core/src/ports/`)**:
+- **Hexagonal Storage Ports (`@orchestr-ai/core/src/ports/`)**:
   - `IExecutionRepository` (`execution-repository.port.ts`)
   - `ISessionRepository` (`session-repository.port.ts`)
   - `IAgentRepository` (`agent-repository.port.ts`)
   - `IEventPublisher` (`event-publisher.port.ts`)
   - `IQueueProducer` (`queue-producer.port.ts`)
-- **CQRS Command Pipeline (`@orchestrai/core/src/cqrs/`)**:
+- **CQRS Command Pipeline (`@orchestr-ai/core/src/cqrs/`)**:
   - `ICommand`, `ICommandHandler`, `ICommandBus` (`command-bus.port.ts`)
   - `CreateExecutionCommand`, `CancelExecutionCommand` (`execution.commands.ts`)
   - `ResolveApprovalCommand` (`approval.commands.ts`)
   - `CreateSessionCommand`, `AppendMessageCommand`, `DeleteSessionCommand` (`session.commands.ts`)
-- **SDK Resources (`@orchestrai/sdk/src/resources/`)**:
+- **SDK Resources (`@orchestr-ai/sdk/src/resources/`)**:
   - Mounted `AdminResource` (`admin.ts`) for operator control plane queries and budget metrics.
   - Mounted `RealtimeResource` (`realtime.ts`) for typed SSE streaming subscriptions (`subscribeToExecution`).
   - Added `adminUrl` configuration option to `OrchestrAIClientOptions`.
@@ -570,7 +570,7 @@ Chronological log of architecture, engineering decisions, and completed mileston
 - Unified SSE wire protocol event emissions and listeners (`SseStreamEvent.CHUNK`, `SseStreamEvent.MESSAGE`, `SseStreamEvent.ARTIFACT`, `SseStreamEvent.APPROVAL_REQUEST`, `SseStreamEvent.TOOL_CALL`, `SseStreamEvent.DONE`, `SseStreamEvent.ERROR`) across Gateway (`live-turn-executor.ts`, `live-execution.manager.ts`, `live-execution-broadcaster.ts`, `tool-approval-invoker.ts`) and Console (`execution-stream-consumer.ts`).
 - Standardized message segment discriminator logic (`MessageSegmentType.THINKING`, `MessageSegmentType.PLAN`, `MessageSegmentType.ARTIFACT`, `MessageSegmentType.APPROVAL`, `MessageSegmentType.TEXT`) across `types.ts`, `message-segment-utils.ts`, and `studio-message-item.tsx`.
 - Moved raw SQL queries into dedicated query files (`packages/runtime/src/hitl/storage/postgres-approval-queries.ts`, `packages/runtime/src/checkpoint/postgres-checkpoint-queries.ts`, `packages/database/src/query.ts`).
-- Fixed `@orchestrai/database` re-export for `PermissionScopeType`.
+- Fixed `@orchestr-ai/database` re-export for `PermissionScopeType`.
 
 ### 4. Quality Gates
 
@@ -854,7 +854,7 @@ Chronological log of architecture, engineering decisions, and completed mileston
 ### 1. Root Cause
 
 - In CI (`.github/workflows/ci.yml`), `pnpm typecheck` was run right after `pnpm install --frozen-lockfile` without generating the Prisma client.
-- In Prisma 7, `@prisma/client` does not automatically run `prisma generate` during install, leaving `@prisma/client` without generated types and causing `@orchestrai/database#typecheck` to fail with exit code 2 (`error TS2305: Module '"@prisma/client"' has no exported member 'PrismaClient'`).
+- In Prisma 7, `@prisma/client` does not automatically run `prisma generate` during install, leaving `@prisma/client` without generated types and causing `@orchestr-ai/database#typecheck` to fail with exit code 2 (`error TS2305: Module '"@prisma/client"' has no exported member 'PrismaClient'`).
 
 ### 2. Resolution
 
@@ -901,7 +901,7 @@ Chronological log of architecture, engineering decisions, and completed mileston
 
 ### 1. Architectural Scope & Problem Statement
 
-- OrchestrAI had built out 17 packages (`@orchestrai/*`) and 4 apps (`console`, `gateway`, `realtime`, `worker`), but several components (BullMQ background queues, Redis Pub/Sub, RAG pipelines, episodic memory, telemetry tracing, benchmark eval) were operating in isolation or using stub implementations.
+- OrchestrAI had built out 17 packages (`@orchestr-ai/*`) and 4 apps (`console`, `gateway`, `realtime`, `worker`), but several components (BullMQ background queues, Redis Pub/Sub, RAG pipelines, episodic memory, telemetry tracing, benchmark eval) were operating in isolation or using stub implementations.
 - The objective was to connect all components end-to-end into a distributed, Google/Anthropic-grade architecture while adhering to zero-Docker local execution (native Redis 6379, Postgres 5432) and strict quality invariants.
 
 ### 2. Implementation Deliverables
@@ -913,16 +913,16 @@ Chronological log of architecture, engineering decisions, and completed mileston
   - `apps/gateway/src/services/agent-execution-queue.producer.ts`: Enqueues asynchronous agent tasks via `AgentExecutionProducer` into BullMQ.
   - `apps/gateway/src/services/execution.service.ts`: Routes `async`/`background` mode requests to BullMQ queues while streaming live requests interactively.
   - `apps/worker`: Daemon runs `AgentExecutionWorker` polling BullMQ with `OrchestrAIRuntime` DAG execution.
-- **Production RAG Pipeline Integration (`@orchestrai/rag`)**:
+- **Production RAG Pipeline Integration (`@orchestr-ai/rag`)**:
   - `apps/gateway/src/services/rag.service.ts`: Replaced mock stubs with real `RagPipeline` orchestrating chunking, dual Ollama/Mock embedding providers, and vector retrieval.
   - `packages/tools/src/builtins/search/knowledge-search.tool.ts`: Added built-in `knowledge_search` tool allowing autonomous agents to query ingested knowledge bases.
   - Wired into `apps/gateway/src/services/autonomous-agent-runner.ts` and `autonomous-tools.prompt.ts`.
-- **Episodic Cross-Session Memory (`@orchestrai/memory`)**:
+- **Episodic Cross-Session Memory (`@orchestr-ai/memory`)**:
   - `apps/gateway/src/services/memory.service.ts`: Created unified enterprise memory service.
   - `apps/gateway/src/services/live-turn-executor.ts`: Automatically recalls prior memories before turn loops and records completed execution episodes for continuous learning.
-- **OpenTelemetry Observability & Resilience (`@orchestrai/observability` & `@orchestrai/resilience`)**:
+- **OpenTelemetry Observability & Resilience (`@orchestr-ai/observability` & `@orchestr-ai/resilience`)**:
   - `apps/gateway/src/services/live-turn-executor.ts`: Records execution and turn spans using `getTracer()`.
-- **Agent Capability Evaluation (`@orchestrai/eval`)**:
+- **Agent Capability Evaluation (`@orchestr-ai/eval`)**:
   - `apps/gateway/src/services/eval.service.ts`: Pre-configured evaluation suite scoring model tool-calling accuracy.
   - `apps/gateway/src/controllers/eval.controller.ts` & `apps/gateway/src/routes/eval.route.ts`: Exposes `/api/v1/eval/datasets` and `/api/v1/eval/run`.
 
@@ -1000,7 +1000,7 @@ Chronological log of architecture, engineering decisions, and completed mileston
   2. UI layout flaw in Knowledge & Memory hubs: Nested duplicate search bars (tester box with search bar stacked directly on top of the document filter toolbar).
   3. Broken search icon and padding: Manual `relative`/`absolute` icon placement overlapped input text; needed to match the canonical `/agents` layout with `startIcon={<Search className="size-3.5" />}`.
   4. Hardcoded non-UUID formats: `"d1a10001-0000-0000-0000-000000000001"` in `eval.service.ts` violated RFC 4122 v4 UUID specification and failed Zod `.uuid()` validation.
-  5. String comparison normalization: Shared string literals replaced with typed enumerations in `@orchestrai/shared-types`.
+  5. String comparison normalization: Shared string literals replaced with typed enumerations in `@orchestr-ai/shared-types`.
 
 ### 2. Implementation Deliverables
 
@@ -1182,7 +1182,7 @@ Chronological log of architecture, engineering decisions, and completed mileston
   - Updated `Agent`: made `tenantId` optional (`String?`), added `scope PlatformScope @default(platform)`, relations to `capabilities`, `grants`, `requests`, `accessLogs`.
   - Updated `Conversation`: added `userId String? @map("user_id") @db.Uuid` and relations.
   - Added `packages/database/src/seed-capabilities.ts` providing `seedDefaultCapabilities` utility with 6 core capability blueprints.
-- **Shared Types & Domain Contracts (`packages/shared-types`, `@orchestrai/core`)**:
+- **Shared Types & Domain Contracts (`packages/shared-types`, `@orchestr-ai/core`)**:
   - `packages/shared-types/src/enums/resource.enums.ts`: `ResourceType` enum.
   - `packages/shared-types/src/enums/security.enums.ts`: `PermissionLevel`, `RequestStatus`, `GrantStatus`.
   - `packages/core/src/agents/capability.schema.ts`: `CapabilityDefinitionSchema`, `AgentCapabilityBindingSchema`.
@@ -1231,7 +1231,7 @@ Chronological log of architecture, engineering decisions, and completed mileston
 - **Zod 4 Deprecation Modernization**:
   - Eliminated all occurrences of `z.nativeEnum()` in favor of canonical `z.enum(EnumObject)`.
   - Eliminated all occurrences of `z.string().uuid()` across all packages and services in favor of top-level `z.uuid()`.
-  - Upgraded `@orchestrai/grpc` and `@orchestrai/eval` dependencies to `"zod": "^4.6.5"`.
+  - Upgraded `@orchestr-ai/grpc` and `@orchestr-ai/eval` dependencies to `"zod": "^4.6.5"`.
 - **Strict Invariants Maintained**:
   - All modified files remain strictly below the 250-line maximum rule (Prime Invariant 1).
   - Maintained zero `any` types and zero test cases implemented during phase implementation.
@@ -1258,8 +1258,8 @@ Chronological log of architecture, engineering decisions, and completed mileston
 - **Compilation & IDE Diagnostic Resolution**:
   - Fixed `permission-evaluator.ts:103` risk level assignment via canonical `ApprovalRiskLevel`.
   - Fixed `permission-policy.manager.ts` value import for `PermissionScope`.
-  - Fixed schema imports in `eval-dataset.schema.ts` and `execution-service.ts` to source branded types directly from `@orchestrai/core`.
-  - Regenerated package distribution declarations for `@orchestrai/database` and `@orchestrai/queue`.
+  - Fixed schema imports in `eval-dataset.schema.ts` and `execution-service.ts` to source branded types directly from `@orchestr-ai/core`.
+  - Regenerated package distribution declarations for `@orchestr-ai/database` and `@orchestr-ai/queue`.
   - Monorepo typecheck: **37 of 37 targets successful (0 errors)**.
   - Monorepo linter: **0 warnings (`--max-warnings=0`)**.
   - All files strictly adhere to the < 250-line rule (Prime Invariant 1).
@@ -1318,12 +1318,12 @@ Chronological log of architecture, engineering decisions, and completed mileston
 
 ---
 
-## Session: 2026-10-02 — DRY Consolidation, Dedicated `@orchestrai/regex` Package & Automatic Mode and Rule Engine
+## Session: 2026-10-02 — DRY Consolidation, Dedicated `@orchestr-ai/regex` Package & Automatic Mode and Rule Engine
 
 ### 1. Dedicated Zero-Dependency Regex Package (`packages/regex/`)
 
 - **Centralized Pattern Extraction**:
-  - Created `@orchestrai/regex` package providing canonical regular expressions and validation helpers across the entire monorepo.
+  - Created `@orchestr-ai/regex` package providing canonical regular expressions and validation helpers across the entire monorepo.
   - Submodules:
     - [`uuid.regex.ts`](file:///Users/yuvarajpattabi/Yuva/yuva-devlab/Repos/orchestrai/packages/regex/src/uuid.regex.ts): Canonical `UUID_REGEX` supporting versions 1-5 and `isUuid(value)` predicate.
     - [`mode.regex.ts`](file:///Users/yuvarajpattabi/Yuva/yuva-devlab/Repos/orchestrai/packages/regex/src/mode.regex.ts): Heuristic mode triggers `PLAN_PATTERNS`, `ACT_PATTERNS`, and `CHAT_PATTERNS`.
@@ -1332,15 +1332,15 @@ Chronological log of architecture, engineering decisions, and completed mileston
     - [`uri.regex.ts`](file:///Users/yuvarajpattabi/Yuva/yuva-devlab/Repos/orchestrai/packages/regex/src/uri.regex.ts): `CANONICAL_URI_REGEX`, `FILE_PROTOCOL_REGEX`, `POSTGRES_PROTOCOL_REGEX`, `REALTIME_CHANNEL_PREFIX_REGEX`, `TOOL_NAME_REGEX`.
     - [`text.regex.ts`](file:///Users/yuvarajpattabi/Yuva/yuva-devlab/Repos/orchestrai/packages/regex/src/text.regex.ts): `EMBEDDING_ARRAY_REGEX`, `MARKDOWN_HEADING_REGEX`, `LEADING_TRAILING_DASH_REGEX`, `ALPHANUMERIC_START_REGEX`, `WORD_SPLIT_REGEX`.
 - **Consumer Migration**:
-  - Replaced ad-hoc and duplicate regex definitions in `@orchestrai/agent`, `@orchestrai/memory`, `@orchestrai/rag`, `@orchestrai/tools`, `apps/gateway`, `apps/realtime`, and `apps/console`.
-  - Maintained `@orchestrai/core` zero internal workspace dependency invariant.
+  - Replaced ad-hoc and duplicate regex definitions in `@orchestr-ai/agent`, `@orchestr-ai/memory`, `@orchestr-ai/rag`, `@orchestr-ai/tools`, `apps/gateway`, `apps/realtime`, and `apps/console`.
+  - Maintained `@orchestr-ai/core` zero internal workspace dependency invariant.
 
 ### 2. Centralized Platform Rules & Mode Prompts (`packages/prompts/`)
 
 - **Single Source of Truth for Prompts**:
   - Created [`modes.prompt.ts`](file:///Users/yuvarajpattabi/Yuva/yuva-devlab/Repos/orchestrai/packages/prompts/src/system/modes.prompt.ts) providing canonical `CHAT_MODE_SYSTEM_PROMPT`, `PLAN_MODE_SYSTEM_PROMPT`, `ACT_MODE_SYSTEM_PROMPT`, `AUTO_MODE_SYSTEM_PROMPT`, and `MODE_PROMPT_REGISTRY`.
   - Created [`rules.prompt.ts`](file:///Users/yuvarajpattabi/Yuva/yuva-devlab/Repos/orchestrai/packages/prompts/src/system/rules.prompt.ts) defining canonical `CORE_PLATFORM_RULES_PROMPT` and `COMPACT_PLATFORM_RULES_PROMPT`.
-  - Refactored `ChatModeStrategy`, `PlanModeStrategy`, `ActModeStrategy`, and `AutoModeStrategy` in `@orchestrai/agent` to source prompt definitions directly from `@orchestrai/prompts`.
+  - Refactored `ChatModeStrategy`, `PlanModeStrategy`, `ActModeStrategy`, and `AutoModeStrategy` in `@orchestr-ai/agent` to source prompt definitions directly from `@orchestr-ai/prompts`.
 
 ### 3. Automatic Rule Adoption & Mode Selection Engine
 
@@ -1403,7 +1403,7 @@ Chronological log of architecture, engineering decisions, and completed mileston
   - Switching mode automatically strips the slash prefix so users can type their prompt immediately.
   - `/clear` triggers `state.handleNewSession()` to clear message feeds and reset canvas cleanly.
 - **Canonical Regex Extraction**:
-  - Added `prompt.regex.ts` in `@orchestrai/regex` defining `MENTION_QUERY_REGEX`, `SLASH_COMMAND_PREFIX_REGEX`, `TRAILING_PATH_SLASH_REGEX`, and `PATH_SPLIT_REGEX`.
+  - Added `prompt.regex.ts` in `@orchestr-ai/regex` defining `MENTION_QUERY_REGEX`, `SLASH_COMMAND_PREFIX_REGEX`, `TRAILING_PATH_SLASH_REGEX`, and `PATH_SPLIT_REGEX`.
   - Zero inline regular expressions in consumer components.
 
 ### 4. Quality Invariants & Verification
@@ -1497,7 +1497,7 @@ Chronological log of architecture, engineering decisions, and completed mileston
 - **Clean Removal of Redundant Packages**:
   - Removed duplicate internal packages: `packages/billing`, `packages/resilience`, `packages/semantic-cache`.
   - Upgraded `apps/gateway` to directly depend on `@yuva-devlab/billing`, `@yuva-devlab/resilience`, and `@yuva-devlab/semantic-cache`.
-  - Preserved domain-specific swarm packages (`@orchestrai/events`, `@orchestrai/models`, `@orchestrai/rag`, `@orchestrai/tools`) as first-class citizens.
+  - Preserved domain-specific swarm packages (`@orchestr-ai/events`, `@orchestr-ai/models`, `@orchestr-ai/rag`, `@orchestr-ai/tools`) as first-class citizens.
 - **Verification**:
   - `pnpm typecheck` in `orchestrai`: 42/42 tasks passed (FULL TURBO, 0 errors).
 

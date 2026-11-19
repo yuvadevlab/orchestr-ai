@@ -26,7 +26,7 @@ import type {
   ContentBlock,
   ImageContentBlock,
   TextContentBlock,
-} from "@orchestrai/core";
+} from "@orchestr-ai/core";
 
 /**
  * Shape of a message expected by Ollama's chat endpoint.

@@ -3,7 +3,7 @@
  * @description Pure SSR Server Component route wrapper for OrchestrAI Console SSO login.
  * Delegates authentication directly to DevLab Central Portal SSO.
  * @author yuva.devlab@gmail.com
- * @module @orchestrai/console/app/auth
+ * @module @orchestr-ai/console/app/auth
  */
 
 import React, { Suspense } from "react";

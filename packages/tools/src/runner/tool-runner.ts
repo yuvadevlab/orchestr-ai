@@ -17,8 +17,8 @@
  */
 
 import { performance } from "node:perf_hooks";
-import { ToolResultStatus, ToolPermissionLevel } from "@orchestrai/shared-types";
-import type { ToolCallId, ToolResult } from "@orchestrai/core";
+import { ToolResultStatus, ToolPermissionLevel } from "@orchestr-ai/shared-types";
+import type { ToolCallId, ToolResult } from "@orchestr-ai/core";
 import type { ITool, ToolExecutionContext } from "@/interfaces";
 import { evaluateToolPermission } from "@/security";
 

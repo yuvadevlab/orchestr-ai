@@ -8,7 +8,7 @@ import type {
   WorkspaceSkillMetadata,
   WorkspaceRuleMetadata,
   WorkspaceHarnessContext,
-} from "@orchestrai/shared-types";
+} from "@orchestr-ai/shared-types";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
 
 const logger = loggerWithConfig(new Logger("HarnessSkillRegistry"));

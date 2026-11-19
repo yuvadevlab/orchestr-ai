@@ -2,7 +2,7 @@
  * @file packages/database/src/seed-platform-data.ts
  * @description Centralized export for platform blueprints across cognitive policies, prompts, configs, and flags.
  * Sourced directly from modular seeders adhering strictly to the < 250 LOC rule.
- * @module @orchestrai/database
+ * @module @orchestr-ai/database
  */
 
 export * from "./seeds/seed-cognitive-policies";

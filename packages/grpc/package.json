@@ -1,5 +1,5 @@
 {
-  "name": "@orchestrai/grpc",
+  "name": "@orchestr-ai/grpc",
   "version": "0.1.0",
   "description": "gRPC inter-service communication layer and Protobuf RPC contracts for OrchestrAI.",
   "main": "./dist/index.cjs",
@@ -18,8 +18,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@orchestrai/core": "workspace:*",
-    "@orchestrai/shared-types": "workspace:*",
+    "@orchestr-ai/core": "workspace:*",
+    "@orchestr-ai/shared-types": "workspace:*",
     "zod": "^4.6.6"
   },
   "devDependencies": {

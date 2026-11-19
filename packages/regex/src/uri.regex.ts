@@ -1,7 +1,7 @@
 /**
  * @file packages/regex/src/uri.regex.ts
  * @description Regular expressions for URI scheme validation, resource identifiers, and tool names.
- * @module @orchestrai/regex
+ * @module @orchestr-ai/regex
  */
 
 /**

@@ -29,11 +29,11 @@ Use this skill when developing, refactoring, or planning any feature within Orch
 
 1. **250-Line Limit**: NO file across `apps/*` or `packages/*` may exceed 250 LOC (decompose proactively at 200 lines).
 2. **JSDoc & Comments**: Every exported symbol must have JSDoc; every conditional/guard must have an inline explanatory comment.
-3. **Strict Enums**: Strictly compare with `Enum.KEY` from `@orchestrai/shared-types`. Never use raw string literals.
+3. **Strict Enums**: Strictly compare with `Enum.KEY` from `@orchestr-ai/shared-types`. Never use raw string literals.
 4. **Zero Hardcoded Models & Synthetic Agents**: All models and agents are DB- or env-driven (`DEFAULT_MODEL_NAME`). Never auto-seed fallback agents.
 5. **Testing Policy**: Never write test cases or Storybook stories during phase implementation unless requested.
-6. **Package Boundaries**: `@orchestrai/core` is pure with zero workspace dependencies. Dependencies flow inward.
-7. **Dynamic Server-Driven Configuration (Big 3 Standard) & Centralized Regex**: Zero hardcoded runtime parameters (commands, prompts, steps, temperatures, cache/RAG limits). All runtime parameters must be database/control-plane-driven. All regexes must come from `@orchestrai/regex`.
+6. **Package Boundaries**: `@orchestr-ai/core` is pure with zero workspace dependencies. Dependencies flow inward.
+7. **Dynamic Server-Driven Configuration (Big 3 Standard) & Centralized Regex**: Zero hardcoded runtime parameters (commands, prompts, steps, temperatures, cache/RAG limits). All runtime parameters must be database/control-plane-driven. All regexes must come from `@orchestr-ai/regex`.
 
 ## Monorepo Directory
 

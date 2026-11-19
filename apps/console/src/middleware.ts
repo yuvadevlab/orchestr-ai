@@ -3,7 +3,7 @@
  * @description Authentication edge middleware enforcing session checks and DevLab SSO redirect.
  * Modeled after FinAI's centralized authentication architecture.
  * @author yuva.devlab@gmail.com
- * @module @orchestrai/console/middleware
+ * @module @orchestr-ai/console/middleware
  */
 
 import { NextResponse, type NextRequest } from "next/server";

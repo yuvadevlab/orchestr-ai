@@ -5,7 +5,7 @@
 
 import { z } from "zod";
 import dotenv from "dotenv";
-import { ValidationError, AGENT_EXECUTION_DEFAULTS } from "@orchestrai/core";
+import { ValidationError, AGENT_EXECUTION_DEFAULTS } from "@orchestr-ai/core";
 
 // Load local environment variables from .env file if present
 dotenv.config();

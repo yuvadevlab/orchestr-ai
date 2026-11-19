@@ -3,7 +3,7 @@
  * Sourced and refined from the high-density agent platform specification.
  */
 
-import { StudioEventType, CoworkMessageRole } from "@orchestrai/shared-types";
+import { StudioEventType, CoworkMessageRole } from "@orchestr-ai/shared-types";
 
 /**
  * Operational state of an individual orchestrated agent.

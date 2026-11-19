@@ -8,10 +8,10 @@ import type {
   AgentDefinition,
   ToolCallContentBlock,
   ToolResult,
-} from "@orchestrai/core";
-import type { ILlmAdapter } from "@orchestrai/models";
-import type { ToolPermissionLevel } from "@orchestrai/shared-types";
-import type { ToolRegistry } from "@orchestrai/tools";
+} from "@orchestr-ai/core";
+import type { ILlmAdapter } from "@orchestr-ai/models";
+import type { ToolPermissionLevel } from "@orchestr-ai/shared-types";
+import type { ToolRegistry } from "@orchestr-ai/tools";
 
 /**
  * Mutable state payload flowing through the runtime DAG nodes.

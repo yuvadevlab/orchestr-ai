@@ -4,7 +4,7 @@
  */
 
 import type { Job, Processor } from "bullmq";
-import type { AgentExecutionJobPayload } from "@orchestrai/queue";
+import type { AgentExecutionJobPayload } from "@orchestr-ai/queue";
 import {
   handleAgentExecutionJob,
   type AgentJobExecutionResult,

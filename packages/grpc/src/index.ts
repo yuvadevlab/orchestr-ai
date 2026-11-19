@@ -1,7 +1,7 @@
 /**
  * @file index.ts
- * @description Master barrel export for `@orchestrai/grpc`.
- * @module @orchestrai/grpc
+ * @description Master barrel export for `@orchestr-ai/grpc`.
+ * @module @orchestr-ai/grpc
  */
 
 export * from "./contracts/execution-service";

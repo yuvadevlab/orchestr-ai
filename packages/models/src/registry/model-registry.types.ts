@@ -3,7 +3,7 @@
  * @description Type definitions for entries stored in the ModelRegistry.
  */
 
-import type { ModelIdentifier, ModelCapabilities } from "@orchestrai/core";
+import type { ModelIdentifier, ModelCapabilities } from "@orchestr-ai/core";
 import type { ILlmAdapter } from "@/interfaces";
 
 /**

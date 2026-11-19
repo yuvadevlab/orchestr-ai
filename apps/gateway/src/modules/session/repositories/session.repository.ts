@@ -5,18 +5,18 @@
  * @module apps/gateway/repositories
  */
 
-import { getPrismaClient, type PrismaClient, type Prisma } from "@orchestrai/database";
+import { getPrismaClient, type PrismaClient, type Prisma } from "@orchestr-ai/database";
 import type {
   ISessionRepository,
   SessionEntity,
   SessionMessageEntity,
   CreateSessionEntityData,
   ListSessionsFilter,
-} from "@orchestrai/core";
-import type { PaginatedResult } from "@orchestrai/shared-types";
+} from "@orchestr-ai/core";
+import type { PaginatedResult } from "@orchestr-ai/shared-types";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
 import { resolveDbTenantId, resolveOrCreateDefaultAgent } from "@/modules/tenant-resolver";
-import { isUuid } from "@orchestrai/regex";
+import { isUuid } from "@orchestr-ai/regex";
 import { mapConversationToSessionEntity } from "./session-entity.mapper";
 import { appendSessionMessage, listSessionMessages } from "./session-message-store";
 import { queryConversationSessions } from "./session-query.runner";

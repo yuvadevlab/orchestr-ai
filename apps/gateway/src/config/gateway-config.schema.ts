@@ -5,7 +5,7 @@
  */
 
 import { z } from "zod";
-import { AGENT_EXECUTION_DEFAULTS } from "@orchestrai/core";
+import { AGENT_EXECUTION_DEFAULTS } from "@orchestr-ai/core";
 
 /**
  * Zod schema validating gateway runtime configuration.

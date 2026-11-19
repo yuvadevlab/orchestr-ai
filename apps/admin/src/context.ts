@@ -6,7 +6,7 @@
 
 import { randomUUID } from "node:crypto";
 import type { IncomingMessage } from "node:http";
-import type { OperatorRole } from "@orchestrai/shared-types";
+import type { OperatorRole } from "@orchestr-ai/shared-types";
 
 /**
  * Contextual metadata attached to every incoming operator request.

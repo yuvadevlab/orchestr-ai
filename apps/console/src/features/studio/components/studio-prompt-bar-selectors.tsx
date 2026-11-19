@@ -8,10 +8,10 @@
 
 import React from "react";
 import { Bot, Cpu, Sparkles } from "lucide-react";
-import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@orchestrai/ui";
+import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@orchestr-ai/ui";
 import { UI_COPY } from "@/lib/ui-copy";
 import type { SpecialistPersona } from "../types";
-import type { LlmModelRecord, PlatformModeRecord } from "@orchestrai/shared-types";
+import type { LlmModelRecord, PlatformModeRecord } from "@orchestr-ai/shared-types";
 
 export interface StudioPromptBarSelectorsProps {
   readonly specialists: SpecialistPersona[];

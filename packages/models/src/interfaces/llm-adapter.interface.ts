@@ -12,8 +12,8 @@
  */
 
 import { z } from "zod";
-import type { ModelProvider } from "@orchestrai/core";
-import { AIMessageSchema, ModelUsageSchema, AGENT_EXECUTION_DEFAULTS } from "@orchestrai/core";
+import type { ModelProvider } from "@orchestr-ai/core";
+import { AIMessageSchema, ModelUsageSchema, AGENT_EXECUTION_DEFAULTS } from "@orchestr-ai/core";
 
 // ─── Request Schema ─────────────────────────────────────────────────────────
 

@@ -10,7 +10,7 @@ import {
   PermissionLevel,
   SseStreamEvent,
   WorkspaceTool,
-} from "@orchestrai/shared-types";
+} from "@orchestr-ai/shared-types";
 import {
   executeWorkspaceTool,
   resolveMonorepoRoot,

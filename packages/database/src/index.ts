@@ -1,7 +1,7 @@
 /**
  * @file packages/database/src/index.ts
- * @description Master barrel export for the @orchestrai/database package.
- * @module @orchestrai/database
+ * @description Master barrel export for the @orchestr-ai/database package.
+ * @module @orchestr-ai/database
  */
 
 export * from "./types";

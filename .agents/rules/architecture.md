@@ -3,7 +3,7 @@
 ## 1. Modular Monorepo with Evolutionary Extraction
 
 - The platform starts as a single monorepo (`apps/*`, `packages/*`) using pnpm workspaces.
-- Package boundaries must be maintained cleanly so any package (`@orchestrai/sdk`, `@orchestrai/models`, `@orchestrai/tools`) can be published to npm or extracted into a standalone repo without structural rewrites.
+- Package boundaries must be maintained cleanly so any package (`@orchestr-ai/sdk`, `@orchestr-ai/models`, `@orchestr-ai/tools`) can be published to npm or extracted into a standalone repo without structural rewrites.
 
 ## 2. Dependency Flow Hierarchy
 
@@ -17,11 +17,11 @@ Domain Packages (agent, runtime, memory, rag, queue, events)
 Infrastructure Adapters (models, tools, observability)
   │
   ▼
-Core Contracts (@orchestrai/core)
+Core Contracts (@orchestr-ai/core)
 ```
 
 - **Rule**: Upward or circular imports between layers are strictly forbidden.
-- `@orchestrai/core` contains only domain types, Zod schemas, error definitions, and interface declarations. It has NO runtime dependencies on database, Redis, or external APIs.
+- `@orchestr-ai/core` contains only domain types, Zod schemas, error definitions, and interface declarations. It has NO runtime dependencies on database, Redis, or external APIs.
 
 ## 3. Air-Gapped Sovereignty & Enterprise Dual-Runtime
 

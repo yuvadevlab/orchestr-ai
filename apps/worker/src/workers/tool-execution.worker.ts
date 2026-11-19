@@ -4,9 +4,9 @@
  */
 
 import type { Redis } from "ioredis";
-import { QUEUE_NAMES } from "@orchestrai/shared-types";
-import type { ToolExecutionJobPayload } from "@orchestrai/queue";
-import type { ToolRegistry } from "@orchestrai/tools";
+import { QUEUE_NAMES } from "@orchestr-ai/shared-types";
+import type { ToolExecutionJobPayload } from "@orchestr-ai/queue";
+import type { ToolRegistry } from "@orchestr-ai/tools";
 import { BaseWorker } from "./base.worker";
 import { createToolExecutionProcessor, type ToolJobExecutionResult } from "@/processors";
 

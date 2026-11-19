@@ -9,8 +9,8 @@ import {
   type PrismaClient,
   type PlatformMode,
   type Prisma,
-} from "@orchestrai/database";
-import type { PlatformModeRecord } from "@orchestrai/shared-types";
+} from "@orchestr-ai/database";
+import type { PlatformModeRecord } from "@orchestr-ai/shared-types";
 
 /**
  * Payload interface for registering or modifying an execution mode.

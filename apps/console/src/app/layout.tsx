@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import React from "react";
-import { ConfigProvider, Toaster } from "@orchestrai/ui";
+import { ConfigProvider, Toaster } from "@orchestr-ai/ui";
 import { AppQueryProvider } from "@/lib/providers";
 import { AuthProvider } from "@/lib/auth";
 import "./globals.css";
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
  * Root Layout for OrchestrAI Console application.
  *
  * WHY ConfigProvider only (no local ThemeProvider):
- *   ConfigProvider from @orchestrai/ui sets data-brand="orchestrai" AND
+ *   ConfigProvider from @orchestr-ai/ui sets data-brand="orchestrai" AND
  *   data-theme="orchestrai-dark/light" on <html>. Our theme CSS (orchestrai.css)
  *   scopes tokens to those exact selectors. A second ThemeProvider that also
  *   writes class="dark/light" conflicts and causes light mode to appear broken.

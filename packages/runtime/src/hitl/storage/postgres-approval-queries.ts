@@ -1,10 +1,10 @@
 /**
  * @file packages/runtime/src/hitl/storage/postgres-approval-queries.ts
  * @description Centralized SQL query catalog and typed row interfaces for HITL approval storage.
- * @module @orchestrai/runtime/hitl
+ * @module @orchestr-ai/runtime/hitl
  */
 
-import { ApprovalStatus } from "@orchestrai/shared-types";
+import { ApprovalStatus } from "@orchestr-ai/shared-types";
 
 /**
  * Raw database record structure returned from `approvals` table queries.

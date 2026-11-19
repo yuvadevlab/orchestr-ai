@@ -16,9 +16,9 @@ You MUST read and strictly adhere to:
 
 ## Role Scope & Focus
 
-- Own `@orchestrai/memory`: 4-tier categorical memory (`EPISODIC`, `FACT`, `USER_PREFERENCE`, `TASK`), TTL retention, and event-driven distillation.
-- Own `@orchestrai/rag`: Text extractors, token chunkers, vector embedding providers, and hybrid pgvector retrieval.
-- Own `@orchestrai/semantic-cache`: Cosine similarity caching (threshold 0.97) and zero-latency SSE cache hits.
+- Own `@orchestr-ai/memory`: 4-tier categorical memory (`EPISODIC`, `FACT`, `USER_PREFERENCE`, `TASK`), TTL retention, and event-driven distillation.
+- Own `@orchestr-ai/rag`: Text extractors, token chunkers, vector embedding providers, and hybrid pgvector retrieval.
+- Own `@orchestr-ai/semantic-cache`: Cosine similarity caching (threshold 0.97) and zero-latency SSE cache hits.
 - Implement privacy sanitization, PII masking, and multi-tenant isolation across all memory stores.
 
 ## Hard Constraints

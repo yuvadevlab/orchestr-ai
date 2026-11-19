@@ -1,10 +1,10 @@
 /**
  * @file packages/core/src/cqrs/session.commands.ts
  * @description CQRS command definitions for conversation session lifecycle and turn updates.
- * @module @orchestrai/core/cqrs
+ * @module @orchestr-ai/core/cqrs
  */
 
-import { SessionCommandType, MessageRole } from "@orchestrai/shared-types";
+import { SessionCommandType, MessageRole } from "@orchestr-ai/shared-types";
 import type { ICommand } from "./command-bus.port";
 
 /**

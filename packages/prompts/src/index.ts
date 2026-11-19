@@ -1,12 +1,12 @@
 /**
  * @file packages/prompts/src/index.ts
- * @description Public entrypoint for `@orchestrai/prompts`.
+ * @description Public entrypoint for `@orchestr-ai/prompts`.
  *
  * ─── Package Invariant ─────────────────────────────────────────────
  * This package is the centralized repository for prompt templates, system instructions,
- * and specialist personas. It has zero external dependencies beyond `@orchestrai/shared-types`.
+ * and specialist personas. It has zero external dependencies beyond `@orchestr-ai/shared-types`.
  * ───────────────────────────────────────────────────────────────────
- * @module @orchestrai/prompts
+ * @module @orchestr-ai/prompts
  */
 
 export * from "./system";

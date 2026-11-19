@@ -3,13 +3,13 @@
  * @description Helper functions converting between ToolResult objects and OrchestrAI AIMessages.
  */
 
-import { MessageRole, ToolResultStatus } from "@orchestrai/shared-types";
+import { MessageRole, ToolResultStatus } from "@orchestr-ai/shared-types";
 import {
   AIMessageSchema,
   type AIMessage,
   type ToolCallContentBlock,
   type ToolResult,
-} from "@orchestrai/core";
+} from "@orchestr-ai/core";
 
 /**
  * Converts a ToolResult record into a canonical AIMessage for the LLM history.

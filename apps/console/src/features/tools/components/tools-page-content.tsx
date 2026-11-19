@@ -1,13 +1,13 @@
 "use client";
 
 import React, { useState, useMemo } from "react";
-import { Button } from "@orchestrai/ui";
+import { Button } from "@orchestr-ai/ui";
 import { Plus, Wrench } from "lucide-react";
 import { ToolCard } from "./tool-card";
 import { ToolDialog } from "./tool-dialog";
 import { useTools, useToggleTool, useToolCategories } from "@/features/tools/api";
-import { EmptyState } from "@orchestrai/ui";
-import { CardGridSkeleton } from "@orchestrai/ui/components/skeleton";
+import { EmptyState } from "@orchestr-ai/ui";
+import { CardGridSkeleton } from "@orchestr-ai/ui/components/skeleton";
 import { PageShell } from "@/components/layout/page-shell";
 import { UI_COPY } from "@/lib/ui-copy";
 import type { ToolDefinition } from "../types";

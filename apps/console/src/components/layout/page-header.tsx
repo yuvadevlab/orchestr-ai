@@ -27,7 +27,7 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@orchestrai/ui";
+} from "@orchestr-ai/ui";
 import { cn } from "@/lib/utils";
 
 // ---------------------------------------------------------------------------

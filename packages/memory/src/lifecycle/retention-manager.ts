@@ -3,7 +3,7 @@
  * @description Manages retention periods and automatic pruning for different memory tiers.
  */
 
-import { MemoryType } from "@orchestrai/shared-types";
+import { MemoryType } from "@orchestr-ai/shared-types";
 import type { IMemoryStorage } from "@/contracts";
 
 /**

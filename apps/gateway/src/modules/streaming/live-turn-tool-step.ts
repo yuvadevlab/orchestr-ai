@@ -5,7 +5,7 @@
  */
 
 import { randomUUID } from "node:crypto";
-import { MessageRole, SseStreamEvent, ToolResultStatus } from "@orchestrai/shared-types";
+import { MessageRole, SseStreamEvent, ToolResultStatus } from "@orchestr-ai/shared-types";
 import {
   formatToolArtifact,
   coerceWorkspaceTool,

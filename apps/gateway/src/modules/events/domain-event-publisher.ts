@@ -1,23 +1,23 @@
 /**
  * @file apps/gateway/src/modules/events/domain-event-publisher.ts
- * @description Wires @orchestrai/events into the gateway.
+ * @description Wires @orchestr-ai/events into the gateway.
  * Publishes strongly-typed domain events at every execution lifecycle transition.
  * Uses the in-memory EventBus for local delivery and is ready to swap in
  * Redis Streams or Kafka for production scale.
  * @module apps/gateway/modules/events
  */
 
-import { MemoryEventBus } from "@orchestrai/events";
-import { createDomainEvent } from "@orchestrai/events";
-import { DomainEventType, ToolResultStatus } from "@orchestrai/shared-types";
+import { MemoryEventBus } from "@orchestr-ai/events";
+import { createDomainEvent } from "@orchestr-ai/events";
+import { DomainEventType, ToolResultStatus } from "@orchestr-ai/shared-types";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
-import type { ExecutionId, TenantId, AgentId } from "@orchestrai/core";
+import type { ExecutionId, TenantId, AgentId } from "@orchestr-ai/core";
 
 const logger = loggerWithConfig(new Logger("DomainEventPublisher"));
 
 /**
  * Singleton in-memory event bus.
- * In production, swap this for RedisStreamPublisher or KafkaPublisher from @orchestrai/events.
+ * In production, swap this for RedisStreamPublisher or KafkaPublisher from @orchestr-ai/events.
  */
 export const domainEventBus = new MemoryEventBus();
 

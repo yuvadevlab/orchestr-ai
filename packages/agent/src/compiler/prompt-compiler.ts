@@ -16,9 +16,9 @@
  * ───────────────────────────────────────────────────────────────────
  */
 
-import { MessageRole } from "@orchestrai/shared-types";
-import { AIMessageSchema, type AIMessage } from "@orchestrai/core";
-import { CORE_PLATFORM_RULES_PROMPT } from "@orchestrai/prompts";
+import { MessageRole } from "@orchestr-ai/shared-types";
+import { AIMessageSchema, type AIMessage } from "@orchestr-ai/core";
+import { CORE_PLATFORM_RULES_PROMPT } from "@orchestr-ai/prompts";
 import type { PromptCompileOptions } from "./compiler.types";
 
 /**

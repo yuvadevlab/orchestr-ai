@@ -4,15 +4,15 @@
  * @module apps/gateway/services
  */
 
-import { getPrismaClient, type AccessGrant, type PermissionRequest } from "@orchestrai/database";
+import { getPrismaClient, type AccessGrant, type PermissionRequest } from "@orchestr-ai/database";
 import {
   PermissionLevel,
   PermissionScope,
   RequestStatus,
   GrantStatus,
   ApprovalRiskLevel,
-} from "@orchestrai/shared-types";
-import { isResourceContained } from "@orchestrai/core";
+} from "@orchestr-ai/shared-types";
+import { isResourceContained } from "@orchestr-ai/core";
 
 /**
  * Service orchestrating persistent database access grants and permission clearance requests.

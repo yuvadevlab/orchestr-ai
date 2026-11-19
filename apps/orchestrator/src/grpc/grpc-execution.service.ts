@@ -10,22 +10,22 @@ import type {
   IGrpcExecutionService,
   GrpcExecutionRequest,
   GrpcExecutionResponse,
-} from "@orchestrai/grpc";
+} from "@orchestr-ai/grpc";
 import {
   ExecutionStatus,
   AgentMode,
   PlatformScope,
   PlatformCapabilitySlug,
   PlatformToolName,
-} from "@orchestrai/shared-types";
+} from "@orchestr-ai/shared-types";
 import {
   ExecutionIdSchema,
   AGENT_EXECUTION_DEFAULTS,
   type AgentDefinition,
   AgentIdSchema,
-} from "@orchestrai/core";
+} from "@orchestr-ai/core";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
-import { getPrismaClient } from "@orchestrai/database";
+import { getPrismaClient } from "@orchestr-ai/database";
 import { DagExecutionEngine } from "@/runtime";
 import { toCanonicalExecutionStatus } from "@/state-machine";
 

@@ -16,9 +16,9 @@ You MUST read and strictly adhere to:
 
 ## Role Scope & Focus
 
-- Own agent loops, state transitions, prompt assembly, and mode switches in `@orchestrai/agent`.
-- Implement model adapters (Ollama, Anthropic, OpenAI) and streaming parsers in `@orchestrai/models`.
-- Define tool interfaces, validation schemas, and execution sandboxing in `@orchestrai/tools`.
+- Own agent loops, state transitions, prompt assembly, and mode switches in `@orchestr-ai/agent`.
+- Implement model adapters (Ollama, Anthropic, OpenAI) and streaming parsers in `@orchestr-ai/models`.
+- Define tool interfaces, validation schemas, and execution sandboxing in `@orchestr-ai/tools`.
 - Ensure dangerous tools enforce the **human-in-the-loop approval protocol** before side-effect execution.
 
 ## Hard Constraints

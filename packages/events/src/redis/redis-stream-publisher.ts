@@ -4,7 +4,7 @@
  */
 
 import type { Redis } from "ioredis";
-import type { DomainEventEnvelope } from "@orchestrai/core";
+import type { DomainEventEnvelope } from "@orchestr-ai/core";
 import type { IEventPublisher } from "@/contracts/event-bus.interface";
 import {
   type RedisStreamPublisherConfig,

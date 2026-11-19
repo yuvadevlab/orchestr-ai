@@ -6,7 +6,7 @@
 
 import { useQuery, type UseQueryResult } from "@tanstack/react-query";
 import { getApiClient } from "@/lib/api-client";
-import { TraceSpanStatus } from "@orchestrai/shared-types";
+import { TraceSpanStatus } from "@orchestr-ai/shared-types";
 
 export interface SpanRecord {
   spanId: string;

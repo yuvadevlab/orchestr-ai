@@ -2,7 +2,7 @@
  * @file packages/database/src/seeds/seed-modes-nav.ts
  * @description Idempotent seeder for platform execution modes and navigation items.
  * Preserves existing database data with zero deletion or truncation.
- * @module @orchestrai/database/seeds
+ * @module @orchestr-ai/database/seeds
  */
 
 import type { PrismaClient, Prisma } from "@prisma/client";

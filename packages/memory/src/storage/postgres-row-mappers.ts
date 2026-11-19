@@ -4,10 +4,10 @@
  * Enforces defensive schema boundary validation via Zod.
  */
 
-import { MemoryType } from "@orchestrai/shared-types";
+import { MemoryType } from "@orchestr-ai/shared-types";
 import { MemoryItemSchema, type MemoryItem } from "../contracts";
 import type { MemoryDbRow } from "./postgres-queries";
-import { EMBEDDING_ARRAY_REGEX } from "@orchestrai/regex";
+import { EMBEDDING_ARRAY_REGEX } from "@orchestr-ai/regex";
 
 /**
  * Maps a relational database row from `memory_items` to a validated MemoryItem entity.

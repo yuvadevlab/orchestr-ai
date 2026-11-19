@@ -1,11 +1,11 @@
 /**
  * @file eval-dataset.schema.ts
  * @description Zod validation schemas for evaluation datasets and scoring metrics.
- * @module @orchestrai/eval/contracts
+ * @module @orchestr-ai/eval/contracts
  */
 
 import { z } from "zod";
-import { UuidSchema } from "@orchestrai/core";
+import { UuidSchema } from "@orchestr-ai/core";
 
 /** Evaluation test item schema */
 export const EvaluationItemSchema = z.object({

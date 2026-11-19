@@ -4,7 +4,7 @@
  */
 
 import type { ITextExtractor, ExtractedDocument } from "./extractor.interface";
-import { MARKDOWN_HEADING_REGEX } from "@orchestrai/regex";
+import { MARKDOWN_HEADING_REGEX } from "@orchestr-ai/regex";
 
 /**
  * Supported text MIME types handled by this extractor.

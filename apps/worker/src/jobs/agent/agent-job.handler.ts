@@ -4,18 +4,18 @@
  */
 
 import crypto from "node:crypto";
-import { AgentExecutionJobPayloadSchema, type AgentExecutionJobPayload } from "@orchestrai/queue";
+import { AgentExecutionJobPayloadSchema, type AgentExecutionJobPayload } from "@orchestr-ai/queue";
 import {
   ValidationError,
   OrchestrAIError,
   extractMessageText,
   type AIMessage,
   type AgentDefinition,
-} from "@orchestrai/core";
-import { MessageRole, ExecutionStatus, ModelProvider } from "@orchestrai/shared-types";
-import { OrchestrAIRuntime, type RuntimeNodeDependencies } from "@orchestrai/runtime";
-import type { ILlmAdapter } from "@orchestrai/models";
-import type { ToolRegistry } from "@orchestrai/tools";
+} from "@orchestr-ai/core";
+import { MessageRole, ExecutionStatus, ModelProvider } from "@orchestr-ai/shared-types";
+import { OrchestrAIRuntime, type RuntimeNodeDependencies } from "@orchestr-ai/runtime";
+import type { ILlmAdapter } from "@orchestr-ai/models";
+import type { ToolRegistry } from "@orchestr-ai/tools";
 
 /**
  * Result returned from executing an agent execution job.

@@ -15,8 +15,8 @@
  * ────────────────────────────────────────────────────────────────────────────
  */
 
-import type { ModelUsage } from "@orchestrai/core";
-import type { ModelProvider } from "@orchestrai/core";
+import type { ModelUsage } from "@orchestr-ai/core";
+import type { ModelProvider } from "@orchestr-ai/core";
 import { resolvePricing, type TokenPricingConfig } from "./pricing.constants";
 
 /**

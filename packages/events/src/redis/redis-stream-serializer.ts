@@ -3,7 +3,7 @@
  * @description Serialization and deserialization utilities between DomainEventEnvelope and Redis Streams entry fields.
  */
 
-import { type DomainEventEnvelope, DomainEventEnvelopeSchema } from "@orchestrai/core";
+import { type DomainEventEnvelope, DomainEventEnvelopeSchema } from "@orchestr-ai/core";
 
 /**
  * Serializes a domain event envelope into a flat key-value string array suitable for `XADD`.

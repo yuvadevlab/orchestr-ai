@@ -1,11 +1,11 @@
 /**
  * @file packages/model-router/src/fallback-cascade.ts
  * @description Fault-tolerant fallback executor cascading through ranked deployment candidates.
- * @module @orchestrai/model-router
+ * @module @orchestr-ai/model-router
  */
 
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
-import { RouterFallbackReason } from "@orchestrai/shared-types";
+import { RouterFallbackReason } from "@orchestr-ai/shared-types";
 import type { ModelDeploymentCandidate, FallbackAttempt } from "./types";
 
 const logger = loggerWithConfig(new Logger("FallbackCascade"));

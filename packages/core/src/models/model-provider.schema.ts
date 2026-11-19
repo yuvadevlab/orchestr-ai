@@ -4,7 +4,7 @@
  */
 
 import { z } from "zod";
-import { ModelProvider } from "@orchestrai/shared-types";
+import { ModelProvider } from "@orchestr-ai/shared-types";
 
 /**
  * Recognized LLM runtime provider engines backed by ModelProvider enum.

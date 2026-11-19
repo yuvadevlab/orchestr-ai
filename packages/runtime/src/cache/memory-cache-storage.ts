@@ -1,7 +1,7 @@
 /**
  * @file memory-cache-storage.ts
  * @description In-memory TTL cache storage engine with LRU eviction.
- * @module @orchestrai/runtime/cache
+ * @module @orchestr-ai/runtime/cache
  */
 
 import type { ICacheStorage, CacheOptions } from "./cache-storage.interface";

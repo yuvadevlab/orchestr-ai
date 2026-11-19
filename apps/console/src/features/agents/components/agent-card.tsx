@@ -1,7 +1,7 @@
 import React from "react";
-import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@orchestrai/ui";
-import { StatusBadge } from "@orchestrai/ui/components/status-badge";
-import { ALPHANUMERIC_START_REGEX } from "@orchestrai/regex";
+import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@orchestr-ai/ui";
+import { StatusBadge } from "@orchestr-ai/ui/components/status-badge";
+import { ALPHANUMERIC_START_REGEX } from "@orchestr-ai/regex";
 import type { AgentDefinition } from "../types";
 
 export interface AgentCardProps {

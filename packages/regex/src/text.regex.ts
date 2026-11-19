@@ -1,7 +1,7 @@
 /**
  * @file packages/regex/src/text.regex.ts
  * @description Regular expressions for text manipulation, markdown sanitization, and token splitting.
- * @module @orchestrai/regex
+ * @module @orchestr-ai/regex
  */
 
 /**

@@ -5,7 +5,7 @@
  */
 
 import { Redis } from "ioredis";
-import { OrchestratorPubSubEventName } from "@orchestrai/shared-types";
+import { OrchestratorPubSubEventName } from "@orchestr-ai/shared-types";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
 
 const logger = loggerWithConfig(new Logger("OrchestratorRedisPublisher"));

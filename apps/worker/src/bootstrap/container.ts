@@ -4,12 +4,12 @@
  */
 
 import type { Redis } from "ioredis";
-import { createRedisConnection, closeRedisConnection } from "@orchestrai/queue";
-import { OrchestrAIRuntime } from "@orchestrai/runtime";
-import { ToolRegistry, ReadFileTool } from "@orchestrai/tools";
-import { ModelRegistry, createAdapter } from "@orchestrai/models";
-import { AgentMode, ModelProvider } from "@orchestrai/shared-types";
-import type { AgentDefinition, AgentId, TenantId } from "@orchestrai/core";
+import { createRedisConnection, closeRedisConnection } from "@orchestr-ai/queue";
+import { OrchestrAIRuntime } from "@orchestr-ai/runtime";
+import { ToolRegistry, ReadFileTool } from "@orchestr-ai/tools";
+import { ModelRegistry, createAdapter } from "@orchestr-ai/models";
+import { AgentMode, ModelProvider } from "@orchestr-ai/shared-types";
+import type { AgentDefinition, AgentId, TenantId } from "@orchestr-ai/core";
 import type { WorkerConfig } from "./config";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
 import {

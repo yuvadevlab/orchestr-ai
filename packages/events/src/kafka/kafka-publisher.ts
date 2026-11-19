@@ -1,10 +1,10 @@
 /**
  * @file kafka-publisher.ts
  * @description Kafka stream event publisher implementation of IEventPublisher.
- * @module @orchestrai/events/kafka
+ * @module @orchestr-ai/events/kafka
  */
 
-import type { DomainEventEnvelope } from "@orchestrai/core";
+import type { DomainEventEnvelope } from "@orchestr-ai/core";
 import type { IEventPublisher } from "../contracts";
 
 /** Kafka publisher options configuration */

@@ -7,8 +7,8 @@
  */
 
 import React from "react";
-import { toast } from "@orchestrai/ui";
-import { FormDialog, type FormFieldConfig } from "@orchestrai/ui";
+import { toast } from "@orchestr-ai/ui";
+import { FormDialog, type FormFieldConfig } from "@orchestr-ai/ui";
 import { formatApiError } from "@/lib/error-utils";
 import { UI_COPY } from "@/lib/ui-copy";
 import { useCreateMemory } from "../api";

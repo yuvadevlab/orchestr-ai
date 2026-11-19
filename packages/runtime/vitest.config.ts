@@ -1,6 +1,6 @@
 /**
  * @file packages/runtime/vitest.config.ts
- * @description Vitest configuration for @orchestrai/runtime.
+ * @description Vitest configuration for @orchestr-ai/runtime.
  */
 
 import path from "node:path";

@@ -1,7 +1,7 @@
 /**
  * @file packages/regex/src/prompt.regex.ts
  * @description Regular expressions for user prompt commands, mentions, and path parsing.
- * @module @orchestrai/regex
+ * @module @orchestr-ai/regex
  */
 
 /**

@@ -6,7 +6,7 @@
 
 import { randomUUID, randomBytes } from "node:crypto";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
-import { prisma, type Prisma } from "@orchestrai/database";
+import { prisma, type Prisma } from "@orchestr-ai/database";
 import { LocalStore } from "@/db/local-store";
 import { hashPassword } from "./crypto";
 import { issueSessionToken } from "./token.service";

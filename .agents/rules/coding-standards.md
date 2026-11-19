@@ -31,13 +31,13 @@
 ## 4. Zero Hardcoded Strings & Strict Enum Usage
 
 - **Never Use Hardcoded String Literals**: Domain statuses, event types, roles, modes, scopes, clearance levels, and CQRS commands must NEVER be bare strings (e.g. `"running"`, `"user"`, `"pending"`).
-- **Always Reference `Enum.KEY`**: Every status check or assignment must use the shared enum key from `@orchestrai/shared-types` or `@orchestrai/core` (e.g. `ExecutionStatus.RUNNING`, `MessageRole.USER`, `ApprovalStatus.PENDING`).
+- **Always Reference `Enum.KEY`**: Every status check or assignment must use the shared enum key from `@orchestr-ai/shared-types` or `@orchestr-ai/core` (e.g. `ExecutionStatus.RUNNING`, `MessageRole.USER`, `ApprovalStatus.PENDING`).
 - **Type-Safe Payloads**: Define all event types and state transitions using discriminated unions with canonical enum keys.
 
 ## 4. Validation & Schemas
 
 - Every external boundary (HTTP request body, query params, WebSocket frame, queue job, environment variable) MUST be validated with Zod.
-- In `@orchestrai/core`, export both the Zod schema and the inferred TypeScript type:
+- In `@orchestr-ai/core`, export both the Zod schema and the inferred TypeScript type:
   ```typescript
   /**
    * Zod schema validating execution runtime context.

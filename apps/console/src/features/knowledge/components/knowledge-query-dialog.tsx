@@ -19,7 +19,7 @@ import {
   DialogDescription,
   DialogBody,
   DialogFooter,
-} from "@orchestrai/ui";
+} from "@orchestr-ai/ui";
 import { UI_COPY } from "@/lib/ui-copy";
 import { useQueryKnowledge } from "../api";
 import { KnowledgeQueryResults } from "./knowledge-query-results";

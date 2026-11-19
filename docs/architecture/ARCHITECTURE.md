@@ -8,7 +8,7 @@ The platform is designed around seven core pillars:
 
 1. **Stateful Graph Execution**: Agents operate as state machines with checkpointed transitions, rewindability, and branching.
 2. **Zero-Trust Security & Air-Gapped Sovereignty**: Complete system operates with zero required cloud data egress using PostgreSQL + pgvector, Redis, and private cluster inference models, while scaling horizontally across distributed cloud environments.
-3. **Strict Contract Boundaries**: Domain schemas and types in `@orchestrai/core` enforce invariant correctness across services.
+3. **Strict Contract Boundaries**: Domain schemas and types in `@orchestr-ai/core` enforce invariant correctness across services.
 4. **Resilient Intelligence**: Composable circuit breakers, retries, timeouts, and bulkheads wrap every LLM turn.
 5. **Human-in-the-Loop Safeguards**: High-risk tool calls (filesystem, network, database writes) trigger interactive pauses awaiting operator clearance.
 6. **Multi-Tier Context & Memory**: Working, episodic, fact, preference, and task memories distill automatically across sessions.
@@ -50,17 +50,17 @@ The platform is designed around seven core pillars:
 ┌───────────────────────────────────────────────────────────────────────┐
 │                       Domain Packages Layer                           │
 │                                                                       │
-│  @orchestrai/agent          ──▶  @orchestrai/runtime                  │
-│  @orchestrai/memory         ──▶  @orchestrai/rag                      │
-│  @orchestrai/semantic-cache ──▶  @orchestrai/model-router             │
-│  @orchestrai/eval           ──▶  @orchestrai/prompts                  │
-│  @orchestrai/billing        ──▶  @orchestrai/resilience               │
-│  @orchestrai/events         ──▶  @orchestrai/queue                    │
-│  @orchestrai/grpc           ──▶  @orchestrai/observability            │
-│  @orchestrai/tools          ──▶  @orchestrai/models                   │
+│  @orchestr-ai/agent          ──▶  @orchestr-ai/runtime                  │
+│  @orchestr-ai/memory         ──▶  @orchestr-ai/rag                      │
+│  @orchestr-ai/semantic-cache ──▶  @orchestr-ai/model-router             │
+│  @orchestr-ai/eval           ──▶  @orchestr-ai/prompts                  │
+│  @orchestr-ai/billing        ──▶  @orchestr-ai/resilience               │
+│  @orchestr-ai/events         ──▶  @orchestr-ai/queue                    │
+│  @orchestr-ai/grpc           ──▶  @orchestr-ai/observability            │
+│  @orchestr-ai/tools          ──▶  @orchestr-ai/models                   │
 │                                │                                      │
 │                                ▼                                      │
-│                   @orchestrai/core (Shared Contracts)                 │
+│                   @orchestr-ai/core (Shared Contracts)                 │
 └────────────────────────────────┬──────────────────────────────────────┘
                                  │
          ┌───────────────────────┴───────────────────────┐
@@ -78,34 +78,34 @@ The platform is designed around seven core pillars:
 ```text
 1. CLIENT REQUEST & INGRESS
    └─▶ Gateway receives HTTP POST /executions/stream with user prompt
-   └─▶ Authenticates tenant JWT / API key and parses schema via @orchestrai/core
+   └─▶ Authenticates tenant JWT / API key and parses schema via @orchestr-ai/core
 
 2. SEMANTIC CACHE LOOKUP
-   └─▶ @orchestrai/semantic-cache computes embedding vector
+   └─▶ @orchestr-ai/semantic-cache computes embedding vector
    └─▶ If cosine similarity > 0.97: returns instant cached SSE completion (0 ms latency)
 
 3. BUDGET GATE & MODEL ROUTING
-   └─▶ @orchestrai/billing evaluates budget ceiling and token balance
-   └─▶ @orchestrai/model-router selects model via live empirical latency quantiles
+   └─▶ @orchestr-ai/billing evaluates budget ceiling and token balance
+   └─▶ @orchestr-ai/model-router selects model via live empirical latency quantiles
 
 4. CONVERSATIONAL RAG & MEMORY RECALL
-   └─▶ @orchestrai/memory retrieves 4-tier memories (preferences, facts, episodes)
-   └─▶ @orchestrai/rag queries top-3 knowledge base chunks
+   └─▶ @orchestr-ai/memory retrieves 4-tier memories (preferences, facts, episodes)
+   └─▶ @orchestr-ai/rag queries top-3 knowledge base chunks
    └─▶ apps/intelligence selectively injects relevant turns, pruning old history
 
 5. RESILIENT REASONING TURN
-   └─▶ Wrapped in @orchestrai/resilience (circuit breaker, retries, 120s deadline)
+   └─▶ Wrapped in @orchestr-ai/resilience (circuit breaker, retries, 120s deadline)
    └─▶ Dispatches to local Ollama adapter
    └─▶ Emits streaming token deltas to apps/realtime over Redis Pub/Sub
 
 6. TOOL DISPATCH & CLEARANCE
    └─▶ If dangerous action: halts at approval_gate, emits APPROVAL_REQUESTED event
-   └─▶ Safe tools execute inside @orchestrai/tools sandboxes
+   └─▶ Safe tools execute inside @orchestr-ai/tools sandboxes
    └─▶ Web scraping delegates to apps/crawler Playwright headless Chromium
 
 7. EVALUATION GATE & MEMORY DISTILLATION
    └─▶ EXECUTION_COMPLETED domain event published
-   └─▶ @orchestrai/eval scores completeness, tool veracity, and throughput
+   └─▶ @orchestr-ai/eval scores completeness, tool veracity, and throughput
    └─▶ Turn summary automatically distills into episodic memory table in PostgreSQL
 ```
 

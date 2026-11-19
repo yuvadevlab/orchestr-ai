@@ -4,7 +4,7 @@
  */
 
 import { z } from "zod";
-import { AgentMode, ModelProvider } from "@orchestrai/shared-types";
+import { AgentMode, ModelProvider } from "@orchestr-ai/shared-types";
 import { AgentIdSchema, TenantIdSchema } from "@/identifiers";
 import { AGENT_EXECUTION_DEFAULTS } from "@/constants";
 import { AgentModeSchema } from "./agent-mode.schema";

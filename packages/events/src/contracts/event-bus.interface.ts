@@ -3,8 +3,8 @@
  * @description Master publisher, subscriber, and event bus interfaces for OrchestrAI.
  */
 
-import type { DomainEventEnvelope } from "@orchestrai/core";
-import type { DomainEventType } from "@orchestrai/shared-types";
+import type { DomainEventEnvelope } from "@orchestr-ai/core";
+import type { DomainEventType } from "@orchestr-ai/shared-types";
 
 /**
  * Callback handler invoked when a matching domain event is received.

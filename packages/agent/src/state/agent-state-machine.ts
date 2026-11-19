@@ -14,8 +14,8 @@
  * ───────────────────────────────────────────────────────────────────
  */
 
-import { OrchestrAIError } from "@orchestrai/core";
-import type { AgentState } from "@orchestrai/core";
+import { OrchestrAIError } from "@orchestr-ai/core";
+import type { AgentState } from "@orchestr-ai/core";
 import { LoopDetector } from "./loop-detector";
 
 /**

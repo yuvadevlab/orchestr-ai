@@ -28,8 +28,8 @@ Welcome, Agent. You are pair-programming on **OrchestrAI**, an enterprise-grade 
    - Every exported symbol (function, class, interface, type, schema) MUST have a comprehensive JSDoc block.
    - Every conditional (`if/else/switch`), guard clause, and state transition MUST have an inline comment explaining **why** it exists and what business invariant or edge case it handles.
 3. **Strict Package Boundaries**:
-   - `@orchestrai/core` is the absolute source of truth with ZERO internal workspace dependencies.
-   - All shared contracts, enums, schemas, and event types must originate from `@orchestrai/core`. Never duplicate.
+   - `@orchestr-ai/core` is the absolute source of truth with ZERO internal workspace dependencies.
+   - All shared contracts, enums, schemas, and event types must originate from `@orchestr-ai/core`. Never duplicate.
 4. **Conventional Commits & Quality Gates**:
    - Commits must pass `commitlint` (format: `<type>(<scope>): <subject>`).
    - Pre-commit hooks run `lint-staged` with zero ESLint warnings (`--max-warnings=0`).
@@ -42,14 +42,14 @@ Welcome, Agent. You are pair-programming on **OrchestrAI**, an enterprise-grade 
    - Always update [`PROGRESS.md`](PROGRESS.md) and log in [`IMPLEMENTATION-LOG.md`](IMPLEMENTATION-LOG.md).
 7. **Zero Hardcoded Strings, Models & Strict Enum Usage**:
    - NO raw hardcoded string literals or magic numbers for domain entities, statuses, roles, event types, modes, scopes, or state transitions.
-   - All statuses, events, roles, and modes must be canonical enums in `@orchestrai/shared-types`.
+   - All statuses, events, roles, and modes must be canonical enums in `@orchestr-ai/shared-types`.
    - Always check and compare using `Enum.KEY` (e.g. `status === ExecutionStatus.COMPLETED`, `role === MessageRole.USER`), NEVER bare strings like `"completed"`.
    - NO hardcoded fallback model constants (e.g. `"gemma4:31b-cloud"`, `"qwen2.5:7b"`) or fallback candidate objects (`DEFAULT_FALLBACK_CANDIDATE`). All models must be DB- or env-driven.
    - NO synthetic agent auto-seeding (`DEFAULT_SUPERVISOR`, `Lead Orchestrator`). If a tenant has no agent, fail fast and instruct the user to create one in the Studio.
 8. **Dynamic Server-Driven Configuration (Big 3 Standard) & Centralized Regex**:
    - NO client or worker application may hardcode operational parameters (slash commands, system prompts, max execution steps, sampling temperatures, compaction thresholds, cache similarity/TTL, RAG chunking parameters, retention policies, or starter suggestions).
    - All operational behaviors must be dynamic, database- or control-plane-driven, served via Gateway APIs (`/api/v1/platform/...`), and cached with stale-while-revalidate IndexedDB persistence.
-   - All regular expressions across all apps and packages must originate from `@orchestrai/regex`. Zero inline regexes.
+   - All regular expressions across all apps and packages must originate from `@orchestr-ai/regex`. Zero inline regexes.
 9. **Next.js Page & Layout Invariant (Pure SSR Wrappers)**:
    - All `page.tsx` and `layout.tsx` files across Next.js applications MUST remain Server Components (`SSR`).
    - NEVER place `"use client"` on `page.tsx` or `layout.tsx`.

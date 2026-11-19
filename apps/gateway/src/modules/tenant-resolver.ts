@@ -4,8 +4,8 @@
  * @module apps/gateway/services
  */
 
-import { getPrismaClient, type PrismaClient } from "@orchestrai/database";
-import { UUID_REGEX } from "@orchestrai/regex";
+import { getPrismaClient, type PrismaClient } from "@orchestr-ai/database";
+import { UUID_REGEX } from "@orchestr-ai/regex";
 
 /**
  * Resolves a valid tenant UUID from database.

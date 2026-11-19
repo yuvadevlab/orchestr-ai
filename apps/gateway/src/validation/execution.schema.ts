@@ -4,7 +4,7 @@
  */
 
 import { z } from "zod";
-import { AgentMode, ExecutionStatus } from "@orchestrai/shared-types";
+import { AgentMode, ExecutionStatus } from "@orchestr-ai/shared-types";
 
 /**
  * Validates payload for launching a new asynchronous agent execution.

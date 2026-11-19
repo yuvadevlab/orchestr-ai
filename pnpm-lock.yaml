@@ -223,13 +223,13 @@ importers:
 
   apps/admin:
     dependencies:
-      '@orchestrai/core':
+      '@orchestr-ai/core':
         specifier: workspace:*
         version: link:../../packages/core
-      '@orchestrai/database':
+      '@orchestr-ai/database':
         specifier: workspace:*
         version: link:../../packages/database
-      '@orchestrai/shared-types':
+      '@orchestr-ai/shared-types':
         specifier: workspace:*
         version: link:../../packages/shared-types
       '@yuva-devlab/logger':
@@ -263,19 +263,19 @@ importers:
       '@fontsource-variable/sora':
         specifier: ^5.3.0
         version: 5.3.0
-      '@orchestrai/core':
+      '@orchestr-ai/core':
         specifier: workspace:*
         version: link:../../packages/core
-      '@orchestrai/regex':
+      '@orchestr-ai/regex':
         specifier: workspace:*
         version: link:../../packages/regex
-      '@orchestrai/sdk':
+      '@orchestr-ai/sdk':
         specifier: workspace:*
         version: link:../../packages/sdk
-      '@orchestrai/shared-types':
+      '@orchestr-ai/shared-types':
         specifier: workspace:*
         version: link:../../packages/shared-types
-      '@orchestrai/ui':
+      '@orchestr-ai/ui':
         specifier: workspace:*
         version: link:../../packages/ui
       '@tanstack/react-query':
@@ -348,55 +348,55 @@ importers:
 
   apps/gateway:
     dependencies:
-      '@orchestrai/agent':
+      '@orchestr-ai/agent':
         specifier: workspace:*
         version: link:../../packages/agent
-      '@orchestrai/core':
+      '@orchestr-ai/core':
         specifier: workspace:*
         version: link:../../packages/core
-      '@orchestrai/database':
+      '@orchestr-ai/database':
         specifier: workspace:*
         version: link:../../packages/database
-      '@orchestrai/eval':
+      '@orchestr-ai/eval':
         specifier: workspace:*
         version: link:../../packages/eval
-      '@orchestrai/events':
+      '@orchestr-ai/events':
         specifier: workspace:*
         version: link:../../packages/events
-      '@orchestrai/grpc':
+      '@orchestr-ai/grpc':
         specifier: workspace:*
         version: link:../../packages/grpc
-      '@orchestrai/memory':
+      '@orchestr-ai/memory':
         specifier: workspace:*
         version: link:../../packages/memory
-      '@orchestrai/model-router':
+      '@orchestr-ai/model-router':
         specifier: workspace:*
         version: link:../../packages/model-router
-      '@orchestrai/models':
+      '@orchestr-ai/models':
         specifier: workspace:*
         version: link:../../packages/models
-      '@orchestrai/observability':
+      '@orchestr-ai/observability':
         specifier: workspace:*
         version: link:../../packages/observability
-      '@orchestrai/prompts':
+      '@orchestr-ai/prompts':
         specifier: workspace:*
         version: link:../../packages/prompts
-      '@orchestrai/queue':
+      '@orchestr-ai/queue':
         specifier: workspace:*
         version: link:../../packages/queue
-      '@orchestrai/rag':
+      '@orchestr-ai/rag':
         specifier: workspace:*
         version: link:../../packages/rag
-      '@orchestrai/regex':
+      '@orchestr-ai/regex':
         specifier: workspace:*
         version: link:../../packages/regex
-      '@orchestrai/runtime':
+      '@orchestr-ai/runtime':
         specifier: workspace:*
         version: link:../../packages/runtime
-      '@orchestrai/shared-types':
+      '@orchestr-ai/shared-types':
         specifier: workspace:*
         version: link:../../packages/shared-types
-      '@orchestrai/tools':
+      '@orchestr-ai/tools':
         specifier: workspace:*
         version: link:../../packages/tools
       '@yuva-devlab/auth-server':
@@ -445,34 +445,34 @@ importers:
 
   apps/orchestrator:
     dependencies:
-      '@orchestrai/agent':
+      '@orchestr-ai/agent':
         specifier: workspace:*
         version: link:../../packages/agent
-      '@orchestrai/core':
+      '@orchestr-ai/core':
         specifier: workspace:*
         version: link:../../packages/core
-      '@orchestrai/database':
+      '@orchestr-ai/database':
         specifier: workspace:*
         version: link:../../packages/database
-      '@orchestrai/events':
+      '@orchestr-ai/events':
         specifier: workspace:*
         version: link:../../packages/events
-      '@orchestrai/grpc':
+      '@orchestr-ai/grpc':
         specifier: workspace:*
         version: link:../../packages/grpc
-      '@orchestrai/models':
+      '@orchestr-ai/models':
         specifier: workspace:*
         version: link:../../packages/models
-      '@orchestrai/observability':
+      '@orchestr-ai/observability':
         specifier: workspace:*
         version: link:../../packages/observability
-      '@orchestrai/runtime':
+      '@orchestr-ai/runtime':
         specifier: workspace:*
         version: link:../../packages/runtime
-      '@orchestrai/shared-types':
+      '@orchestr-ai/shared-types':
         specifier: workspace:*
         version: link:../../packages/shared-types
-      '@orchestrai/tools':
+      '@orchestr-ai/tools':
         specifier: workspace:*
         version: link:../../packages/tools
       '@yuva-devlab/logger':
@@ -500,16 +500,16 @@ importers:
 
   apps/realtime:
     dependencies:
-      '@orchestrai/core':
+      '@orchestr-ai/core':
         specifier: workspace:*
         version: link:../../packages/core
-      '@orchestrai/events':
+      '@orchestr-ai/events':
         specifier: workspace:*
         version: link:../../packages/events
-      '@orchestrai/regex':
+      '@orchestr-ai/regex':
         specifier: workspace:*
         version: link:../../packages/regex
-      '@orchestrai/shared-types':
+      '@orchestr-ai/shared-types':
         specifier: workspace:*
         version: link:../../packages/shared-types
       '@yuva-devlab/logger':
@@ -543,25 +543,25 @@ importers:
 
   apps/worker:
     dependencies:
-      '@orchestrai/agent':
+      '@orchestr-ai/agent':
         specifier: workspace:*
         version: link:../../packages/agent
-      '@orchestrai/core':
+      '@orchestr-ai/core':
         specifier: workspace:*
         version: link:../../packages/core
-      '@orchestrai/models':
+      '@orchestr-ai/models':
         specifier: workspace:*
         version: link:../../packages/models
-      '@orchestrai/queue':
+      '@orchestr-ai/queue':
         specifier: workspace:*
         version: link:../../packages/queue
-      '@orchestrai/runtime':
+      '@orchestr-ai/runtime':
         specifier: workspace:*
         version: link:../../packages/runtime
-      '@orchestrai/shared-types':
+      '@orchestr-ai/shared-types':
         specifier: workspace:*
         version: link:../../packages/shared-types
-      '@orchestrai/tools':
+      '@orchestr-ai/tools':
         specifier: workspace:*
         version: link:../../packages/tools
       '@yuva-devlab/logger':
@@ -592,22 +592,22 @@ importers:
 
   packages/agent:
     dependencies:
-      '@orchestrai/core':
+      '@orchestr-ai/core':
         specifier: workspace:*
         version: link:../core
-      '@orchestrai/models':
+      '@orchestr-ai/models':
         specifier: workspace:*
         version: link:../models
-      '@orchestrai/prompts':
+      '@orchestr-ai/prompts':
         specifier: workspace:*
         version: link:../prompts
-      '@orchestrai/regex':
+      '@orchestr-ai/regex':
         specifier: workspace:*
         version: link:../regex
-      '@orchestrai/shared-types':
+      '@orchestr-ai/shared-types':
         specifier: workspace:*
         version: link:../shared-types
-      '@orchestrai/tools':
+      '@orchestr-ai/tools':
         specifier: workspace:*
         version: link:../tools
       '@yuva-devlab/logger':
@@ -632,7 +632,7 @@ importers:
 
   packages/core:
     dependencies:
-      '@orchestrai/shared-types':
+      '@orchestr-ai/shared-types':
         specifier: workspace:*
         version: link:../shared-types
       zod:
@@ -651,10 +651,10 @@ importers:
 
   packages/database:
     dependencies:
-      '@orchestrai/core':
+      '@orchestr-ai/core':
         specifier: workspace:*
         version: link:../core
-      '@orchestrai/shared-types':
+      '@orchestr-ai/shared-types':
         specifier: workspace:*
         version: link:../shared-types
       '@prisma/adapter-pg':
@@ -691,10 +691,10 @@ importers:
 
   packages/eval:
     dependencies:
-      '@orchestrai/core':
+      '@orchestr-ai/core':
         specifier: workspace:*
         version: link:../core
-      '@orchestrai/shared-types':
+      '@orchestr-ai/shared-types':
         specifier: workspace:*
         version: link:../shared-types
       zod:
@@ -710,10 +710,10 @@ importers:
 
   packages/events:
     dependencies:
-      '@orchestrai/core':
+      '@orchestr-ai/core':
         specifier: workspace:*
         version: link:../core
-      '@orchestrai/shared-types':
+      '@orchestr-ai/shared-types':
         specifier: workspace:*
         version: link:../shared-types
       '@yuva-devlab/logger':
@@ -741,10 +741,10 @@ importers:
 
   packages/grpc:
     dependencies:
-      '@orchestrai/core':
+      '@orchestr-ai/core':
         specifier: workspace:*
         version: link:../core
-      '@orchestrai/shared-types':
+      '@orchestr-ai/shared-types':
         specifier: workspace:*
         version: link:../shared-types
       zod:
@@ -760,13 +760,13 @@ importers:
 
   packages/memory:
     dependencies:
-      '@orchestrai/core':
+      '@orchestr-ai/core':
         specifier: workspace:*
         version: link:../core
-      '@orchestrai/regex':
+      '@orchestr-ai/regex':
         specifier: workspace:*
         version: link:../regex
-      '@orchestrai/shared-types':
+      '@orchestr-ai/shared-types':
         specifier: workspace:*
         version: link:../shared-types
       '@yuva-devlab/logger':
@@ -788,10 +788,10 @@ importers:
 
   packages/model-router:
     dependencies:
-      '@orchestrai/models':
+      '@orchestr-ai/models':
         specifier: workspace:*
         version: link:../models
-      '@orchestrai/shared-types':
+      '@orchestr-ai/shared-types':
         specifier: workspace:*
         version: link:../shared-types
       '@yuva-devlab/logger':
@@ -816,7 +816,7 @@ importers:
       '@anthropic-ai/sdk':
         specifier: '>=0.24.0'
         version: 0.126.0(zod@4.6.6)
-      '@orchestrai/core':
+      '@orchestr-ai/core':
         specifier: workspace:*
         version: link:../core
       '@yuva-devlab/logger':
@@ -847,7 +847,7 @@ importers:
 
   packages/observability:
     dependencies:
-      '@orchestrai/shared-types':
+      '@orchestr-ai/shared-types':
         specifier: workspace:*
         version: link:../shared-types
       '@yuva-devlab/logger':
@@ -863,7 +863,7 @@ importers:
 
   packages/prompts:
     dependencies:
-      '@orchestrai/shared-types':
+      '@orchestr-ai/shared-types':
         specifier: workspace:*
         version: link:../shared-types
     devDependencies:
@@ -879,10 +879,10 @@ importers:
 
   packages/queue:
     dependencies:
-      '@orchestrai/core':
+      '@orchestr-ai/core':
         specifier: workspace:*
         version: link:../core
-      '@orchestrai/shared-types':
+      '@orchestr-ai/shared-types':
         specifier: workspace:*
         version: link:../shared-types
       '@yuva-devlab/logger':
@@ -910,13 +910,13 @@ importers:
 
   packages/rag:
     dependencies:
-      '@orchestrai/core':
+      '@orchestr-ai/core':
         specifier: workspace:*
         version: link:../core
-      '@orchestrai/regex':
+      '@orchestr-ai/regex':
         specifier: workspace:*
         version: link:../regex
-      '@orchestrai/shared-types':
+      '@orchestr-ai/shared-types':
         specifier: workspace:*
         version: link:../shared-types
       '@yuva-devlab/logger':
@@ -950,19 +950,19 @@ importers:
 
   packages/runtime:
     dependencies:
-      '@orchestrai/agent':
+      '@orchestr-ai/agent':
         specifier: workspace:*
         version: link:../agent
-      '@orchestrai/core':
+      '@orchestr-ai/core':
         specifier: workspace:*
         version: link:../core
-      '@orchestrai/models':
+      '@orchestr-ai/models':
         specifier: workspace:*
         version: link:../models
-      '@orchestrai/shared-types':
+      '@orchestr-ai/shared-types':
         specifier: workspace:*
         version: link:../shared-types
-      '@orchestrai/tools':
+      '@orchestr-ai/tools':
         specifier: workspace:*
         version: link:../tools
       '@yuva-devlab/logger':
@@ -987,7 +987,7 @@ importers:
 
   packages/sdk:
     dependencies:
-      '@orchestrai/shared-types':
+      '@orchestr-ai/shared-types':
         specifier: workspace:*
         version: link:../shared-types
     devDependencies:
@@ -1009,13 +1009,13 @@ importers:
 
   packages/tools:
     dependencies:
-      '@orchestrai/core':
+      '@orchestr-ai/core':
         specifier: workspace:*
         version: link:../core
-      '@orchestrai/regex':
+      '@orchestr-ai/regex':
         specifier: workspace:*
         version: link:../regex
-      '@orchestrai/shared-types':
+      '@orchestr-ai/shared-types':
         specifier: workspace:*
         version: link:../shared-types
       '@yuva-devlab/logger':

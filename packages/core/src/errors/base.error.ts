@@ -7,11 +7,11 @@
  * - `OrchestrAIError` is generic on `TCode extends ErrorCode` so that each
  *   domain subclass narrows `code` to a single string literal. This enables
  *   exhaustive `switch (err.code)` discrimination at call sites.
- * - `ErrorCode` lives in `@orchestrai/shared-types` as the single source of
+ * - `ErrorCode` lives in `@orchestr-ai/shared-types` as the single source of
  *   truth; add new codes there whenever a new subclass is introduced.
  */
 
-import type { ErrorCode } from "@orchestrai/shared-types";
+import type { ErrorCode } from "@orchestr-ai/shared-types";
 
 /**
  * Serialized representation of an OrchestrAI error for API and logging boundaries.

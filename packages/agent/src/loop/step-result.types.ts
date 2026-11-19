@@ -3,7 +3,7 @@
  * @description Type definitions for agent step results and lifecycle outcomes.
  */
 
-import type { AIMessage, ToolResult } from "@orchestrai/core";
+import type { AIMessage, ToolResult } from "@orchestr-ai/core";
 
 /**
  * High-level outcome of executing a single agent loop step.

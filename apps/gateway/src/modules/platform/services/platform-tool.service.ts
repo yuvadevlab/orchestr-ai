@@ -5,8 +5,8 @@
  * @module apps/gateway/services
  */
 
-import { getPrismaClient, type PrismaClient, type PlatformTool } from "@orchestrai/database";
-import { ToolPermissionLevel } from "@orchestrai/shared-types";
+import { getPrismaClient, type PrismaClient, type PlatformTool } from "@orchestr-ai/database";
+import { ToolPermissionLevel } from "@orchestr-ai/shared-types";
 
 /** DTO for registering or updating an execution tool. */
 export interface UpsertToolDto {

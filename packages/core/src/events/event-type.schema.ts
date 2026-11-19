@@ -4,7 +4,7 @@
  */
 
 import { z } from "zod";
-import { DomainEventType } from "@orchestrai/shared-types";
+import { DomainEventType } from "@orchestr-ai/shared-types";
 
 /**
  * Enumeration of all domain lifecycle events backed by DomainEventType enum.

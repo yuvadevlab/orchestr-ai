@@ -4,7 +4,7 @@
  */
 
 import { z } from "zod";
-import { ResourceType } from "@orchestrai/shared-types";
+import { ResourceType } from "@orchestr-ai/shared-types";
 import { ResourceIdSchema, TenantIdSchema } from "@/identifiers";
 
 /**

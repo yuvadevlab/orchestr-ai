@@ -7,11 +7,11 @@
  */
 
 import React from "react";
-import { toast } from "@orchestrai/ui";
-import { FormDialog, type FormFieldConfig } from "@orchestrai/ui";
+import { toast } from "@orchestr-ai/ui";
+import { FormDialog, type FormFieldConfig } from "@orchestr-ai/ui";
 import { formatApiError } from "@/lib/error-utils";
-import { DocumentMimeType } from "@orchestrai/shared-types";
-import { LEADING_TRAILING_DASH_REGEX } from "@orchestrai/regex";
+import { DocumentMimeType } from "@orchestr-ai/shared-types";
+import { LEADING_TRAILING_DASH_REGEX } from "@orchestr-ai/regex";
 import { UI_COPY } from "@/lib/ui-copy";
 import { useIngestDocument } from "../api";
 

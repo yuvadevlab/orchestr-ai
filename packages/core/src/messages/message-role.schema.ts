@@ -4,7 +4,7 @@
  */
 
 import { z } from "zod";
-import { MessageRole } from "@orchestrai/shared-types";
+import { MessageRole } from "@orchestr-ai/shared-types";
 
 /**
  * Standard message roles supported by model adapters backed by MessageRole enum.

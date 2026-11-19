@@ -5,7 +5,7 @@
  */
 
 import { loadGatewayConfig } from "@/config";
-import { prisma } from "@orchestrai/database";
+import { prisma } from "@orchestr-ai/database";
 import { LocalStore } from "@/db/local-store";
 import { JwksValidator, DEFAULT_JWKS_PATH } from "@yuva-devlab/auth-server";
 import { signToken, verifyToken, type TokenClaims } from "./crypto";

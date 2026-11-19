@@ -6,7 +6,7 @@
 import type { IncomingMessage, ServerResponse } from "node:http";
 import { Logger, loggerWithConfig, requestLogger } from "@yuva-devlab/logger";
 import { handleExecutionSseStream, handleGlobalSseStream } from "@/sse";
-import { LOCALHOST_ORIGIN_REGEX } from "@orchestrai/regex";
+import { LOCALHOST_ORIGIN_REGEX } from "@orchestr-ai/regex";
 import type { ConnectionRegistry } from "@/connection";
 import type { SubscriptionManager } from "@/subscriptions";
 

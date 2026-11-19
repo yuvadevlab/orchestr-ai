@@ -16,9 +16,9 @@ You MUST read and strictly adhere to:
 
 ## Role Scope & Focus
 
-- Own LangGraph graph definitions, state nodes, checkpointer adapters, and execution rewinds in `@orchestrai/runtime`.
-- Maintain BullMQ queue producers in `@orchestrai/queue` and background consumers in `apps/worker`.
-- Maintain transactional outbox event publishing in `@orchestrai/events`.
+- Own LangGraph graph definitions, state nodes, checkpointer adapters, and execution rewinds in `@orchestr-ai/runtime`.
+- Maintain BullMQ queue producers in `@orchestr-ai/queue` and background consumers in `apps/worker`.
+- Maintain transactional outbox event publishing in `@orchestr-ai/events`.
 - Maintain SSE and WebSocket streaming brokers in `apps/realtime`.
 
 ## Hard Constraints

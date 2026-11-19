@@ -8,9 +8,9 @@
 
 import React, { useState } from "react";
 import { Plus, Search, Sparkles, BookOpen } from "lucide-react";
-import { Button, Input } from "@orchestrai/ui";
+import { Button, Input } from "@orchestr-ai/ui";
 import { PageShell } from "@/components/layout/page-shell";
-import { EmptyState, TableSkeleton, DynamicErrorState } from "@orchestrai/ui";
+import { EmptyState, TableSkeleton, DynamicErrorState } from "@orchestr-ai/ui";
 import { useKnowledgeDocuments } from "../api";
 import { UI_COPY } from "@/lib/ui-copy";
 import { KnowledgeUploadDialog } from "./knowledge-upload-dialog";

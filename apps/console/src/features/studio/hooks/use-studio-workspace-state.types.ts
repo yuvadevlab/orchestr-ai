@@ -5,7 +5,7 @@
  */
 
 import type React from "react";
-import type { PermissionScope, PlatformModeRecord } from "@orchestrai/shared-types";
+import type { PermissionScope, PlatformModeRecord } from "@orchestr-ai/shared-types";
 import type { LlmModel } from "@/features/models/types";
 import type {
   CoworkSession,

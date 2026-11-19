@@ -10,8 +10,8 @@
  * ────────────────────────────────────────────────────────────────────────────
  */
 
-import { OrchestrAIError } from "@orchestrai/core";
-import type { ModelProvider } from "@orchestrai/core";
+import { OrchestrAIError } from "@orchestr-ai/core";
+import type { ModelProvider } from "@orchestr-ai/core";
 import type { ModelRegistryEntry, ModelRegistryKey } from "./model-registry.types";
 
 /**

@@ -1,10 +1,10 @@
 /**
  * @file packages/core/src/ports/event-publisher.port.ts
  * @description Abstract messaging port for publishing domain events and streaming token deltas.
- * @module @orchestrai/core/ports
+ * @module @orchestr-ai/core/ports
  */
 
-import type { SseEventEnvelope, SseStreamEvent } from "@orchestrai/shared-types";
+import type { SseEventEnvelope, SseStreamEvent } from "@orchestr-ai/shared-types";
 import type { DomainEventEnvelope } from "../events/event-envelope.schema";
 
 /**

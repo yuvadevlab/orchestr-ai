@@ -11,7 +11,7 @@ import { ArtifactDocumentCard } from "./artifact-document-card";
 import { ArtifactCodeCard } from "./artifact-code-card";
 import { ArtifactTerminalCard } from "./artifact-terminal-card";
 import { ArtifactSearchCard } from "./artifact-search-card";
-import { ArtifactType } from "@orchestrai/shared-types";
+import { ArtifactType } from "@orchestr-ai/shared-types";
 import type { CoworkArtifact } from "../../types";
 
 export interface ArtifactRendererProps {

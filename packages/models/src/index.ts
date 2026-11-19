@@ -1,10 +1,10 @@
 /**
  * @file packages/models/src/index.ts
- * @description Public API surface for `@orchestrai/models`.
+ * @description Public API surface for `@orchestr-ai/models`.
  *
  * Package invariant: This package sits in the Infrastructure Adapter layer.
- * It depends on `@orchestrai/core` for all shared contracts and must never
- * be imported by `@orchestrai/core`. Dependency direction is strictly downward.
+ * It depends on `@orchestr-ai/core` for all shared contracts and must never
+ * be imported by `@orchestr-ai/core`. Dependency direction is strictly downward.
  *
  * What this package exports:
  *  - ILlmAdapter interface + LlmRequest / LlmResponse / LlmStreamChunk types

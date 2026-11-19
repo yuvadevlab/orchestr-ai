@@ -1,7 +1,7 @@
 /**
  * @file packages/prompts/src/personas/orchestrator.prompt.ts
  * @description Lead Orchestrator coordinator persona prompt constant.
- * @module @orchestrai/prompts/personas
+ * @module @orchestr-ai/prompts/personas
  */
 
 /**

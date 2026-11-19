@@ -1,7 +1,7 @@
 /**
  * @file packages/prompts/src/system/autonomous-tools.prompt.ts
  * @description Centralized system instructions and JSON schemas for autonomous tool execution.
- * @module @orchestrai/prompts/system
+ * @module @orchestr-ai/prompts/system
  */
 
 /**

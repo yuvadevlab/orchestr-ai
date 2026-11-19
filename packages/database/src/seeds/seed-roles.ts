@@ -2,11 +2,11 @@
  * @file packages/database/src/seeds/seed-roles.ts
  * @description Database seeder for platform roles.
  * Idempotent upsert preserving existing user customizations.
- * @module @orchestrai/database/seeds
+ * @module @orchestr-ai/database/seeds
  */
 
 import type { PrismaClient } from "@prisma/client";
-import { AgentRoleSlug } from "@orchestrai/shared-types";
+import { AgentRoleSlug } from "@orchestr-ai/shared-types";
 
 export const SEED_ROLES = [
   {

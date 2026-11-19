@@ -4,7 +4,7 @@
  * @module apps/gateway/commands
  */
 
-import type { ICommandHandler, ResolveApprovalCommand } from "@orchestrai/core";
+import type { ICommandHandler, ResolveApprovalCommand } from "@orchestr-ai/core";
 import { ApprovalService } from "@/modules/approval/approval.service";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
 

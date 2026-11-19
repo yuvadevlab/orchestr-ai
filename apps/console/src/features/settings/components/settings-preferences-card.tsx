@@ -16,7 +16,7 @@ import {
   SelectTrigger,
   SelectValue,
   Switch,
-} from "@orchestrai/ui";
+} from "@orchestr-ai/ui";
 import { UI_COPY } from "@/lib/ui-copy";
 import type { AgentDefinition } from "@/features/agents/types";
 

@@ -1,10 +1,10 @@
 /**
  * @file packages/core/src/cqrs/execution.commands.ts
  * @description CQRS command definitions for creating, starting, and aborting agent execution runs.
- * @module @orchestrai/core/cqrs
+ * @module @orchestr-ai/core/cqrs
  */
 
-import { ExecutionCommandType } from "@orchestrai/shared-types";
+import { ExecutionCommandType } from "@orchestr-ai/shared-types";
 import type { ICommand } from "./command-bus.port";
 
 /**

@@ -3,7 +3,7 @@
  * @description Interfaces and data types for Outbox pattern storage adapters.
  */
 
-import type { DomainEventEnvelope } from "@orchestrai/core";
+import type { DomainEventEnvelope } from "@orchestr-ai/core";
 
 /**
  * Lifecycle status of an outbox record.

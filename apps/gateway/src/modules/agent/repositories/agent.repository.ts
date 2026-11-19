@@ -4,14 +4,14 @@
  * @module apps/gateway/repositories
  */
 
-import { getPrismaClient, type PrismaClient, type Prisma } from "@orchestrai/database";
+import { getPrismaClient, type PrismaClient, type Prisma } from "@orchestr-ai/database";
 import type {
   IAgentRepository,
   AgentEntity,
   CreateAgentEntityData,
   ListAgentsFilter,
-} from "@orchestrai/core";
-import type { PaginatedResult } from "@orchestrai/shared-types";
+} from "@orchestr-ai/core";
+import type { PaginatedResult } from "@orchestr-ai/shared-types";
 
 /**
  * PostgreSQL Prisma adapter implementing IAgentRepository.

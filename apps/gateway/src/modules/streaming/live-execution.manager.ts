@@ -11,8 +11,8 @@ import {
   AgentMode,
   FeatureFlagKey,
   CognitivePolicySlug,
-} from "@orchestrai/shared-types";
-import { autoDetectMode } from "@orchestrai/agent";
+} from "@orchestr-ai/shared-types";
+import { autoDetectMode } from "@orchestr-ai/agent";
 import type { GatewayResponse } from "@/routes/http-types";
 import {
   attachExecutionSseStream,

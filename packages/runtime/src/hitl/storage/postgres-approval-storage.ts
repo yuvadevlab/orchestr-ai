@@ -3,8 +3,8 @@
  * @description Durable PostgreSQL adapter for HITL approvals table with optimistic concurrency control.
  */
 
-import { ApprovalStatus, ApprovalDecisionVerdict } from "@orchestrai/shared-types";
-import { OrchestrAIError } from "@orchestrai/core";
+import { ApprovalStatus, ApprovalDecisionVerdict } from "@orchestr-ai/shared-types";
+import { OrchestrAIError } from "@orchestr-ai/core";
 import type { IDatabaseQueryRunner } from "@/checkpoint/database-adapter.interface";
 import type { ApprovalResolutionInput, ApprovalTicket, IApprovalStorage } from "../contracts";
 import { APPROVAL_SQL_QUERIES, type ApprovalDbRow } from "./postgres-approval-queries";

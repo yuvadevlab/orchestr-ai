@@ -7,12 +7,12 @@
 
 import fs from "node:fs";
 import path from "node:path";
-import { YAML_FRONTMATTER_REGEX, YAML_KEY_VALUE_REGEX } from "@orchestrai/regex";
+import { YAML_FRONTMATTER_REGEX, YAML_KEY_VALUE_REGEX } from "@orchestr-ai/regex";
 import type {
   WorkspaceSkillMetadata,
   WorkspaceRuleMetadata,
   WorkspaceHarnessContext,
-} from "@orchestrai/shared-types";
+} from "@orchestr-ai/shared-types";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
 
 const logger = loggerWithConfig(new Logger("WorkspaceInstructionLoader"));

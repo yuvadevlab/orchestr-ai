@@ -1,14 +1,14 @@
 /**
  * @file apps/gateway/src/modules/eval/eval-quality-gate.ts
- * @description Quality gate evaluating completed agent executions using @orchestrai/eval on EXECUTION_COMPLETED events.
+ * @description Quality gate evaluating completed agent executions using @orchestr-ai/eval on EXECUTION_COMPLETED events.
  * @module apps/gateway/modules/eval
  */
 
-import { DomainEventType } from "@orchestrai/shared-types";
+import { DomainEventType } from "@orchestr-ai/shared-types";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
 import { domainEventBus } from "@/modules/events/domain-event-publisher";
-import type { DomainEventEnvelope } from "@orchestrai/core";
-import { ExecutionCompletedPayloadSchema } from "@orchestrai/events";
+import type { DomainEventEnvelope } from "@orchestr-ai/core";
+import { ExecutionCompletedPayloadSchema } from "@orchestr-ai/events";
 import type { z } from "zod";
 
 type ExecutionCompletedPayload = z.infer<typeof ExecutionCompletedPayloadSchema>;

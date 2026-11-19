@@ -10,7 +10,7 @@ import {
   ArtifactType,
   ExecutionStatus,
   StudioEventType,
-} from "@orchestrai/shared-types";
+} from "@orchestr-ai/shared-types";
 import { useConsoleStore } from "@/lib/stores";
 import { UI_COPY } from "@/lib/ui-copy";
 import type { CoworkArtifact, CoworkMessage, StudioApprovalRequest, StudioEvent } from "../types";

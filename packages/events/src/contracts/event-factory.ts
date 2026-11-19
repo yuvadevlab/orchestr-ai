@@ -10,8 +10,8 @@ import {
   type ExecutionId,
   type TenantId,
   type TraceId,
-} from "@orchestrai/core";
-import type { DomainEventType } from "@orchestrai/shared-types";
+} from "@orchestr-ai/core";
+import type { DomainEventType } from "@orchestr-ai/shared-types";
 import { EventPayloadMap, type EventPayloadTypeMap } from "./event-payloads";
 
 /**

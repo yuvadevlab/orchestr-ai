@@ -4,7 +4,7 @@
  * @module apps/console/features/studio/hooks
  */
 
-import { PermissionScope, MessageSegmentType } from "@orchestrai/shared-types";
+import { PermissionScope, MessageSegmentType } from "@orchestr-ai/shared-types";
 import type { CoworkArtifact, MessageSegment, StudioApprovalRequest } from "../types";
 
 /**

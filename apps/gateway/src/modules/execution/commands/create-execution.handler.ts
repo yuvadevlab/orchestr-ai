@@ -11,8 +11,8 @@ import type {
   IExecutionRepository,
   IQueueProducer,
   IEventPublisher,
-} from "@orchestrai/core";
-import { ExecutionStatus, SseStreamEvent, QUEUE_NAMES } from "@orchestrai/shared-types";
+} from "@orchestr-ai/core";
+import { ExecutionStatus, SseStreamEvent, QUEUE_NAMES } from "@orchestr-ai/shared-types";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
 
 const logger = loggerWithConfig(new Logger("CreateExecutionCommandHandler"));

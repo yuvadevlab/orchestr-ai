@@ -1,7 +1,7 @@
 """
 apps/intelligence/src/mode_router.py
 Fast rule-based heuristic classifier and canonical system prompt instructions for AgentMode.
-Parallels @orchestrai/agent and @orchestrai/prompts with identical lexical patterns.
+Parallels @orchestr-ai/agent and @orchestr-ai/prompts with identical lexical patterns.
 """
 
 import re

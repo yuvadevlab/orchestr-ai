@@ -6,7 +6,7 @@
 
 import type { Conversation, Message, PaginatedList } from "@/types";
 import { ResourceBase } from "./resource-base";
-import { MessageRole } from "@orchestrai/shared-types";
+import { MessageRole } from "@orchestr-ai/shared-types";
 
 export interface CreateConversationParams {
   title?: string;

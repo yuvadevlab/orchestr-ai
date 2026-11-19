@@ -1,11 +1,11 @@
 /**
  * @file packages/database/src/seed-capabilities.ts
  * @description Default platform capabilities and tool associations seeder.
- * @module @orchestrai/database
+ * @module @orchestr-ai/database
  */
 
 import { getPrismaClient, type PrismaClient } from "./client";
-import { PlatformCapabilitySlug, PlatformToolName } from "@orchestrai/shared-types";
+import { PlatformCapabilitySlug, PlatformToolName } from "@orchestr-ai/shared-types";
 
 /**
  * Capability seed blueprint definition.

@@ -1,7 +1,7 @@
 /**
  * @file apps/console/src/app/api/v1/health/route.ts
  * @description Health probe route handler for OrchestrAI Console Web frontend.
- * @module @orchestrai/console/api/v1/health
+ * @module @orchestr-ai/console/api/v1/health
  */
 
 import { NextResponse } from "next/server";

@@ -3,7 +3,7 @@
  * @description Decision processing coordinator validating operator verdicts and argument overrides.
  */
 
-import { OrchestrAIError } from "@orchestrai/core";
+import { OrchestrAIError } from "@orchestr-ai/core";
 import {
   ApprovalResolutionInputSchema,
   ApprovalDecisionVerdict,

@@ -1,7 +1,7 @@
 /**
  * @file packages/prompts/src/system/index.ts
  * @description Barrel export for system prompt definitions, mode instructions, and platform rules.
- * @module @orchestrai/prompts/system
+ * @module @orchestr-ai/prompts/system
  */
 
 export * from "./autonomous-tools.prompt";

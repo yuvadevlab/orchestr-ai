@@ -9,7 +9,7 @@
 import { useQuery, type UseQueryResult } from "@tanstack/react-query";
 import { getApiClient } from "@/lib/api-client";
 import { useAuth } from "@/lib/auth";
-import type { PlatformCommandRecord } from "@orchestrai/shared-types";
+import type { PlatformCommandRecord } from "@orchestr-ai/shared-types";
 
 /**
  * Queries active platform slash commands from the Gateway API.

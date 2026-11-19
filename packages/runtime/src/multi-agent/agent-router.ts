@@ -1,7 +1,7 @@
 /**
  * @file agent-router.ts
  * @description Inter-agent message router enabling peer-to-peer and supervisor-to-subagent communications.
- * @module @orchestrai/runtime/multi-agent
+ * @module @orchestr-ai/runtime/multi-agent
  */
 
 /** Inter-agent task delegation message payload */

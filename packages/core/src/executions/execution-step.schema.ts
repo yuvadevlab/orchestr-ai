@@ -4,7 +4,7 @@
  */
 
 import { z } from "zod";
-import { StepStatus, StepType } from "@orchestrai/shared-types";
+import { StepStatus, StepType } from "@orchestr-ai/shared-types";
 import { ExecutionIdSchema, StepIdSchema } from "@/identifiers";
 
 /**

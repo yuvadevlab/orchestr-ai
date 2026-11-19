@@ -3,7 +3,11 @@
  * @description Domain service for managing human-in-the-loop approval tickets and resolution.
  */
 
-import { ApprovalStatus, ApprovalDecisionVerdict, PermissionScope } from "@orchestrai/shared-types";
+import {
+  ApprovalStatus,
+  ApprovalDecisionVerdict,
+  PermissionScope,
+} from "@orchestr-ai/shared-types";
 import type { ApprovalFilterDto, ResolveApprovalDto } from "@/validation";
 import { permissionPolicyManager } from "@/modules/permission";
 

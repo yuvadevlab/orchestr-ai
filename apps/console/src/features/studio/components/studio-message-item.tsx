@@ -8,12 +8,12 @@
 
 import React, { useState } from "react";
 import { Bot, Check, Copy, Sparkles } from "lucide-react";
-import { Button, Badge } from "@orchestrai/ui";
+import { Button, Badge } from "@orchestr-ai/ui";
 import { UI_COPY } from "@/lib/ui-copy";
 import { MarkdownRenderer } from "@/components/markdown-renderer";
 import { StudioThinkingBlock } from "./studio-thinking-block";
 import { StudioPlanCard } from "./studio-plan-card";
-import { CoworkMessageRole, MessageSegmentType } from "@orchestrai/shared-types";
+import { CoworkMessageRole, MessageSegmentType } from "@orchestr-ai/shared-types";
 import { ArtifactRenderer } from "./artifacts";
 import { ApprovalDecisionChip } from "./approval-decision-chip";
 import type { CoworkMessage } from "../types";

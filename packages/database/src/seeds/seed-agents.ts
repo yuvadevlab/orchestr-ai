@@ -3,7 +3,7 @@
  * @description Idempotent seeder for default workspace tenant and specialist agents.
  * Preserves existing database data with zero deletion or truncation.
  * Uses canonical enums for mode and scope.
- * @module @orchestrai/database/seeds
+ * @module @orchestr-ai/database/seeds
  */
 
 import type { PrismaClient, Prisma } from "@prisma/client";
@@ -12,7 +12,7 @@ import {
   PlatformScope,
   AgentRoleSlug,
   PlatformToolName,
-} from "@orchestrai/shared-types";
+} from "@orchestr-ai/shared-types";
 
 export const DEFAULT_TENANT_ID = "e84e82d6-5e8f-4ba4-a242-86747fe88107";
 const DEFAULT_SEED_MODEL = process.env.DEFAULT_MODEL_NAME || "";

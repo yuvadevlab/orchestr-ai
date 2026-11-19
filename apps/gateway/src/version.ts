@@ -2,7 +2,7 @@
  * @file apps/gateway/src/version.ts
  * @description Dynamic application version and build metadata for OrchestrAI Gateway.
  * Implements Big Tech hybrid SemVer + Git SHA observability without hardcoded strings.
- * @module @orchestrai/gateway/version
+ * @module @orchestr-ai/gateway/version
  */
 
 import pkg from "../package.json";

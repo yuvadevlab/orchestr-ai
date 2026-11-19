@@ -3,9 +3,9 @@
  * @description Strategy implementation for adaptive AUTO mode.
  */
 
-import { AgentMode } from "@orchestrai/shared-types";
-import { AUTO_MODE_SYSTEM_PROMPT } from "@orchestrai/prompts";
-import type { ITool } from "@orchestrai/tools";
+import { AgentMode } from "@orchestr-ai/shared-types";
+import { AUTO_MODE_SYSTEM_PROMPT } from "@orchestr-ai/prompts";
+import type { ITool } from "@orchestr-ai/tools";
 import type { IModeStrategy } from "./mode-strategy.interface";
 
 /**
@@ -16,7 +16,7 @@ export class AutoModeStrategy implements IModeStrategy {
   public readonly mode = AgentMode.AUTO;
 
   /**
-   * Returns canonical system guidance for AUTO mode from @orchestrai/prompts.
+   * Returns canonical system guidance for AUTO mode from @orchestr-ai/prompts.
    */
   public getSystemInstructions(): string {
     return AUTO_MODE_SYSTEM_PROMPT;

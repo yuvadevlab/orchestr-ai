@@ -1,6 +1,6 @@
 /**
  * @file packages/agent/src/index.ts
- * @description Public API surface for `@orchestrai/agent`.
+ * @description Public API surface for `@orchestr-ai/agent`.
  *
  * ─── Package Invariant ─────────────────────────────────────────────
  * This package implements the core Agent Loop, State Transitions,

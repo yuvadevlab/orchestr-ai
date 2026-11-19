@@ -3,10 +3,10 @@
  * @description Tool execution node running cleared tools in the sandboxed runner.
  */
 
-import { ToolResultStatus } from "@orchestrai/shared-types";
-import type { AIMessage, ToolResult } from "@orchestrai/core";
-import { executeTool } from "@orchestrai/tools";
-import { createToolResultMessage } from "@orchestrai/agent";
+import { ToolResultStatus } from "@orchestr-ai/shared-types";
+import type { AIMessage, ToolResult } from "@orchestr-ai/core";
+import { executeTool } from "@orchestr-ai/tools";
+import { createToolResultMessage } from "@orchestr-ai/agent";
 import type { NodeFunction } from "@/graph";
 import type { RuntimeGraphState, RuntimeNodeDependencies } from "./node.types";
 

@@ -5,8 +5,8 @@
  */
 
 import { Redis } from "ioredis";
-import { AgentExecutionProducer, JobPriority } from "@orchestrai/queue";
-import type { ExecutionId, AgentId, TenantId, TraceId } from "@orchestrai/core";
+import { AgentExecutionProducer, JobPriority } from "@orchestr-ai/queue";
+import type { ExecutionId, AgentId, TenantId, TraceId } from "@orchestr-ai/core";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
 
 const logger = loggerWithConfig(new Logger("AgentQueueProducer"));

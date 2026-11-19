@@ -4,7 +4,7 @@
  * @module apps/gateway/services
  */
 
-import { PermissionScope, ApprovalRiskLevel } from "@orchestrai/shared-types";
+import { PermissionScope, ApprovalRiskLevel } from "@orchestr-ai/shared-types";
 export { PermissionScope, ApprovalRiskLevel };
 
 /**

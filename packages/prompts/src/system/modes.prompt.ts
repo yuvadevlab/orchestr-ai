@@ -1,10 +1,10 @@
 /**
  * @file packages/prompts/src/system/modes.prompt.ts
  * @description Centralized, canonical system prompt instructions for all AgentMode strategies.
- * @module @orchestrai/prompts/system
+ * @module @orchestr-ai/prompts/system
  */
 
-import { AgentMode } from "@orchestrai/shared-types";
+import { AgentMode } from "@orchestr-ai/shared-types";
 
 /**
  * System guidance for conversational CHAT mode.

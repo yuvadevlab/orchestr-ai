@@ -9,7 +9,7 @@
  */
 
 import { useCallback, useRef, useState } from "react";
-import { PermissionScope, CoworkMessageRole, StudioEventType } from "@orchestrai/shared-types";
+import { PermissionScope, CoworkMessageRole, StudioEventType } from "@orchestr-ai/shared-types";
 import { getApiClient } from "@/lib/api-client";
 import { formatApiError } from "@/lib/error-utils";
 import { useResolveApproval } from "../api";

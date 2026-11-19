@@ -1,6 +1,6 @@
 /**
  * @file packages/shared-types/src/index.ts
- * @description Main entry point for `@orchestrai/shared-types`.
+ * @description Main entry point for `@orchestr-ai/shared-types`.
  * Exports shared enums, system constants, and universal type contracts.
  */
 

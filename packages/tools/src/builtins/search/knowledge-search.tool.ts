@@ -1,12 +1,12 @@
 /**
  * @file packages/tools/src/builtins/search/knowledge-search.tool.ts
  * @description Safe semantic retrieval tool searching ingested vector knowledge bases.
- * @module @orchestrai/tools/builtins/search
+ * @module @orchestr-ai/tools/builtins/search
  */
 
 import { z } from "zod";
-import { ToolPermissionLevel } from "@orchestrai/shared-types";
-import type { ToolDefinition } from "@orchestrai/core";
+import { ToolPermissionLevel } from "@orchestr-ai/shared-types";
+import type { ToolDefinition } from "@orchestr-ai/core";
 import type { ITool, ToolExecutionContext } from "@/interfaces";
 
 /**

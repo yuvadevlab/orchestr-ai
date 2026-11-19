@@ -1,5 +1,5 @@
 {
-  "name": "@orchestrai/prompts",
+  "name": "@orchestr-ai/prompts",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -21,7 +21,7 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@orchestrai/shared-types": "workspace:*"
+    "@orchestr-ai/shared-types": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^26.6.1",

@@ -1,7 +1,7 @@
 /**
  * @file packages/model-router/src/index.ts
- * @description Master entry point for @orchestrai/model-router package.
- * @module @orchestrai/model-router
+ * @description Master entry point for @orchestr-ai/model-router package.
+ * @module @orchestr-ai/model-router
  */
 
 export * from "./types";

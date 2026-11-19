@@ -1,7 +1,7 @@
 /**
  * @file packages/core/src/cqrs/index.ts
  * @description Barrel export for CQRS command definitions and bus interfaces.
- * @module @orchestrai/core/cqrs
+ * @module @orchestr-ai/core/cqrs
  */
 
 export * from "./command-bus.port";

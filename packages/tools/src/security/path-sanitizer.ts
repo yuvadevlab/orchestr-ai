@@ -1,12 +1,12 @@
 /**
  * @file packages/tools/src/security/path-sanitizer.ts
  * @description Path jail and directory traversal protection for filesystem tools with multi-root support.
- * @module @orchestrai/tools/security
+ * @module @orchestr-ai/tools/security
  */
 
 import fs from "node:fs";
 import path from "node:path";
-import { OrchestrAIError } from "@orchestrai/core";
+import { OrchestrAIError } from "@orchestr-ai/core";
 import { expandUserHome } from "./sensitive-path.detector";
 
 /**

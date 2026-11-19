@@ -1,7 +1,7 @@
 /**
  * @file packages/regex/src/mode.regex.ts
  * @description Lexical regular expression patterns for dynamic agent mode intent classification.
- * @module @orchestrai/regex
+ * @module @orchestr-ai/regex
  */
 
 /**

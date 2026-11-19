@@ -3,7 +3,7 @@
  * @description Formats and commits execution run episodes into episodic memory items.
  */
 
-import { MemoryType } from "@orchestrai/shared-types";
+import { MemoryType } from "@orchestr-ai/shared-types";
 import type { IMemoryStorage, MemoryItem } from "../contracts";
 import type { EpisodeRecord } from "./episode.types";
 

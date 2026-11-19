@@ -4,7 +4,7 @@
  * @module apps/console/features/memory
  */
 
-import { MemoryType } from "@orchestrai/shared-types";
+import { MemoryType } from "@orchestr-ai/shared-types";
 
 export { MemoryType };
 

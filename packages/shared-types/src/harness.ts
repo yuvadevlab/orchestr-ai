@@ -2,7 +2,7 @@
  * @file packages/shared-types/src/harness.ts
  * @description Type definitions and contracts for Agent Harness Engineering, workspace markdown
  * discovery (AGENTS.md, rules, skills), code verification gates, and diagnostics reporting.
- * @module @orchestrai/shared-types
+ * @module @orchestr-ai/shared-types
  */
 
 /**

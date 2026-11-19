@@ -1,10 +1,10 @@
 /**
  * @file packages/model-router/src/types.ts
  * @description Types and contracts governing model deployment routing, candidates, and cascades.
- * @module @orchestrai/model-router
+ * @module @orchestr-ai/model-router
  */
 
-import type { RoutingStrategy, RouterFallbackReason } from "@orchestrai/shared-types";
+import type { RoutingStrategy, RouterFallbackReason } from "@orchestr-ai/shared-types";
 
 /**
  * Candidate deployment endpoint capable of executing inference requests.

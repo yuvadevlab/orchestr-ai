@@ -3,10 +3,10 @@
  * @description Core step controller and execution engine for autonomous agents.
  */
 
-import { AgentMode, MessageRole, ToolPermissionLevel } from "@orchestrai/shared-types";
-import { AIMessageSchema, type AIMessage, type AgentDefinition } from "@orchestrai/core";
-import type { ILlmAdapter } from "@orchestrai/models";
-import type { ToolRegistry } from "@orchestrai/tools";
+import { AgentMode, MessageRole, ToolPermissionLevel } from "@orchestr-ai/shared-types";
+import { AIMessageSchema, type AIMessage, type AgentDefinition } from "@orchestr-ai/core";
+import type { ILlmAdapter } from "@orchestr-ai/models";
+import type { ToolRegistry } from "@orchestr-ai/tools";
 import type { AgentStateMachine } from "@/state";
 import { compilePrompt } from "@/compiler";
 import {

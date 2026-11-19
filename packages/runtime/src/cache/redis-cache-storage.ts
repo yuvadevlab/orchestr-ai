@@ -1,7 +1,7 @@
 /**
  * @file redis-cache-storage.ts
  * @description Distributed Redis-backed cache storage implementation.
- * @module @orchestrai/runtime/cache
+ * @module @orchestr-ai/runtime/cache
  */
 
 import type { ICacheStorage, CacheOptions } from "./cache-storage.interface";

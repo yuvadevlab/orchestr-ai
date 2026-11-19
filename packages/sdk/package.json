@@ -1,5 +1,5 @@
 {
-  "name": "@orchestrai/sdk",
+  "name": "@orchestr-ai/sdk",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -21,7 +21,7 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@orchestrai/shared-types": "workspace:*"
+    "@orchestr-ai/shared-types": "workspace:*"
   },
   "devDependencies": {
     "tsup": "^8.5.1",

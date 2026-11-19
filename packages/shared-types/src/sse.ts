@@ -1,7 +1,7 @@
 /**
  * @file packages/shared-types/src/sse.ts
  * @description Strongly-typed Server-Sent Event (SSE) payload contracts and wire envelopes.
- * @module @orchestrai/shared-types
+ * @module @orchestr-ai/shared-types
  */
 
 import { SseStreamEvent } from "./enums/studio.enums";

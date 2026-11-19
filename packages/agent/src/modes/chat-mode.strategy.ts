@@ -3,9 +3,9 @@
  * @description Strategy implementation for conversational CHAT mode.
  */
 
-import { AgentMode, ToolPermissionLevel } from "@orchestrai/shared-types";
-import { CHAT_MODE_SYSTEM_PROMPT } from "@orchestrai/prompts";
-import type { ITool } from "@orchestrai/tools";
+import { AgentMode, ToolPermissionLevel } from "@orchestr-ai/shared-types";
+import { CHAT_MODE_SYSTEM_PROMPT } from "@orchestr-ai/prompts";
+import type { ITool } from "@orchestr-ai/tools";
 import type { IModeStrategy } from "./mode-strategy.interface";
 
 /**
@@ -16,7 +16,7 @@ export class ChatModeStrategy implements IModeStrategy {
   public readonly mode = AgentMode.CHAT;
 
   /**
-   * Returns canonical system guidance for CHAT mode from @orchestrai/prompts.
+   * Returns canonical system guidance for CHAT mode from @orchestr-ai/prompts.
    */
   public getSystemInstructions(): string {
     return CHAT_MODE_SYSTEM_PROMPT;

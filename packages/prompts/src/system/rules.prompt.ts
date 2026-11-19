@@ -1,7 +1,7 @@
 /**
  * @file packages/prompts/src/system/rules.prompt.ts
  * @description Centralized, single source of truth for platform rules and invariant enforcement prompts.
- * @module @orchestrai/prompts/system
+ * @module @orchestr-ai/prompts/system
  */
 
 /**

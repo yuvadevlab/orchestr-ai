@@ -4,9 +4,9 @@
  * @module apps/gateway/repositories
  */
 
-import type { PrismaClient } from "@orchestrai/database";
-import type { SessionEntity, ListSessionsFilter } from "@orchestrai/core";
-import type { PaginatedResult } from "@orchestrai/shared-types";
+import type { PrismaClient } from "@orchestr-ai/database";
+import type { SessionEntity, ListSessionsFilter } from "@orchestr-ai/core";
+import type { PaginatedResult } from "@orchestr-ai/shared-types";
 import { Logger, loggerWithConfig } from "@yuva-devlab/logger";
 import { mapConversationToSessionEntity } from "./session-entity.mapper";
 

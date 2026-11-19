@@ -9,7 +9,7 @@ import { ClientSession, ConnectionRegistry } from "@/connection";
 import { SubscriptionManager } from "@/subscriptions";
 import { ChannelTopics } from "@/contracts";
 import { configureSseHeaders, sendSseEvent, sendSseKeepalive, closeSseStream } from "./sse-channel";
-import { LOCALHOST_ORIGIN_REGEX } from "@orchestrai/regex";
+import { LOCALHOST_ORIGIN_REGEX } from "@orchestr-ai/regex";
 
 const logger = loggerWithConfig(new Logger("SseHandler"));
 

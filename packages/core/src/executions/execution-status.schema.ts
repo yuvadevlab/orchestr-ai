@@ -4,7 +4,7 @@
  */
 
 import { z } from "zod";
-import { ExecutionStatus } from "@orchestrai/shared-types";
+import { ExecutionStatus } from "@orchestr-ai/shared-types";
 
 /**
  * Valid lifecycle states for an execution run backed by ExecutionStatus enum.

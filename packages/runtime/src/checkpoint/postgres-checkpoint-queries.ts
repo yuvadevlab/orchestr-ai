@@ -1,7 +1,7 @@
 /**
  * @file packages/runtime/src/checkpoint/postgres-checkpoint-queries.ts
  * @description Centralized SQL query catalog and typed row interfaces for execution checkpoint storage.
- * @module @orchestrai/runtime/checkpoint
+ * @module @orchestr-ai/runtime/checkpoint
  */
 
 /**

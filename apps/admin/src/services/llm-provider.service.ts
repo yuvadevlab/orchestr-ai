@@ -9,8 +9,8 @@ import {
   type PrismaClient,
   type LlmProvider,
   type Prisma,
-} from "@orchestrai/database";
-import type { LlmProviderRecord } from "@orchestrai/shared-types";
+} from "@orchestr-ai/database";
+import type { LlmProviderRecord } from "@orchestr-ai/shared-types";
 
 /**
  * Payload interface for registering or modifying an LLM provider.

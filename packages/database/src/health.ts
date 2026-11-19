@@ -1,7 +1,7 @@
 /**
  * @file packages/database/src/health.ts
  * @description Health check probes and latency diagnostics for PostgreSQL.
- * @module @orchestrai/database
+ * @module @orchestr-ai/database
  */
 
 import { getOrCreatePool } from "./pool";

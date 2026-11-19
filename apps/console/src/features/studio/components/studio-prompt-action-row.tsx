@@ -8,9 +8,9 @@
 
 import React from "react";
 import { ArrowUp, Square } from "lucide-react";
-import { Button } from "@orchestrai/ui";
+import { Button } from "@orchestr-ai/ui";
 import type { SpecialistPersona } from "../types";
-import type { LlmModelRecord, PlatformModeRecord } from "@orchestrai/shared-types";
+import type { LlmModelRecord, PlatformModeRecord } from "@orchestr-ai/shared-types";
 import { StudioFileAttachment, type AttachedFile } from "./studio-file-attachment";
 import { StudioPromptBarSelectors } from "./studio-prompt-bar-selectors";
 import { UI_COPY } from "@/lib/ui-copy";

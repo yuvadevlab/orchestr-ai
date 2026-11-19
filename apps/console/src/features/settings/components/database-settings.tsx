@@ -8,7 +8,7 @@ import {
   Input,
   Label,
   Switch,
-} from "@orchestrai/ui";
+} from "@orchestr-ai/ui";
 import { Database } from "lucide-react";
 import { UI_COPY } from "@/lib/ui-copy";
 

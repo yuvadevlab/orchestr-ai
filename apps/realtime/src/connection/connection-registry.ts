@@ -3,7 +3,7 @@
  * @description Thread-safe in-memory registry tracking concurrent client sessions and capacity limits.
  */
 
-import { OrchestrAIError } from "@orchestrai/core";
+import { OrchestrAIError } from "@orchestr-ai/core";
 import type { ClientSession } from "./client-session";
 
 export interface ConnectionRegistryStats {

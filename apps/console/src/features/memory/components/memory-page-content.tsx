@@ -8,10 +8,10 @@
 
 import React, { useState } from "react";
 import { Plus, Search, Sparkles, Brain } from "lucide-react";
-import { Button, Input } from "@orchestrai/ui";
-import { MemoryType } from "@orchestrai/shared-types";
+import { Button, Input } from "@orchestr-ai/ui";
+import { MemoryType } from "@orchestr-ai/shared-types";
 import { PageShell } from "@/components/layout/page-shell";
-import { EmptyState, TableSkeleton, DynamicErrorState } from "@orchestrai/ui";
+import { EmptyState, TableSkeleton, DynamicErrorState } from "@orchestr-ai/ui";
 import { useMemories } from "../api";
 import { UI_COPY } from "@/lib/ui-copy";
 import { MemoryCreateDialog } from "./memory-create-dialog";

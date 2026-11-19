@@ -4,8 +4,8 @@
  */
 
 import type { Redis } from "ioredis";
-import { QUEUE_NAMES } from "@orchestrai/shared-types";
-import type { AgentExecutionJobPayload } from "@orchestrai/queue";
+import { QUEUE_NAMES } from "@orchestr-ai/shared-types";
+import type { AgentExecutionJobPayload } from "@orchestr-ai/queue";
 import { BaseWorker } from "./base.worker";
 import { createAgentExecutionProcessor } from "@/processors";
 import type { AgentJobExecutionResult, AgentJobHandlerDependencies } from "@/jobs/agent";

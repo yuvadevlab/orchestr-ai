@@ -1,7 +1,7 @@
 /**
  * @file packages/prompts/src/personas/researcher.prompt.ts
  * @description Research and Discovery specialist persona prompt constant.
- * @module @orchestrai/prompts/personas
+ * @module @orchestr-ai/prompts/personas
  */
 
 /**

@@ -4,8 +4,8 @@
  */
 
 import type { Redis } from "ioredis";
-import { QUEUE_NAMES } from "@orchestrai/shared-types";
-import type { DeadLetterJobPayload } from "@orchestrai/queue";
+import { QUEUE_NAMES } from "@orchestr-ai/shared-types";
+import type { DeadLetterJobPayload } from "@orchestr-ai/queue";
 import { BaseWorker } from "./base.worker";
 import { createDeadLetterProcessor, type DeadLetterResult } from "@/processors";
 

@@ -4,7 +4,7 @@
  * @module packages/models/adapters/anthropic
  */
 
-import { MessageRole, type AIMessage } from "@orchestrai/core";
+import { MessageRole, type AIMessage } from "@orchestr-ai/core";
 
 /** Minimal structural type for the @anthropic-ai/sdk client */
 export interface AnthropicClientLike {

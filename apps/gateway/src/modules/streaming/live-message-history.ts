@@ -3,14 +3,14 @@
  * @description Helper for reconstructing multi-turn conversational message history for agent executions.
  *
  * ─── Package Wiring & Rule Adoption ─────────────────────────────────────────
- * @orchestrai/prompts
+ * @orchestr-ai/prompts
  *   - AUTONOMOUS_TOOLS_SYSTEM_PROMPT → Canonical tool-calling instructions
  *   - SPECIALIST_PERSONA_REGISTRY → Agent persona resolved from DB role field
  *   - CORE_PLATFORM_RULES_PROMPT → Automatically adopted platform invariants
  *   - SAFETY_GUARDRAILS_SYSTEM_PROMPT → Automatically adopted safety rules
  *   - MODE_PROMPT_REGISTRY → Dynamic instructions matching picked AgentMode
  *
- * All prompt templates and invariants originate from @orchestrai/prompts — the single source of truth.
+ * All prompt templates and invariants originate from @orchestr-ai/prompts — the single source of truth.
  * ────────────────────────────────────────────────────────────────────────────
  *
  * @module apps/gateway/modules/streaming
@@ -19,7 +19,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { randomUUID } from "node:crypto";
-import { MessageRole, AgentMode } from "@orchestrai/shared-types";
+import { MessageRole, AgentMode } from "@orchestr-ai/shared-types";
 import {
   AUTONOMOUS_TOOLS_SYSTEM_PROMPT,
   SPECIALIST_PERSONA_REGISTRY,
@@ -27,7 +27,7 @@ import {
   SAFETY_GUARDRAILS_SYSTEM_PROMPT,
   MODE_PROMPT_REGISTRY,
   AUTO_MODE_SYSTEM_PROMPT,
-} from "@orchestrai/prompts";
+} from "@orchestr-ai/prompts";
 import { resolveMonorepoRoot } from "@/modules/streaming/autonomous-agent-runner";
 
 export interface LiveMessage {
@@ -70,8 +70,8 @@ Current Environment & Workspace Context:
 
 /**
  * Builds the composite system prompt for an execution by combining:
- *  1. Specialist persona from @orchestrai/prompts (developer, researcher, architect, orchestrator)
- *  2. Automatically adopted platform rules and safety invariants from @orchestrai/prompts
+ *  1. Specialist persona from @orchestr-ai/prompts (developer, researcher, architect, orchestrator)
+ *  2. Automatically adopted platform rules and safety invariants from @orchestr-ai/prompts
  *  3. Dynamic operating mode strategy instructions (CHAT, PLAN, ACT, AUTO)
  *  4. Canonical autonomous tool calling instructions (omitted in CHAT mode)
  *  5. Optional caller-supplied override instructions

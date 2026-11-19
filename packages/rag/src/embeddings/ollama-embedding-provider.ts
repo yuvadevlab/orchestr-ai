@@ -3,7 +3,7 @@
  * @description HTTP client for Ollama embedding models (e.g. nomic-embed-text, all-minilm).
  */
 
-import { RagError } from "@orchestrai/core";
+import { RagError } from "@orchestr-ai/core";
 import type { IEmbeddingProvider } from "./embedding-provider.interface";
 
 /**

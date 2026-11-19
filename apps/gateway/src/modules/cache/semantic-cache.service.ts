@@ -1,6 +1,6 @@
 /**
  * @file apps/gateway/src/modules/cache/semantic-cache.service.ts
- * @description Enterprise semantic vector cache wiring @orchestrai/semantic-cache into the gateway.
+ * @description Enterprise semantic vector cache wiring @orchestr-ai/semantic-cache into the gateway.
  * Dynamically configured from database platform_configs with zero hardcoding.
  * @module apps/gateway/modules/cache
  */

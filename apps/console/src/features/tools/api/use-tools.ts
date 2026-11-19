@@ -14,7 +14,7 @@ import {
   type UseQueryResult,
   type UseMutationResult,
 } from "@tanstack/react-query";
-import { toast } from "@orchestrai/ui";
+import { toast } from "@orchestr-ai/ui";
 import { getApiClient } from "@/lib/api-client";
 import { useAuth } from "@/lib/auth";
 import { UI_COPY } from "@/lib/ui-copy";

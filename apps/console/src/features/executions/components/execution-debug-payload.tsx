@@ -8,7 +8,7 @@
 
 import React, { useState } from "react";
 import { Check, Copy } from "lucide-react";
-import { Button } from "@orchestrai/ui";
+import { Button } from "@orchestr-ai/ui";
 import type { ExecutionRun } from "../types";
 import { UI_COPY } from "@/lib/ui-copy";
 

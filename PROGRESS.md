@@ -9,13 +9,13 @@ Live progress tracking for the **OrchestrAI** Universal Autonomous AI Agent & Co
 ### Milestone 1: Monorepo Foundation & Core Contracts
 
 - [x] Turborepo + pnpm v12 monorepo setup (`apps/*`, `packages/*`)
-- [x] `@orchestrai/core` — Zero-dependency source of truth for all domain types, enums, and schemas
-- [x] `@orchestrai/shared-types` — Protocol enums (`AgentMode`, `ExecutionStatus`, `ModelProvider`)
+- [x] `@orchestr-ai/core` — Zero-dependency source of truth for all domain types, enums, and schemas
+- [x] `@orchestr-ai/shared-types` — Protocol enums (`AgentMode`, `ExecutionStatus`, `ModelProvider`)
 - [x] Conventional Commits + Commitlint + Husky pre-commit quality gates
 
 ---
 
-### Milestone 2: Enterprise Database & Persistence (`@orchestrai/database`)
+### Milestone 2: Enterprise Database & Persistence (`@orchestr-ai/database`)
 
 - [x] Native PostgreSQL 16 + Prisma 7 ORM pipeline (Zero-Docker required)
 - [x] Declarative schema (`schema.prisma`) with 15 production models (Tenants, Users, Agents, Executions, Conversations, Messages, Memory, Outbox)
@@ -77,22 +77,22 @@ Live progress tracking for the **OrchestrAI** Universal Autonomous AI Agent & Co
 
 ### Milestone 7: Domain Engines & Tooling Packages
 
-- [x] `@orchestrai/models` — Unified adapter registry for Ollama (local), Groq, OpenRouter, Google AI Studio, OpenAI, Anthropic
-- [x] `@orchestrai/tools` — Sandboxed tool execution registry with permission levels (`READ_ONLY`, `WRITE_SAFE`, `SENSITIVE`, `DANGEROUS`)
-- [x] `@orchestrai/agent` — Autonomous agent execution loop, state machines, and reflection
-- [x] `@orchestrai/runtime` — Multi-step DAG orchestration with checkpoint recovery
-- [x] `@orchestrai/queue` — BullMQ job producers with priority scheduling
-- [x] `@orchestrai/events` — Distributed event bus, outbox pattern, and idempotency store
-- [x] `@orchestrai/memory` — Multi-tiered short-term, episodic, and semantic memory stores
-- [x] `@orchestrai/rag` — Document chunking, vector indexing, and embedding retrieval
-- [x] `@orchestrai/observability` — OpenTelemetry distributed tracing and structured JSON logging
-- [x] `@orchestrai/sdk` — TypeScript client library for Gateway integrations
+- [x] `@orchestr-ai/models` — Unified adapter registry for Ollama (local), Groq, OpenRouter, Google AI Studio, OpenAI, Anthropic
+- [x] `@orchestr-ai/tools` — Sandboxed tool execution registry with permission levels (`READ_ONLY`, `WRITE_SAFE`, `SENSITIVE`, `DANGEROUS`)
+- [x] `@orchestr-ai/agent` — Autonomous agent execution loop, state machines, and reflection
+- [x] `@orchestr-ai/runtime` — Multi-step DAG orchestration with checkpoint recovery
+- [x] `@orchestr-ai/queue` — BullMQ job producers with priority scheduling
+- [x] `@orchestr-ai/events` — Distributed event bus, outbox pattern, and idempotency store
+- [x] `@orchestr-ai/memory` — Multi-tiered short-term, episodic, and semantic memory stores
+- [x] `@orchestr-ai/rag` — Document chunking, vector indexing, and embedding retrieval
+- [x] `@orchestr-ai/observability` — OpenTelemetry distributed tracing and structured JSON logging
+- [x] `@orchestr-ai/sdk` — TypeScript client library for Gateway integrations
 
 ---
 
 ### Milestone 8: Autonomous Multi-Turn Execution & HITL Multi-Workspace Security
 
-- [x] `@orchestrai/prompts` — Centralized persona prompts, autonomous tool prompt specifications, and template builders
+- [x] `@orchestr-ai/prompts` — Centralized persona prompts, autonomous tool prompt specifications, and template builders
 - [x] Multi-Workspace Trust Engine (`PermissionPolicyManager`) with `.orchestrai/permissions.json` file-backed persistence
 - [x] Continuous Multi-Turn Context Memory — Dynamic message history passing across turns ensuring LLM context retention
 - [x] PostgreSQL Thread & Message Persistence — Synchronizing user prompts and assistant outputs into Prisma `conversations` and `messages` tables
@@ -136,7 +136,7 @@ Live progress tracking for the **OrchestrAI** Universal Autonomous AI Agent & Co
 - [x] **Capability Evaluations Hub (`/evaluations`)**: Benchmark evaluation runner against model engines, interactive accuracy gauge, latency breakdowns, and dataset catalogue.
 - [x] **OpenTelemetry Span Waterfall (`/executions/[executionId]`)**: Real-time visualization of execution sub-task spans, start offsets, durations, and attribute inspectors.
 - [x] **API Hook Architecture Standard (`api/use-*.ts`)**: Decomposed all API mutations and queries into dedicated `use-*.ts` files under `features/<feature>/api/` (`use-upload-document.ts`, `use-ingest-document.ts`, `use-knowledge-documents.ts`, `use-delete-document.ts`, `use-query-knowledge.ts`, `use-memories.ts`, `use-create-memory.ts`, `use-delete-memory.ts`, `use-search-memories.ts`, `use-evaluation-datasets.ts`, `use-run-benchmark.ts`). Zero direct `client.http.request` routes in TSX presentation layers.
-- [x] **Enum Normalization & Lowercase snake_case Invariant**: Shared enums (`DocumentUploadStatus`, `TraceSpanStatus`, `DocumentMimeType`, `BenchmarkDatasetName`, `MemoryType`, `PermissionScope`, `ApprovalRiskLevel`, `ArtifactType`, `ArtifactStatus`, `PlanStepStatus`, `EpisodeOutcome`) in `@orchestrai/shared-types`. Modularized `packages/shared-types/src/enums/` to keep all files < 250 lines. Zero raw string comparisons in UI or services.
+- [x] **Enum Normalization & Lowercase snake_case Invariant**: Shared enums (`DocumentUploadStatus`, `TraceSpanStatus`, `DocumentMimeType`, `BenchmarkDatasetName`, `MemoryType`, `PermissionScope`, `ApprovalRiskLevel`, `ArtifactType`, `ArtifactStatus`, `PlanStepStatus`, `EpisodeOutcome`) in `@orchestr-ai/shared-types`. Modularized `packages/shared-types/src/enums/` to keep all files < 250 lines. Zero raw string comparisons in UI or services.
 - [x] **Valid RFC 4122 v4 UUID Format**: Eliminated synthetic/fake non-UUID strings (`"d1a10001-..."`, `"eval-msg"`). Implemented standard `randomUUID()` generation adhering to `EvaluationDatasetSchema` and `ChatMessageSchema`.
 - [x] **Single-Toolbar UI Standard (Zero Nested Search Bars)**: Redesigned Knowledge and Memory hubs to strictly match the canonical `/agents` page pattern. Removed inline query/recall boxes with duplicate search bars; converted query/recall testing into accessible modal dialogs (`KnowledgeQueryDialog`, `MemoryRecallDialog`) accessible via header action buttons. Search bar uses native `Input startIcon={<Search className="size-3.5" />}` with zero broken padding or overlapping icons.
 - [x] **Zero Fallback/Dummy Menus**: Completely eliminated hardcoded fallback menus (`DEFAULT_MODES`) in frontend; UI cleanly relies on live database states with accessible loading indicators.
@@ -144,7 +144,7 @@ Live progress tracking for the **OrchestrAI** Universal Autonomous AI Agent & Co
   - Resolved browser CORS preflight (`OPTIONS /api/v1/stream`) failure caused by missing `X-Tenant-ID` and custom headers in `apps/realtime`.
   - Configured dynamic `localhost`/`127.0.0.1` origin reflection, `Access-Control-Allow-Credentials: true`, and socket TCP no-delay (`req.socket.setNoDelay(true)`).
   - Clean stream closure on `done`/`error` events with `res.end()` preventing indefinite socket hang.
-  - Aligned `@orchestrai/sdk` `sse-parser.ts` with W3C SSE standard: only stripped single leading space delimiter (`rawValue.startsWith(" ") ? rawValue.slice(1) : rawValue`) instead of aggressive `.trim()`, preserving inter-word whitespace and newlines for live streaming tokens.
+  - Aligned `@orchestr-ai/sdk` `sse-parser.ts` with W3C SSE standard: only stripped single leading space delimiter (`rawValue.startsWith(" ") ? rawValue.slice(1) : rawValue`) instead of aggressive `.trim()`, preserving inter-word whitespace and newlines for live streaming tokens.
   - Added immediate loop termination (`break;`) on `done` or `[DONE]` events in `use-agent-runner.ts`.
   - Extracted HITL operator approval resolution mutation into `apps/console/src/features/studio/api/use-resolve-approval.ts` per modular API hook architecture guidelines, keeping `use-agent-runner.ts` well under 250 lines (227 lines).
 - [x] **Default-Collapsed Multi-Domain Tool Artifacts & Safe Process Termination**:
@@ -170,8 +170,8 @@ Live progress tracking for the **OrchestrAI** Universal Autonomous AI Agent & Co
   - Created `ResourceRegistryService` in Gateway for URI normalization, target classification, and lazy database indexing.
 - [x] **Capability-Based Permission Abstraction (`capabilities` & `capability_tools`)**:
   - Introduced `Capability` model grouping execution tools under intelligible functional permissions (Filesystem, Repositories, System Execution, Database, APIs, Memory).
-  - Created `seedDefaultCapabilities` utility in `@orchestrai/database` providing idempotent platform capability seeding and tool bindings.
-  - Added `CapabilityDefinitionSchema` and `AgentCapabilityBindingSchema` in `@orchestrai/core`.
+  - Created `seedDefaultCapabilities` utility in `@orchestr-ai/database` providing idempotent platform capability seeding and tool bindings.
+  - Added `CapabilityDefinitionSchema` and `AgentCapabilityBindingSchema` in `@orchestr-ai/core`.
 - [x] **User Authority Chain & Persistent Access Grants (`access_grants` & `permission_requests`)**:
   - Enforced strict user-authority chain: agent cannot self-authorize.
   - Clearance requests persist to `permission_requests` with lifecycle states (`pending`, `approved`, `rejected`, `expired`, `revoked`).
@@ -209,16 +209,16 @@ Live progress tracking for the **OrchestrAI** Universal Autonomous AI Agent & Co
 
 Master architecture specification documented in [`master-architecture-plan.md`](file:///Users/yuvarajpattabi/.gemini/antigravity-ide/brain/8214e84f-c233-4f28-8c2d-354e1c57bf3f/master-architecture-plan.md).
 
-### [x] Phase 0: Shared Domain Contracts & Ports (`@orchestrai/core`, `@orchestrai/shared-types`, `@orchestrai/sdk`)
+### [x] Phase 0: Shared Domain Contracts & Ports (`@orchestr-ai/core`, `@orchestr-ai/shared-types`, `@orchestr-ai/sdk`)
 
-- [x] Define repository interface ports in `@orchestrai/core`: `IExecutionRepository`, `ISessionRepository`, `IAgentRepository`, `IEventPublisher`, `IQueueProducer`
-- [x] Normalize SSE event payload schemas and HITL clearance DTOs in `@orchestrai/shared-types` with zero hardcoded string literals (canonical `SseMessageRole`, `SseToolCallStatus`, `SseDoneStatus`, `ApprovalDecisionVerdict`, `PermissionScope`, `RequestStatus` enums)
-- [x] Define CQRS command contracts in `@orchestrai/core`: `CreateExecutionCommand`, `CancelExecutionCommand`, `ResolveApprovalCommand`, `CreateSessionCommand`, `ICommandBus` with `ExecutionCommandType`, `ApprovalCommandType`, and `SessionCommandType` enums
-- [x] Update `@orchestrai/sdk` client interfaces with typed `AdminResource` (control plane) and `RealtimeResource` (typed SSE streaming)
+- [x] Define repository interface ports in `@orchestr-ai/core`: `IExecutionRepository`, `ISessionRepository`, `IAgentRepository`, `IEventPublisher`, `IQueueProducer`
+- [x] Normalize SSE event payload schemas and HITL clearance DTOs in `@orchestr-ai/shared-types` with zero hardcoded string literals (canonical `SseMessageRole`, `SseToolCallStatus`, `SseDoneStatus`, `ApprovalDecisionVerdict`, `PermissionScope`, `RequestStatus` enums)
+- [x] Define CQRS command contracts in `@orchestr-ai/core`: `CreateExecutionCommand`, `CancelExecutionCommand`, `ResolveApprovalCommand`, `CreateSessionCommand`, `ICommandBus` with `ExecutionCommandType`, `ApprovalCommandType`, and `SessionCommandType` enums
+- [x] Update `@orchestr-ai/sdk` client interfaces with typed `AdminResource` (control plane) and `RealtimeResource` (typed SSE streaming)
 
 ### [x] Phase 1: Gateway Hexagonal Decoupling, CQRS Refactor & Feature-Module Reorganization (`apps/gateway`)
 
-- [x] Implement Prisma repository adapters in `apps/gateway` implementing `@orchestrai/core` ports (`PostgresExecutionRepository`, `PostgresSessionRepository`, `PostgresAgentRepository`, `RedisEventPublisherAdapter`, `BullMQQueueProducerAdapter`)
+- [x] Implement Prisma repository adapters in `apps/gateway` implementing `@orchestr-ai/core` ports (`PostgresExecutionRepository`, `PostgresSessionRepository`, `PostgresAgentRepository`, `RedisEventPublisherAdapter`, `BullMQQueueProducerAdapter`)
 - [x] Extract dedicated domain entity mappers: `execution-entity.mapper.ts`, `session-entity.mapper.ts` — each < 100 lines, JSDoc-rich
 - [x] Structure `apps/gateway` with CQRS command handlers (`CreateExecutionCommandHandler`, `CancelExecutionCommandHandler`, `ResolveApprovalCommandHandler`, `CreateSessionCommandHandler`)
 - [x] Strip direct Prisma calls out of Gateway services; inject repository interfaces at bootstrap in `ExecutionService`
@@ -232,7 +232,7 @@ Master architecture specification documented in [`master-architecture-plan.md`](
 - [x] Scaffold `apps/orchestrator` as a standalone data-plane microservice with ESM + tsup build pipeline
 - [x] Wire `OrchestrAIRuntime` DAG engine, state machine transitions, and Postgres checkpointer (`PoolDatabaseQueryRunner`)
 - [x] Implement deterministic execution state machine (`ExecutionStateMachine`) with strict `Enum.KEY` guards (`OrchestratorState`, `OrchestratorEventType`)
-- [x] Implement `GrpcExecutionService` implementing `@orchestrai/grpc` contracts; wire Gateway `ExecutionDispatcher` to delegate execution runs to Orchestrator via `GrpcClient`
+- [x] Implement `GrpcExecutionService` implementing `@orchestr-ai/grpc` contracts; wire Gateway `ExecutionDispatcher` to delegate execution runs to Orchestrator via `GrpcClient`
 - [x] Stream DAG step events, state changes, and token deltas to Redis Pub/Sub channels (`orchestrai:realtime:execution:<id>`) via `OrchestratorRedisPublisher`
 - [x] Zero hardcoded strings: Added `OrchestratorState`, `OrchestratorEventType`, `OrchestratorPubSubEventName`, `PlatformScope`, `PlatformCapabilitySlug`, `PlatformToolName` in shared enums; updated agent rule files (`AGENTS.md`, `.agents/AGENTS.md`, `00-core-invariants.md`, `coding-standards.md`) to mandate strict `Enum.KEY` usage.
 
@@ -296,13 +296,13 @@ Master architecture specification documented in [`master-architecture-plan.md`](
 
 #### ✅ Completed — Package Activation (gateway)
 
-- [x] **`@orchestrai/billing`** → `billing.service.ts` (new)
+- [x] **`@orchestr-ai/billing`** → `billing.service.ts` (new)
   - `TokenCounter.countMessageTokens()` → compaction trigger (75% context window)
   - `BudgetEnforcer.evaluateBudget()` → per-turn hard gate before each LLM call
   - `CostLedger.recordExpenditure()` → post-turn cost ledger write
   - All cost rates and context windows sourced from DB model record + env vars (zero hardcodes)
 
-- [x] **`@orchestrai/events`** → `domain-event-publisher.ts` (new)
+- [x] **`@orchestr-ai/events`** → `domain-event-publisher.ts` (new)
   - `EXECUTION_STARTED` emitted on first turn → Inspector Rail initialization
   - `TOOL_CALLED` / `TOOL_COMPLETED` around every tool dispatch → observability traces
   - `EXECUTION_COMPLETED` with token totals + duration → memory distillation trigger
@@ -310,14 +310,14 @@ Master architecture specification documented in [`master-architecture-plan.md`](
   - `EXECUTION_CANCELLED` on stop signal → worker dequeue
   - `APPROVAL_REQUESTED` for HITL gate → realtime modal
 
-- [x] **`@orchestrai/resilience`** → wired into `live-turn-executor.ts`
+- [x] **`@orchestr-ai/resilience`** → wired into `live-turn-executor.ts`
   - `createModelResiliencePipeline()` wraps every `OllamaAdapter.stream()` call
   - CircuitBreaker (5 failures → env-configured cooldown)
   - Retry (2 attempts, exponential backoff + full jitter)
   - Deadline (120s per turn)
   - Bulkhead (max 8 concurrent LLM calls)
 
-- [x] **`@orchestrai/prompts`** → wired into `live-message-history.ts`
+- [x] **`@orchestr-ai/prompts`** → wired into `live-message-history.ts`
   - `AUTONOMOUS_TOOLS_SYSTEM_PROMPT` replaces inline system prompt string
   - `SPECIALIST_PERSONA_REGISTRY` resolves agent persona from DB agent role field
   - `buildCompositeSystemPrompt(personaRole, override)` is the single entry point
@@ -329,22 +329,22 @@ Master architecture specification documented in [`master-architecture-plan.md`](
   - Default model name `gemma4:31b-cloud` removed from agent creation fallback
   - `contextWindow` and `costPerTokenUsd` threaded from DB model record through dispatch chain
 
-- [x] **`@orchestrai/semantic-cache`** → wired via `semantic-cache.service.ts` into live turn execution
+- [x] **`@orchestr-ai/semantic-cache`** → wired via `semantic-cache.service.ts` into live turn execution
   - Cosine vector similarity deduplication (threshold 0.97) with `ResilientEmbeddingProvider`
   - Zero-latency, zero-cost cache HIT returns cached response immediately via SSE
   - Auto-caches completed execution outputs on `ExecutionStatus.COMPLETED`
 
-- [x] **`@orchestrai/rag`** → auto-inject top-3 knowledge chunks per execution prompt
+- [x] **`@orchestr-ai/rag`** → auto-inject top-3 knowledge chunks per execution prompt
   - Hybrid retrieval query (`ragService.query`) auto-appends relevant document context
   - Transparent fallback from Ollama embeddings to deterministic mock provider
   - Zero model call bloat when knowledge base is not populated
 
-- [x] **`@orchestrai/model-router`** → `model-router.service.ts`
+- [x] **`@orchestr-ai/model-router`** → `model-router.service.ts`
   - Real-time empirical per-model turn latency tracking via `LatencyTracker`
   - Dynamic routing strategies: `LOWEST_LATENCY`, `LEAST_EXPENSIVE`, `PRIORITY_FALLBACK`
   - Zero hardcoded fallback candidate constants; 100% database & environment driven
 
-- [x] **`@orchestrai/eval`** → auto quality gate on `EXECUTION_COMPLETED` domain event
+- [x] **`@orchestr-ai/eval`** → auto quality gate on `EXECUTION_COMPLETED` domain event
   - `initEvalQualityGate()` subscribes to `domainEventBus` on `DomainEventType.EXECUTION_COMPLETED`
   - Heuristic scoring of output completeness, tool usage, error indicators, and tokens/sec throughput
   - Non-blocking telemetry metrics emitted for operator cockpit
@@ -355,7 +355,7 @@ Master architecture specification documented in [`master-architecture-plan.md`](
   - If a tenant has no configured agent, system fails fast and explicitly informs user to create one
   - Eradicated all `gemma4:31b-cloud` default constants across the entire monorepo
 
-- [x] **`@orchestrai/runtime`** → wire `StateGraph` into `apps/orchestrator` internals
+- [x] **`@orchestr-ai/runtime`** → wire `StateGraph` into `apps/orchestrator` internals
   - `DagExecutionEngine` executes compiled `StateGraph` DAG via `OrchestrAIRuntime`
   - `GrpcExecutionService` resolves real database agent and model configuration
   - Durable PostgreSQL checkpointer persistence across graph transitions
@@ -391,7 +391,7 @@ Master architecture specification documented in [`master-architecture-plan.md`](
 
 ### Milestone 9: DRY Consolidation, Regex Package & Automatic Mode & Rule Engine
 
-#### [x] `@orchestrai/regex` Package (`packages/regex/`)
+#### [x] `@orchestr-ai/regex` Package (`packages/regex/`)
 
 - [x] Centralized all scattered regular expressions into a dedicated, zero-dependency package:
   - `uuid.regex.ts`: Canonical `UUID_REGEX` (v1-v5) and `isUuid()` validator
@@ -400,16 +400,16 @@ Master architecture specification documented in [`master-architecture-plan.md`](
   - `network.regex.ts`: `BLOCKED_IP_PATTERNS`, `LOCALHOST_ORIGIN_REGEX`, `IPV4_REGEX`
   - `uri.regex.ts`: `CANONICAL_URI_REGEX`, `FILE_PROTOCOL_REGEX`, `POSTGRES_PROTOCOL_REGEX`, `REALTIME_CHANNEL_PREFIX_REGEX`, `TOOL_NAME_REGEX`
   - `text.regex.ts`: `EMBEDDING_ARRAY_REGEX`, `MARKDOWN_HEADING_REGEX`, `LEADING_TRAILING_DASH_REGEX`, `ALPHANUMERIC_START_REGEX`, `WORD_SPLIT_REGEX`
-- [x] Refactored all consumers to import from `@orchestrai/regex`:
+- [x] Refactored all consumers to import from `@orchestr-ai/regex`:
   - `packages/agent`, `packages/memory`, `packages/rag`, `packages/tools`, `apps/gateway`, `apps/realtime`, `apps/console`
 
-#### [x] Centralized System Prompts & Invariant Rules (`@orchestrai/prompts`)
+#### [x] Centralized System Prompts & Invariant Rules (`@orchestr-ai/prompts`)
 
 - [x] Extracted mode prompts into `packages/prompts/src/system/modes.prompt.ts`:
   - `CHAT_MODE_SYSTEM_PROMPT`, `PLAN_MODE_SYSTEM_PROMPT`, `ACT_MODE_SYSTEM_PROMPT`, `AUTO_MODE_SYSTEM_PROMPT`, `MODE_PROMPT_REGISTRY`
 - [x] Extracted platform invariants into `packages/prompts/src/system/rules.prompt.ts`:
   - `CORE_PLATFORM_RULES_PROMPT`, `COMPACT_PLATFORM_RULES_PROMPT`
-- [x] Refactored `ChatModeStrategy`, `PlanModeStrategy`, `ActModeStrategy`, `AutoModeStrategy` in `@orchestrai/agent` to source prompts directly from `@orchestrai/prompts`
+- [x] Refactored `ChatModeStrategy`, `PlanModeStrategy`, `ActModeStrategy`, `AutoModeStrategy` in `@orchestr-ai/agent` to source prompts directly from `@orchestr-ai/prompts`
 
 #### [x] Automatic Rule Adoption & Mode Selection Engine
 
@@ -439,7 +439,7 @@ Master architecture specification documented in [`master-architecture-plan.md`](
   - Recent workspaces history drawer with active indicator, single-click switching, and deletion
 - [x] **`WorkspaceSlice` with Asynchronous IndexedDB Persistence**:
   - Persists active workspace and recent workspaces across page reloads without state loss
-  - Safe path normalization and folder name derivation using `@orchestrai/regex`
+  - Safe path normalization and folder name derivation using `@orchestr-ai/regex`
 
 #### [x] Workspace File Exploration API (`apps/gateway`)
 
@@ -458,7 +458,7 @@ Master architecture specification documented in [`master-architecture-plan.md`](
   - Instant mode switching (`/plan`, `/act`, `/chat`, `/auto`)
   - Quick actions: `/clear` (resets conversation thread), `/compact`, `/files`, `/help`
   - Full keyboard navigation (Arrow keys, Enter, Escape)
-- [x] **All Regular Expressions Sourced from `@orchestrai/regex`**:
+- [x] **All Regular Expressions Sourced from `@orchestr-ai/regex`**:
   - Added `prompt.regex.ts` with `MENTION_QUERY_REGEX`, `SLASH_COMMAND_PREFIX_REGEX`, `TRAILING_PATH_SLASH_REGEX`, `PATH_SPLIT_REGEX`
 
 ---
@@ -467,7 +467,7 @@ Master architecture specification documented in [`master-architecture-plan.md`](
 
 #### [x] Dynamic Slash Commands API (`apps/gateway`)
 
-- [x] **Universal Entity Contract (`@orchestrai/shared-types`)**:
+- [x] **Universal Entity Contract (`@orchestr-ai/shared-types`)**:
   - Added `PlatformCommandRecord` interface
 - [x] **Gateway Service & Controller (`apps/gateway/src/modules/platform/`)**:
   - Implemented `PlatformCommandService` managing commands (`listCommands`, `getCommand`, `createCommand`, `updateCommand`, `deleteCommand`)
@@ -579,7 +579,7 @@ Master architecture specification documented in [`master-architecture-plan.md`](
 #### [x] Dynamic Workspace Context & Markdown Discovery (`apps/gateway/src/modules/harness/`)
 
 - [x] **Workspace Instruction Loader (`workspace-instruction-loader.ts`)**: Automatically scans and parses root markdown instructions (`AGENTS.md`, `CLAUDE.md`, `.cursorrules`, `.github/copilot-instructions.md`), modular rulebooks (`.agents/rules/*.md`, `.cursor/rules/*.md`), and on-demand skills (`.agents/skills/**/SKILL.md`, `skills/**/SKILL.md`).
-- [x] **Centralized Lexical Parsers (`@orchestrai/regex`)**: Uses zero-dependency regular expressions (`YAML_FRONTMATTER_REGEX`, `YAML_KEY_VALUE_REGEX`, `TOOL_CALL_BLOCK_REGEX`) to parse frontmatter and instructions.
+- [x] **Centralized Lexical Parsers (`@orchestr-ai/regex`)**: Uses zero-dependency regular expressions (`YAML_FRONTMATTER_REGEX`, `YAML_KEY_VALUE_REGEX`, `TOOL_CALL_BLOCK_REGEX`) to parse frontmatter and instructions.
 - [x] **In-Memory Skill Registry (`harness-skill-registry.ts`)**: Caches discovered skills and modular rules for instant retrieval during agent execution.
 - [x] **Context Injection (`live-execution.manager.ts`)**: Injects discovered rules, invariants, and available on-demand skills directly into the agent's augmented system prompt on execution bootstrap.
 

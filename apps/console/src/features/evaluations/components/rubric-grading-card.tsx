@@ -8,7 +8,7 @@
 
 import React, { useState } from "react";
 import { CheckCircle, Award, RotateCcw } from "lucide-react";
-import { Button, toast } from "@orchestrai/ui";
+import { Button, toast } from "@orchestr-ai/ui";
 import { UI_COPY } from "@/lib/ui-copy";
 
 interface RubricCriterion {

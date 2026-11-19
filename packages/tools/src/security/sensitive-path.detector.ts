@@ -1,13 +1,13 @@
 /**
  * @file packages/tools/src/security/sensitive-path.detector.ts
  * @description Advanced classification of filesystem targets to protect sensitive credentials and secrets.
- * @module @orchestrai/tools/security
+ * @module @orchestr-ai/tools/security
  */
 
 import os from "node:os";
 import path from "node:path";
-import { ApprovalRiskLevel } from "@orchestrai/shared-types";
-import { CRITICAL_CREDENTIAL_PATTERNS, SECRET_CONFIG_PATTERNS } from "@orchestrai/regex";
+import { ApprovalRiskLevel } from "@orchestr-ai/shared-types";
+import { CRITICAL_CREDENTIAL_PATTERNS, SECRET_CONFIG_PATTERNS } from "@orchestr-ai/regex";
 
 /**
  * Risk classification level for a filesystem path access request.

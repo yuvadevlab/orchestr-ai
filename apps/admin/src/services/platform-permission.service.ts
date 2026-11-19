@@ -4,7 +4,7 @@
  * @module apps/admin/services
  */
 
-import { getPrismaClient, type PrismaClient, type PlatformPermission } from "@orchestrai/database";
+import { getPrismaClient, type PrismaClient, type PlatformPermission } from "@orchestr-ai/database";
 
 /**
  * Platform permission level representation record.

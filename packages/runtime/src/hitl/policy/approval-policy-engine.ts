@@ -3,7 +3,7 @@
  * @description Policy engine evaluating tool invocations to classify operational risk and determine approval triggers.
  */
 
-import { ToolPermissionLevel } from "@orchestrai/shared-types";
+import { ToolPermissionLevel } from "@orchestr-ai/shared-types";
 import {
   type ApprovalPolicyConfig,
   type RiskAssessmentResult,

@@ -1,10 +1,10 @@
 /**
  * @file packages/model-router/src/model-router.ts
  * @description Master Model Router engine coordinating ranking, strategy selection, and fallbacks.
- * @module @orchestrai/model-router
+ * @module @orchestr-ai/model-router
  */
 
-import { RoutingStrategy } from "@orchestrai/shared-types";
+import { RoutingStrategy } from "@orchestr-ai/shared-types";
 import type { ModelDeploymentCandidate, RouteRequest, RouteResult } from "./types";
 import { LatencyTracker } from "./latency-tracker";
 import { CostEstimator } from "./cost-estimator";

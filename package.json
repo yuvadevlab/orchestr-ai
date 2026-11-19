@@ -1,7 +1,11 @@
 {
-  "name": "orchestrai",
+  "name": "orchestr-ai",
   "version": "1.0.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuvadevlab/orchestr-ai.git"
+  },
   "type": "module",
   "description": "Enterprise-grade distributed AI agent orchestration platform for autonomous swarms, sandboxed tools, multi-tier memory, Conversational RAG, realtime streaming, and event-driven execution DAGs",
   "packageManager": "pnpm@12.5.1",
@@ -12,9 +16,9 @@
     "dev": "turbo dev --concurrency=25",
     "build": "turbo build",
     "clean": "turbo clean",
-    "db:generate": "pnpm --filter @orchestrai/database db:generate",
-    "db:migrate": "pnpm --filter @orchestrai/database db:migrate",
-    "db:studio": "pnpm --filter @orchestrai/database db:studio",
+    "db:generate": "pnpm --filter @orchestr-ai/database db:generate",
+    "db:migrate": "pnpm --filter @orchestr-ai/database db:migrate",
+    "db:studio": "pnpm --filter @orchestr-ai/database db:studio",
     "lint": "eslint . --max-warnings=0 && ruff check apps/intelligence apps/crawler",
     "lint:fix": "eslint . --fix --max-warnings=0 && ruff check --fix apps/intelligence apps/crawler",
     "lint:turbo": "turbo lint",

@@ -8,9 +8,9 @@
  * @module apps/gateway/modules/execution
  */
 
-import { getPrismaClient, type PrismaClient } from "@orchestrai/database";
-import { ExecutionStatus, MessageRole } from "@orchestrai/shared-types";
-import type { IExecutionRepository, IQueueProducer } from "@orchestrai/core";
+import { getPrismaClient, type PrismaClient } from "@orchestr-ai/database";
+import { ExecutionStatus, MessageRole } from "@orchestr-ai/shared-types";
+import type { IExecutionRepository, IQueueProducer } from "@orchestr-ai/core";
 import type { CreateExecutionDto, ExecutionFilterDto, ResumeExecutionDto } from "@/validation";
 import type { GatewayResponse } from "@/routes/http-types";
 import { PostgresExecutionRepository } from "../repositories/execution.repository";

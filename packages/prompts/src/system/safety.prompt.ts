@@ -1,7 +1,7 @@
 /**
  * @file packages/prompts/src/system/safety.prompt.ts
  * @description Safety guardrails, sandbox boundaries, and invariant enforcement prompts.
- * @module @orchestrai/prompts/system
+ * @module @orchestr-ai/prompts/system
  */
 
 /**

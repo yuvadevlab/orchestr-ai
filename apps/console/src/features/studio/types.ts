@@ -16,7 +16,7 @@ import {
   CoworkMessageRole,
   SseStreamEvent,
   MessageSegmentType,
-} from "@orchestrai/shared-types";
+} from "@orchestr-ai/shared-types";
 
 export {
   PermissionScope,

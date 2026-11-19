@@ -8,7 +8,7 @@
 
 import React, { useEffect } from "react";
 import { ShieldAlert, Check, X } from "lucide-react";
-import { Button } from "@orchestrai/ui";
+import { Button } from "@orchestr-ai/ui";
 import { useConsoleStore } from "@/lib/stores";
 import { UI_COPY } from "@/lib/ui-copy";
 import { ClearanceTicketDetails } from "./clearance-ticket-details";

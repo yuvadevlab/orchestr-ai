@@ -3,7 +3,7 @@
  * @description Multi-step continuous execution runner for autonomous agent loops.
  */
 
-import type { AIMessage } from "@orchestrai/core";
+import type { AIMessage } from "@orchestr-ai/core";
 import type { AgentLoop } from "./agent-loop";
 import type { StepOutcome } from "./step-result.types";
 import { createToolResultMessage } from "./tool-message-converter";

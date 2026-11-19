@@ -1,14 +1,14 @@
 /**
  * @file packages/core/src/cqrs/approval.commands.ts
  * @description CQRS command definitions for resolving human-in-the-loop security clearance tickets.
- * @module @orchestrai/core/cqrs
+ * @module @orchestr-ai/core/cqrs
  */
 
 import {
   ApprovalCommandType,
   type ApprovalDecisionVerdict,
   type PermissionScope,
-} from "@orchestrai/shared-types";
+} from "@orchestr-ai/shared-types";
 import type { ICommand } from "./command-bus.port";
 
 /**

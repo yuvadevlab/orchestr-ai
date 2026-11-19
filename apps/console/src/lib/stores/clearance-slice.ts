@@ -5,7 +5,7 @@
  */
 
 import type { StateCreator } from "zustand";
-import type { ApprovalRiskLevel, ApprovalDecisionVerdict } from "@orchestrai/shared-types";
+import type { ApprovalRiskLevel, ApprovalDecisionVerdict } from "@orchestr-ai/shared-types";
 
 /**
  * Interactive security clearance request ticket.

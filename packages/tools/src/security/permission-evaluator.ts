@@ -12,8 +12,8 @@
  * ───────────────────────────────────────────────────────────────────
  */
 
-import { ToolPermissionLevel } from "@orchestrai/shared-types";
-import { OrchestrAIError, requiresHumanApproval } from "@orchestrai/core";
+import { ToolPermissionLevel } from "@orchestr-ai/shared-types";
+import { OrchestrAIError, requiresHumanApproval } from "@orchestr-ai/core";
 
 /**
  * Numeric hierarchy values for comparing permission clearance levels.

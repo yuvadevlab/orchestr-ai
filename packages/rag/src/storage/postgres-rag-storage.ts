@@ -4,7 +4,7 @@
  * Delegates SQL query strings to the centralized `postgres-queries` catalog.
  */
 
-import { RagError } from "@orchestrai/core";
+import { RagError } from "@orchestr-ai/core";
 import type {
   IRagStorage,
   Document,

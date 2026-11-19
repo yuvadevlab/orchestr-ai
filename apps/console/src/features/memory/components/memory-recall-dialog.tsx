@@ -19,7 +19,7 @@ import {
   DialogDescription,
   DialogBody,
   DialogFooter,
-} from "@orchestrai/ui";
+} from "@orchestr-ai/ui";
 import { UI_COPY } from "@/lib/ui-copy";
 import { useSearchMemories } from "../api";
 import type { ScoredMemoryResult } from "../types";

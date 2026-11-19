@@ -5,8 +5,8 @@
  * @module apps/gateway/services
  */
 
-import { getPrismaClient, type PrismaClient } from "@orchestrai/database";
-import type { PlatformMode, Prisma } from "@orchestrai/database";
+import { getPrismaClient, type PrismaClient } from "@orchestr-ai/database";
+import type { PlatformMode, Prisma } from "@orchestr-ai/database";
 
 /** DTO for creating or updating a platform mode. */
 export interface UpsertModeDto {

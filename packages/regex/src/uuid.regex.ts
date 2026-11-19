@@ -1,7 +1,7 @@
 /**
  * @file packages/regex/src/uuid.regex.ts
  * @description Canonical UUID regular expressions and validation helpers.
- * @module @orchestrai/regex
+ * @module @orchestr-ai/regex
  */
 
 /**

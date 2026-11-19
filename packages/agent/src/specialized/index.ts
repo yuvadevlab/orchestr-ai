@@ -1,7 +1,7 @@
 /**
  * @file index.ts
- * @description Master barrel export for `@orchestrai/agent/specialized`.
- * @module @orchestrai/agent/specialized
+ * @description Master barrel export for `@orchestr-ai/agent/specialized`.
+ * @module @orchestr-ai/agent/specialized
  */
 
 export * from "./research-agent";

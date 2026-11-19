@@ -16,7 +16,7 @@ import React, {
 } from "react";
 import { useRouter } from "next/navigation";
 import { useQueryClient } from "@tanstack/react-query";
-import { toast } from "@orchestrai/ui";
+import { toast } from "@orchestr-ai/ui";
 import { DevLabAuthProvider } from "@yuva-devlab/auth-client";
 import { DEVLAB_PORTAL_ROUTES } from "@/lib/routes";
 import { isJwtExpired } from "@/lib/jwt";

@@ -4,8 +4,8 @@
  * @module apps/gateway/services
  */
 
-import type { ExecutionStatus as PrismaExecutionStatus } from "@orchestrai/database";
-import { ExecutionStatus } from "@orchestrai/shared-types";
+import type { ExecutionStatus as PrismaExecutionStatus } from "@orchestr-ai/database";
+import { ExecutionStatus } from "@orchestr-ai/shared-types";
 
 /**
  * Maps arbitrary status strings to Prisma's database enum.

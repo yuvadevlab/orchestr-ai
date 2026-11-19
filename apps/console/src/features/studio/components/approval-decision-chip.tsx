@@ -6,8 +6,8 @@
 
 import React from "react";
 import { ShieldCheck, X } from "lucide-react";
-import { Badge } from "@orchestrai/ui";
-import { PermissionScope } from "@orchestrai/shared-types";
+import { Badge } from "@orchestr-ai/ui";
+import { PermissionScope } from "@orchestr-ai/shared-types";
 import { UI_COPY } from "@/lib/ui-copy";
 import type { StudioApprovalRequest } from "../types";
 

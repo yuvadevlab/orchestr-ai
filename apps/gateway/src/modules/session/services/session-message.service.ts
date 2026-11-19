@@ -9,11 +9,11 @@ import {
   type PrismaClient,
   type MessageRole,
   type Prisma,
-} from "@orchestrai/database";
-import { ExecutionStatus } from "@orchestrai/shared-types";
+} from "@orchestr-ai/database";
+import { ExecutionStatus } from "@orchestr-ai/shared-types";
 import type { AddMessageDto } from "@/validation";
 import { resolveDbTenantId, resolveOrCreateDefaultAgent } from "@/modules/tenant-resolver";
-import { UUID_REGEX } from "@orchestrai/regex";
+import { UUID_REGEX } from "@orchestr-ai/regex";
 
 export interface AppendedMessageRecord {
   messageId: string;

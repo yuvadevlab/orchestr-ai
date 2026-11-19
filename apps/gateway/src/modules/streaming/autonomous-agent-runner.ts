@@ -7,9 +7,9 @@
 
 import { randomUUID } from "node:crypto";
 import path from "node:path";
-import { buildAutonomousSystemPrompt } from "@orchestrai/prompts";
-import { ArtifactType, ArtifactStatus, WorkspaceTool } from "@orchestrai/shared-types";
-import { TOOL_CALL_BLOCK_REGEX } from "@orchestrai/regex";
+import { buildAutonomousSystemPrompt } from "@orchestr-ai/prompts";
+import { ArtifactType, ArtifactStatus, WorkspaceTool } from "@orchestr-ai/shared-types";
+import { TOOL_CALL_BLOCK_REGEX } from "@orchestr-ai/regex";
 import { resolveMonorepoRoot, executeWorkspaceTool } from "./workspace-tool-executor";
 
 export { buildAutonomousSystemPrompt, resolveMonorepoRoot, executeWorkspaceTool };

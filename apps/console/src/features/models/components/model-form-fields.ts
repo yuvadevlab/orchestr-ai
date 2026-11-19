@@ -4,7 +4,7 @@
  * @module apps/console/features/models/components
  */
 
-import type { FormFieldSpec } from "@orchestrai/ui/components/action-dialog";
+import type { FormFieldSpec } from "@orchestr-ai/ui/components/action-dialog";
 import { UI_COPY } from "@/lib/ui-copy";
 import type { LlmProvider } from "../types";
 

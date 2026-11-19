@@ -2,11 +2,11 @@
  * @file packages/database/src/seeds/seed-feature-flags.ts
  * @description Database seeder for real-time feature flags, circuit breakers, and kill switches.
  * Enables sub-second deactivation of sensitive tools or emergency maintenance mode.
- * @module @orchestrai/database/seeds
+ * @module @orchestr-ai/database/seeds
  */
 
 import type { PrismaClient } from "@prisma/client";
-import { FeatureFlagKey } from "@orchestrai/shared-types";
+import { FeatureFlagKey } from "@orchestr-ai/shared-types";
 
 export interface FeatureFlagBlueprint {
   key: FeatureFlagKey;

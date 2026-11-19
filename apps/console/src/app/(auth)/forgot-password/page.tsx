@@ -3,7 +3,7 @@
  * @description Pure SSR Server Component route wrapper for OrchestrAI password recovery.
  * Delegates password recovery directly to DevLab Central Portal.
  * @author yuva.devlab@gmail.com
- * @module @orchestrai/console/app/auth
+ * @module @orchestr-ai/console/app/auth
  */
 
 import React, { Suspense } from "react";

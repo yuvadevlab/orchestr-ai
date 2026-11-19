@@ -2,7 +2,7 @@
  * @file packages/database/src/seeds/seed-all.ts
  * @description Master database seed orchestrator running all seed modules idempotently.
  * Never deletes, drops, or truncates existing user or platform data.
- * @module @orchestrai/database/seeds
+ * @module @orchestr-ai/database/seeds
  */
 
 import { getPrismaClient, type PrismaClient } from "../client";

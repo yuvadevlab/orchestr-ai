@@ -8,7 +8,7 @@
 
 import { useApiData, type UseApiDataResult } from "@/lib/hooks";
 import { ExecutionStatus, type ExecutionRun, type ExecutionStepTrace } from "../types";
-import type { Agent, Execution } from "@orchestrai/sdk";
+import type { Agent, Execution } from "@orchestr-ai/sdk";
 import { useAuth } from "@/lib/auth";
 
 /**

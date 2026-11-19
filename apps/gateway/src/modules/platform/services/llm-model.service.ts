@@ -5,8 +5,8 @@
  * @module apps/gateway/services
  */
 
-import { getPrismaClient, type PrismaClient } from "@orchestrai/database";
-import type { LlmModel, Prisma } from "@orchestrai/database";
+import { getPrismaClient, type PrismaClient } from "@orchestr-ai/database";
+import type { LlmModel, Prisma } from "@orchestr-ai/database";
 
 /** DTO for creating or updating an LLM model. */
 export interface UpsertModelDto {

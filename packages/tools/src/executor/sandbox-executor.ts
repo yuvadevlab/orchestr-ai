@@ -13,8 +13,8 @@
  */
 
 import { performance } from "node:perf_hooks";
-import { ToolResultStatus } from "@orchestrai/shared-types";
-import type { ToolCallId, ToolResult } from "@orchestrai/core";
+import { ToolResultStatus } from "@orchestr-ai/shared-types";
+import type { ToolCallId, ToolResult } from "@orchestr-ai/core";
 import type { ITool, ToolExecutionContext } from "@/interfaces";
 import type { IToolRegistry } from "@/registry";
 import { hasCapability, type Capability } from "@/capabilities";

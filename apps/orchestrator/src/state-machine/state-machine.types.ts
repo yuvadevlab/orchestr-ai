@@ -8,7 +8,7 @@ import {
   ExecutionStatus,
   OrchestratorState,
   OrchestratorEventType,
-} from "@orchestrai/shared-types";
+} from "@orchestr-ai/shared-types";
 
 export { OrchestratorState, OrchestratorEventType };
 

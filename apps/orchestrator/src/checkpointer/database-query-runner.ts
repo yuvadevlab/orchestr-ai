@@ -4,8 +4,8 @@
  * @module apps/orchestrator/checkpointer
  */
 
-import { getOrCreatePool } from "@orchestrai/database";
-import type { IDatabaseQueryRunner } from "@orchestrai/runtime";
+import { getOrCreatePool } from "@orchestr-ai/database";
+import type { IDatabaseQueryRunner } from "@orchestr-ai/runtime";
 
 type PoolInstance = ReturnType<typeof getOrCreatePool>;
 

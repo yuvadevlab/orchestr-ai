@@ -7,9 +7,9 @@
  */
 
 import { useMutation, useQueryClient, type UseMutationResult } from "@tanstack/react-query";
-import { ApprovalDecisionVerdict, PermissionScope } from "@orchestrai/shared-types";
+import { ApprovalDecisionVerdict, PermissionScope } from "@orchestr-ai/shared-types";
 import { getApiClient } from "@/lib/api-client";
-import type { ApprovalDecisionResult } from "@orchestrai/sdk";
+import type { ApprovalDecisionResult } from "@orchestr-ai/sdk";
 
 export type ApprovalDecisionScope = PermissionScope;
 

@@ -4,7 +4,7 @@
  */
 
 import { randomUUID } from "node:crypto";
-import { OrchestrAIError } from "@orchestrai/core";
+import { OrchestrAIError } from "@orchestr-ai/core";
 import type { CheckpointRecord } from "../checkpoint.types";
 import type { IPersistentCheckpointer } from "../database-adapter.interface";
 import { type RewindOptions, type RewindResult, RewindOptionsSchema } from "./rewind-policy";

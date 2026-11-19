@@ -5,7 +5,7 @@
  */
 
 import { useCallback, useMemo } from "react";
-import { PermissionScope, MessageSegmentType } from "@orchestrai/shared-types";
+import { PermissionScope, MessageSegmentType } from "@orchestr-ai/shared-types";
 import type { CoworkMessage, StudioApprovalRequest } from "../types";
 import { resolveApprovalInSegments } from "./message-segment-utils";
 

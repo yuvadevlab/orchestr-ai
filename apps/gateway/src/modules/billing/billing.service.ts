@@ -1,6 +1,6 @@
 /**
  * @file apps/gateway/src/modules/billing/billing.service.ts
- * @description Singleton billing service wiring @orchestrai/billing into the gateway.
+ * @description Singleton billing service wiring @orchestr-ai/billing into the gateway.
  * Provides token counting, budget enforcement, and cost ledger recording
  * for every autonomous execution turn.
  * @module apps/gateway/modules/billing

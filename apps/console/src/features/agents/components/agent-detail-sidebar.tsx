@@ -7,7 +7,7 @@
  */
 
 import React from "react";
-import { Panel } from "@orchestrai/ui";
+import { Panel } from "@orchestr-ai/ui";
 import type { AgentDefinition } from "../types";
 import { UI_COPY } from "@/lib/ui-copy";
 

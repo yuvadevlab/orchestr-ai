@@ -3,7 +3,7 @@
  * @description Centralized application and DevLab SSO route path catalog.
  * Eliminates hardcoded URL string literals and provides canonical SSO redirect builders.
  * @author yuva.devlab@gmail.com
- * @module @orchestrai/console/lib/routes
+ * @module @orchestr-ai/console/lib/routes
  */
 
 export const DEVLAB_PORTAL_WEB_URL =

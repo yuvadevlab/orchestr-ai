@@ -7,7 +7,7 @@
  */
 
 import { useMutation, useQueryClient, type UseMutationResult } from "@tanstack/react-query";
-import { ToolPermissionLevel } from "@orchestrai/shared-types";
+import { ToolPermissionLevel } from "@orchestr-ai/shared-types";
 import { getApiClient } from "@/lib/api-client";
 import type { ToolDefinition } from "../types";
 

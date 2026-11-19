@@ -1,6 +1,6 @@
 /**
  * @file packages/core/vitest.config.ts
- * @description Vitest configuration for @orchestrai/core.
+ * @description Vitest configuration for @orchestr-ai/core.
  *
  * Configures the `@/*` path alias to resolve against the local `src/` directory,
  * mirroring the TypeScript path mapping in tsconfig.json so test imports are

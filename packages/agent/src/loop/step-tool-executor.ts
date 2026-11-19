@@ -8,13 +8,13 @@ import {
   ToolResultStatus,
   type AgentMode,
   type ToolPermissionLevel,
-} from "@orchestrai/shared-types";
+} from "@orchestr-ai/shared-types";
 import {
   requiresHumanApproval,
   type ToolCallContentBlock,
   type ToolResult,
-} from "@orchestrai/core";
-import { executeTool, type ToolRegistry } from "@orchestrai/tools";
+} from "@orchestr-ai/core";
+import { executeTool, type ToolRegistry } from "@orchestr-ai/tools";
 import type { AgentStateMachine } from "@/state";
 import type { ModeConstraintEnforcer } from "@/modes";
 import type { PendingApprovalInfo } from "./step-result.types";

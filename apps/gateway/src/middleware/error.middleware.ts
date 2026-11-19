@@ -4,7 +4,7 @@
  */
 
 import { ZodError } from "zod";
-import { OrchestrAIError } from "@orchestrai/core";
+import { OrchestrAIError } from "@orchestr-ai/core";
 import type { GatewayRequest, GatewayResponse } from "@/routes";
 
 /**

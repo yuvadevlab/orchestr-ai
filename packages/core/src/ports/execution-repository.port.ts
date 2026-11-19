@@ -1,10 +1,10 @@
 /**
  * @file packages/core/src/ports/execution-repository.port.ts
  * @description Abstract storage port for agent execution runs, lifecycle transitions, and telemetry.
- * @module @orchestrai/core/ports
+ * @module @orchestr-ai/core/ports
  */
 
-import type { ExecutionStatus, PaginatedResult } from "@orchestrai/shared-types";
+import type { ExecutionStatus, PaginatedResult } from "@orchestr-ai/shared-types";
 
 /**
  * Domain representation of an execution entity returned from repository queries.

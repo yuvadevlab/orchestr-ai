@@ -4,7 +4,7 @@
  */
 
 import { z } from "zod";
-import { ToolResultStatus } from "@orchestrai/shared-types";
+import { ToolResultStatus } from "@orchestr-ai/shared-types";
 import { ToolCallIdSchema } from "@/identifiers";
 
 /**

@@ -4,8 +4,8 @@
  */
 
 import { z } from "zod";
-import { AgentMode, ModelProvider } from "@orchestrai/shared-types";
-import { AGENT_EXECUTION_DEFAULTS } from "@orchestrai/core";
+import { AgentMode, ModelProvider } from "@orchestr-ai/shared-types";
+import { AGENT_EXECUTION_DEFAULTS } from "@orchestr-ai/core";
 
 /**
  * Model selection and hyperparameters payload.

@@ -7,10 +7,10 @@
  */
 
 import React, { useState } from "react";
-import { TableRow, TableCell, Badge } from "@orchestrai/ui";
+import { TableRow, TableCell, Badge } from "@orchestr-ai/ui";
 import { Copy, Check } from "lucide-react";
 import type { ExecutionRun } from "../types";
-import { StatusBadge } from "@orchestrai/ui/components/status-badge";
+import { StatusBadge } from "@orchestr-ai/ui/components/status-badge";
 import { UI_COPY } from "@/lib/ui-copy";
 import { ExecutionRowActions } from "./execution-row-actions";
 

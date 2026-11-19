@@ -3,7 +3,7 @@
  * @description Configuration context and dependencies for the OrchestrAIRuntime engine.
  */
 
-import type { ToolPermissionLevel } from "@orchestrai/shared-types";
+import type { ToolPermissionLevel } from "@orchestr-ai/shared-types";
 import type { ICheckpointer, IPersistentCheckpointer } from "@/checkpoint";
 import type { IApprovalStorage, ApprovalPolicyEngine } from "@/hitl";
 import type { RuntimeGraphState } from "@/nodes";

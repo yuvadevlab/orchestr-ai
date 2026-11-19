@@ -2,7 +2,7 @@
  * @file packages/database/src/seed-platform-manifest.ts
  * @description Orchestrator for synchronizing cognitive policies, system prompts, platform configs, and feature flags.
  * Completely idempotent with zero data loss guarantee.
- * @module @orchestrai/database
+ * @module @orchestr-ai/database
  */
 
 import type { PrismaClient } from "@prisma/client";

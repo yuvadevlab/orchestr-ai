@@ -3,9 +3,9 @@
  * @description Strategy implementation for analytical PLAN mode.
  */
 
-import { AgentMode, ToolPermissionLevel } from "@orchestrai/shared-types";
-import { PLAN_MODE_SYSTEM_PROMPT } from "@orchestrai/prompts";
-import type { ITool } from "@orchestrai/tools";
+import { AgentMode, ToolPermissionLevel } from "@orchestr-ai/shared-types";
+import { PLAN_MODE_SYSTEM_PROMPT } from "@orchestr-ai/prompts";
+import type { ITool } from "@orchestr-ai/tools";
 import type { IModeStrategy } from "./mode-strategy.interface";
 
 /**
@@ -16,7 +16,7 @@ export class PlanModeStrategy implements IModeStrategy {
   public readonly mode = AgentMode.PLAN;
 
   /**
-   * Returns canonical system guidance for PLAN mode from @orchestrai/prompts.
+   * Returns canonical system guidance for PLAN mode from @orchestr-ai/prompts.
    */
   public getSystemInstructions(): string {
     return PLAN_MODE_SYSTEM_PROMPT;

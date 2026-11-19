@@ -1,7 +1,7 @@
 /**
  * @file packages/prompts/src/personas/index.ts
  * @description Barrel export for specialist persona prompt constants and registry.
- * @module @orchestrai/prompts/personas
+ * @module @orchestr-ai/prompts/personas
  */
 
 export * from "./developer.prompt";

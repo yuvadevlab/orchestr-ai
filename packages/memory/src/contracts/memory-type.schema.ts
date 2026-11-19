@@ -4,7 +4,7 @@
  */
 
 import { z } from "zod";
-import { MemoryType } from "@orchestrai/shared-types";
+import { MemoryType } from "@orchestr-ai/shared-types";
 
 /**
  * Zod schema validating a supported categorical memory type.

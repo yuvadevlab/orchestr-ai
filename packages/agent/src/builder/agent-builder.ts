@@ -15,13 +15,13 @@
  */
 
 import crypto from "node:crypto";
-import { AgentMode } from "@orchestrai/shared-types";
+import { AgentMode } from "@orchestr-ai/shared-types";
 import {
   AgentDefinitionSchema,
   AGENT_EXECUTION_DEFAULTS,
   type AgentDefinition,
   type AgentModelConfig,
-} from "@orchestrai/core";
+} from "@orchestr-ai/core";
 
 /**
  * Fluent builder for creating strictly-validated AgentDefinition records.

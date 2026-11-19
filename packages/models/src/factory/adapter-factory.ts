@@ -15,7 +15,7 @@
  * ────────────────────────────────────────────────────────────────────────────
  */
 
-import { ModelProvider, OrchestrAIError } from "@orchestrai/core";
+import { ModelProvider, OrchestrAIError } from "@orchestr-ai/core";
 import { OllamaAdapter, OllamaConfigSchema } from "@/adapters/ollama";
 import { OpenAiAdapter, OpenAiConfigSchema } from "@/adapters/openai";
 import { AnthropicAdapter, AnthropicConfigSchema } from "@/adapters/anthropic";
